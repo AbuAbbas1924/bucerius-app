@@ -81,7 +81,7 @@
        x-cloak
        class="flex flex-col min-h-screen">
 
-    <!-- Header -->
+
     <header class="bg-white border-gray-200 border-b">
       <div class="flex items-center gap-3 mx-auto px-4 py-4 max-w-3xl">
         <div class="bg-[#921925] rounded-sm w-2.5 h-8"></div>
@@ -98,13 +98,13 @@
       </header>
 
     <main class="flex-1 mx-auto px-4 py-6 w-full max-w-3xl">
-    
-      <!-- Loading -->
+
+
       <template x-if="loading">
         <div class="py-24 text-gray-500 text-center">Aufgaben werden geladen &hellip;</div>
       </template>
-    
-      <!-- Fehler beim Laden (z. B. per Doppelklick geoeffnet) -->
+
+
       <template x-if="error">
         <div class="bg-white p-6 border border-gray-200 rounded-xl">
           <h2 class="mb-2 font-semibold text-lg">Fragen konnten nicht geladen werden</h2>
@@ -119,13 +119,13 @@
         </div>
       </template>
 
-      <!-- App -->
+
       <template x-if="ready">
         <div>
 
-          <!-- Steuerung -->
+
           <div class="flex flex-wrap items-center gap-2 mb-5">
-            <!-- Modus -->
+
             <div class="inline-flex bg-gray-200 p-1 rounded-lg">
               <button @click="setMode('lernen')"
                       :class="mode==='lernen' ? 'bg-white shadow text-gray-900' : 'text-gray-600'"
@@ -134,8 +134,8 @@
                       :class="mode==='pruefung' ? 'bg-white shadow text-gray-900' : 'text-gray-600'"
                       class="px-3 py-1.5 rounded-md font-medium text-sm">Pr&uuml;fungsmodus</button>
             </div>
-          
-            <!-- Filter (nur Lernmodus) -->
+
+
             <template x-if="mode==='lernen'">
               <div class="flex flex-wrap gap-2">
                 <select x-model="fGruppe"
@@ -158,8 +158,8 @@
                 </select>
                 </div>
             </template>
-            
-            <!-- Fortschritt (Lernmodus) -->
+
+
             <template x-if="mode==='lernen'">
               <div class="ml-auto text-gray-500 text-sm">
                 <span x-text="answered"></span> bearbeitet &middot;
@@ -169,7 +169,7 @@
             </template>
           </div>
 
-          <!-- ===== Pruefung: Startbildschirm ===== -->
+
           <template x-if="mode==='pruefung' && !examStarted">
             <div class="bg-white p-6 border border-gray-200 rounded-xl">
               <h2 class="mb-2 font-semibold text-xl">Pr&uuml;fungssimulation</h2>
@@ -197,7 +197,7 @@
               </div>
               </template>
 
-          <!-- ===== Pruefung: Ergebnis ===== -->
+
           <template x-if="mode==='pruefung' && examFinished">
             <div class="bg-white mb-5 p-6 border border-gray-200 rounded-xl">
               <div class="flex flex-wrap items-end gap-4">
@@ -232,11 +232,11 @@
               </div>
               </template>
 
-          <!-- ===== Aufgabenkarte ===== -->
+
           <template x-if="(mode==='lernen' || (mode==='pruefung' && examStarted)) && cur()">
             <div class="bg-white p-5 sm:p-7 border border-gray-200 rounded-xl">
 
-              <!-- Kopf -->
+
               <div class="flex flex-wrap items-center gap-3 mb-3">
                 <span class="font-semibold text-[#921925] text-[11px] uppercase tracking-wider"
                       x-text="data.gruppen[cur().gruppe].kurz"></span>
@@ -248,7 +248,7 @@
                       x-text="'Frage ' + (idx+1) + ' / ' + total"></span>
               </div>
 
-              <!-- Frageverb -->
+
               <div class="mb-4">
                 <template x-if="cur().gruppe!=='sprachstile'">
                   <div>
@@ -270,7 +270,7 @@
                 </template>
               </div>
 
-              <!-- Kontext: Sprachstile -->
+
               <template x-if="cur().gruppe==='sprachstile'">
                 <div class="bg-gray-50 p-4 border border-gray-200 rounded-lg text-[17px] leading-relaxed">
                   <span x-text="passage().a"></span><span
@@ -279,7 +279,7 @@
                 </div>
               </template>
 
-              <!-- Kontext: Indizien -->
+
               <template x-if="cur().gruppe==='indizien'">
                 <div>
                   <p class="mb-3"
@@ -298,7 +298,7 @@
                   </div>
                   </template>
 
-              <!-- Kontext: Faelle -->
+
               <template x-if="cur().gruppe==='faelle'">
                 <div>
                   <div class="mb-1.5 text-[11px] text-gray-400 uppercase tracking-wider">Gesetzestext</div>
@@ -310,7 +310,7 @@
                   </div>
                   </template>
 
-              <!-- Kontext: Planen -->
+
               <template x-if="cur().gruppe==='planen'">
                 <div class="bg-gray-50 p-4 border border-gray-200 rounded-lg">
                   <div class="mb-2 font-semibold"
@@ -351,11 +351,11 @@
                           </div>
                           </template>
 
-              <!-- Frage -->
+
               <p class="mt-5 mb-4 font-semibold text-[17px] leading-snug"
                  x-text="cur().frage"></p>
 
-              <!-- Thesen -->
+
               <template x-if="cur().thesen">
                 <div class="space-y-2 mb-4">
                   <template x-for="(t,i) in cur().thesen"
@@ -366,7 +366,7 @@
                 </div>
               </template>
 
-              <!-- Optionen -->
+
               <div class="space-y-2">
                 <template x-for="(o,i) in cur().optionen"
                           :key="i">
@@ -387,7 +387,7 @@
                 </template>
               </div>
 
-              <!-- Aktionen -->
+
               <div class="flex items-center gap-2 mt-5">
                 <template x-if="mode==='lernen' && !checked">
                   <button @click="check()"
@@ -412,7 +412,7 @@
                     </div>
                     </div>
 
-              <!-- Feedback -->
+
               <template x-if="locked()">
                 <div class="mt-5 p-4 border-l-4 rounded-lg"
                      :class="answeredThis() ? (isRight() ? 'border-l-green-600 bg-green-50 border border-green-200' : 'border-l-red-500 bg-red-50 border border-red-200') : 'border-l-gray-400 bg-gray-50 border border-gray-200'">
@@ -423,7 +423,7 @@
                   <p class="text-[14px] text-gray-800 leading-relaxed"
                      x-text="cur().erklaerung"></p>
 
-                  <!-- Loesungstabelle (Planen) -->
+
                   <template x-if="cur().gruppe==='planen' && scen().loesungstabelle">
                     <div class="mt-4 overflow-x-auto">
                       <div class="mb-1 font-semibold text-gray-600 text-xs"
@@ -466,7 +466,7 @@
             </div>
             </template>
 
-          <!-- leerer Pool -->
+
           <template x-if="mode==='lernen' && !cur()">
             <div class="bg-white p-8 border border-gray-200 rounded-xl text-gray-500 text-center">
               Keine Aufgaben f&uuml;r diese Auswahl. Filter anpassen.
@@ -479,7 +479,7 @@
       </template>
     </main>
 
-    <!-- Pruefungs-Leiste -->
+
     <template x-if="mode==='pruefung' && examStarted && !examFinished">
       <div class="bottom-0 sticky bg-white/95 backdrop-blur border-gray-200 border-t">
         <div class="flex items-center gap-3 mx-auto px-4 py-3 max-w-3xl">
@@ -494,7 +494,7 @@
       </div>
       </template>
 
-    <!-- Spickzettel -->
+
     <template x-if="showSpick">
       <div class="z-50 fixed inset-0">
         <div class="absolute inset-0 bg-black/40"
@@ -538,7 +538,6 @@
           pool: [], idx: 0, selected: null, checked: false,
           answeredSet: new Set(), correctSet: new Set(),
           showSpick: false,
-          // Pruefung
           examScope: 'alle', examStarted: false, examFinished: false, answers: {},
           timeLeft: 0, planned: 0, timer: null,
 
@@ -549,7 +548,6 @@
                 this.data = d;
               this.gruppenArr = Object.keys(d.gruppen).map(k => Object.assign({ key: k }, d.gruppen[k]));
               this.lernhilfenArr = Object.keys(d.lernhilfen).map(t => ({ title: t, items: d.lernhilfen[t] }));
-              // Sprachstile-Optionen einmalig mischen (Antwort steht in den Daten an erster Stelle)
               d.aufgaben.forEach(a => { if (a.gruppe === 'sprachstile') this.shuffle(a.optionen); });
               this.buildPool();
               this.loading = false; this.ready = true;
@@ -559,7 +557,6 @@
 
           shuffle(arr) { for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[arr[i], arr[j]] = [arr[j], arr[i]]; } },
 
-          // ---- Pool ----
           gOrder: { sprachstile: 0, planen: 1, indizien: 2, faelle: 3 },
           dOrder: { leicht: 0, mittel: 1, schwer: 2 },
           buildPool() {
@@ -570,7 +567,6 @@
             this.pool = list; this.idx = 0; this.selected = null; this.checked = false;
           },
 
-          // ---- aktuelle Aufgabe ----
           cur() { return this.pool[this.idx] || null; },
           get total() { return this.pool.length; },
           scen() { const q = this.cur(); return (q && q.szenario && this.data.szenarien[q.szenario]) || { titel: '', kontext: '', tabellen: [] }; },
@@ -588,7 +584,6 @@
             })[v] || '';
           },
 
-          // ---- Auswahl / Pruefen ----
           locked() { return this.mode === 'lernen' ? this.checked : this.examFinished; },
           sel() { return this.mode === 'pruefung' ? (this.answers[this.cur().id] ?? null) : this.selected; },
           select(i) {
@@ -621,14 +616,12 @@
             return 'lt-muted';
           },
 
-          // ---- Navigation ----
           next() { if (this.idx < this.total - 1) { this.idx++; this.selected = null; this.checked = false; window.scrollTo({ top: 0, behavior: 'smooth' }); } },
           prev() { if (this.idx > 0) { this.idx--; this.selected = null; this.checked = false; window.scrollTo({ top: 0, behavior: 'smooth' }); } },
 
           get answered() { return this.answeredSet.size; },
           get correct() { return this.correctSet.size; },
 
-          // ---- Modus ----
           setMode(m) {
             if (m === this.mode) { return; }
             clearInterval(this.timer);
@@ -636,7 +629,6 @@
             if (m === 'lernen') this.buildPool();
           },
 
-          // ---- Pruefung ----
           scopeList() { return this.data.aufgaben.filter(a => this.examScope === 'alle' || a.gruppe === this.examScope); },
           scopeCount() { return this.scopeList().length; },
           scopeTime() { return this.scopeList().reduce((s, a) => s + (this.data.gruppen[a.gruppe].zeitProAufgabeSek || 60), 0); },
