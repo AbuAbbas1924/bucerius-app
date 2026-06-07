@@ -1,0 +1,140 @@
+BUCERIUS LAW SCHOOL – AUSWAHLTEST (ITB): LERN- & TRAININGSDOKUMENT
+Gesammelte Aufgaben, Lösungen, Erklärungen, gezielte Skills und Vorlagen zum Selbst-Entwickeln ähnlicher Aufgaben.
+Quelle: Test-Simulation (Demo) der Bucerius Law School / ITB Consulting. Lösungen abgeglichen mit der offiziellen Vorbereitungsbroschüre. Nur zur persönlichen Prüfungsvorbereitung.
+
+SO NUTZT DU DIESES DOKUMENT
+Sortiert nach den vier Aufgabentypen. Zu jeder Aufgabe: Aufgabenstellung (gekürzt), richtige Antwort, Erklärung, und SKILL = die konkrete Fähigkeit, die diese Aufgabe trainiert. Beim Erstellen eigener Aufgaben gezielt genau diesen Skill anvisieren. Allgemein: genau EINE Antwort richtig, kein Punktabzug – im Zweifel raten.
+
+DIE VIER AUFGABENTYPEN
+1. Sprachgefühl / Textergänzung – stilistisch passenden Satz in eine Lücke einsetzen.
+2. Planen in Studium und Beruf – Einsatzplanung unter Nebenbedingungen ("Future Days").
+3. Indizien – Aussagenlogik: Widerspruch / vereinbar / ableitbar.
+4. Fälle und Normen – juristische Subsumtion am Wortlaut der Norm.
+
+==================================================
+1. SPRACHGEFÜHL / TEXTERGÄNZUNG
+Ein Text endet mit einer Lücke. Wähle den Satz, der in Stil, Ton und Inhalt am besten passt.
+
+AUFGABE 1.1 · Wetterbericht
+Nüchterner Wetterbericht endet mit Lücke.
+Optionen: (1) "Am Samstag wird es dann wieder regnen." (2) "Am Samstag Durchzug eines Regengebietes." (3) "Regen, Regen und nochmals Regen." (4) "Dicke Regenwolken ... vorbeiziehen." (5) "Auch am Samstag leider nichts als Regen."
+RICHTIG: Option 2. Knapper, sachlicher Meldungsstil ohne Wertung; nur 2 setzt diesen Nominalstil fort. Falsch: 1 zu salopp; 3 emotional; 4 bildhaft & inhaltlich falsch ("vorbeiziehen"=kein Regen); 5 Wertung "leider".
+SKILL: Register-/Tonerkennung – das Sprachregister eines Sachtextes identifizieren und Wertungs-/Stilbrüche aufspüren.
+
+AUFGABE 1.2 · Märchen
+Grimm-Passage: "...ging fort, immerzu von Morgen bis Abend, und ___".
+Optionen: (1) "ziemlich egal, wohin er ging"; (2) "interessierte ihn nur am Rande"; (3) "es war ihm einerlei, wohin ihn der Weg führte"; (4) "verschwendete keinen Gedanken ... Himmelsrichtung"; (5) "die Richtung war ihm relativ gleichgültig".
+RICHTIG: Option 3. Altertümlich-literarischer Märchenton; "einerlei" + "wohin ihn der Weg führte" treffen ihn genau. Falsch: 1 & 5 zu modern; 2 floskelhaft; 4 technisch.
+SKILL: Stil-Epochen-Gespür – altertümlichen/literarischen Sprachduktus von modernem/umgangssprachlichem unterscheiden.
+
+AUFGABE 1.3 · Wissenschaftstext
+"...Vielmehr ___".
+Optionen: (1) salopp; (2) verschwurbelt "Widerborstigkeit des Gegebenen"; (3) Redewendung "auf Herz und Nieren"; (4) "müssen aus der allgemeinen Theorie einzelne Schlussfolgerungen abgeleitet werden, die als Hypothesen empirisch überprüft werden"; (5) erzählend.
+RICHTIG: Option 4. Präziser Fachstil UND inhaltlich korrekt (Hypothesen ableiten und empirisch prüfen). Falsch: 1 umgangssprachlich; 2 schwammig; 3 zu locker; 5 wertend.
+SKILL: Fachsprachliche Präzision + Inhaltslogik – nüchterne Fachsprache erkennen und zugleich die sachlich richtige Fortsetzung wählen.
+
+LERNTRICK (Stilkonsistenz): Zuerst Register bestimmen (Meldung/Märchen/Fachtext). Streiche alles, was im Ton abweicht (umgangssprachlich, wertend, bildhaft) oder inhaltlich nicht exakt passt. Wertungswörter ("leider"), Abschwächer ("relativ","ziemlich") und moderne Floskeln verraten falsche Optionen.
+BAUPLAN: Text mit klarem Stil wählen (Gebäudebeschreibung, Rezept, Gerichtsurteil, Gedicht, Sportkommentar). EINE perfekte Fortsetzung + vier Ablenker mit je genau EINEM Fehler: zu salopp, zu emotional, falsche Wertung, inhaltlich knapp daneben, falsches Register.
+
+==================================================
+2. PLANEN IN STUDIUM UND BERUF ("FUTURE DAYS")
+Szenario mit Ressourcen, Bedarf, individuellen Wünschen. Fragen prüfen je zwei Aussagen (I/II). Tipp: Tabelle aufzeichnen.
+
+SZENARIO: Veranstaltung Do–Sa. Lobby = Infostand I, Infostand II, Registrierungsschalter (je 1 Person ganztägig, alle 3 Tage = 9 Einsätze). Veranstaltungsebene = Do/Fr je 4 Räume, Sa nur 3 (Raum IV fällt Sa weg) = 11 Einsätze. Räume I–III: hervorragende Technik; Raum IV: oberflächliche. Jennica (Do+Sa Technik, Fr Infostand) und Parker (Fr Technik) vorab eingeplant, beide Profis.
+Personen: Ashley(A): alle 3 Tage, je 1x Ebene/Registrierung/Infostand (nicht Sa), oberfl. Technik. Dany(B): nur Sa, nur Ebene, hervorr. Technik. Levi(B): ein Wochentag (Do/Fr)+Sa, keine Technik. Mohammed(A): alle 3 Tage, Fr Ebene, oberfl. Technik. Roberto(A): zweimal, nicht aufeinanderfolgend, hervorr. Technik. Sonia(B): alle 3 Tage, nicht mit Ashley gleicher Bereich, hervorr. Technik. Toni(B): nur Fr, nicht Infostand, oberfl. Technik.
+
+AUFGABE 2.1 — I: Alle Kapazitäten werden gebraucht. II: Fünf Kräfte können an allen drei Tagen.
+RICHTIG: C (beide). Bedarf (20) geht nur bei voller Auslastung auf (I). Für II zählt "können" (Verfügbarkeit), nicht der Wunsch: Jennica, Ashley, Mohammed, Sonia, Roberto = fünf.
+SKILL: Kapazitäts-/Bedarfsrechnung + exakte Wortunterscheidung "können vs. möchten".
+
+AUFGABE 2.2 — I: Jeden Tag genug Technik-Profis. II: Sa auf der Ebene nur Profis.
+RICHTIG: C (beide). Genug Profis (I). Sa nur 3 Profi-Räume, Raum IV weg (II).
+SKILL: Bedingungen über Zeit/Qualifikation hinweg abgleichen (welche Anforderung gilt wann).
+
+AUFGABE 2.3 — I: Sonia zuerst einplanen. II: Dany zuerst einplanen.
+RICHTIG: B (nur II). Dany stark eingeschränkt → sofort fixierbar. Sonia flexibel → später.
+SKILL: Priorisierung nach Restriktionsgrad (am stärksten eingeschränkte Elemente zuerst).
+
+AUFGABE 2.4 — I: Jeden Tag drei Team-B-Kräfte. II: Registrierungsschalter jeden Tag andere Person.
+RICHTIG: B (nur II). Sa nur zwei Team-B-Kräfte (I falsch). Schalter zwingend täglich anders (II).
+SKILL: Notwendige vs. unmögliche Konsequenzen aus einer Belegung ableiten.
+
+AUFGABE 2.5 — Registrierungsschalter am Do: I: kann Team B sein. II: kann Team A sein.
+RICHTIG: C (beide). Do: Levi/Sonia (B) oder Mohammed (A) möglich.
+SKILL: Möglichkeitsprüfung ("kann sein") – ein gültiges Gegenbeispiel/Beispiel genügt.
+
+LERNTRICK: Planungstabelle (Tage×Positionen), Fixpunkte zuerst. Stark eingeschränkte Personen zuerst. "kann" (Verfügbarkeit) ≠ "möchte" (Wunsch). Bei "Kann es sein, dass...": ein Beispiel reicht für "ja".
+BAUPLAN: Ressourcen (Café-Schichten, Festival-Räume, Touren), klarer Bedarf je Zeiteinheit, 6–8 Personen mit je 1–3 Einschränkungen (Verfügbarkeit, Qualifikation, "nicht mit X", "nicht an aufeinanderfolgenden Tagen"). Fragen als Aussagenpaar (I/II), Muster A/B/C/D. Falle "kann vs. möchte" einbauen.
+
+==================================================
+3. INDIZIEN (AUSSAGENLOGIK)
+Fall mit Prämissen. Thesen prüfen: Widerspruch / vereinbar / ableitbar. Ableitbar → immer vereinbar; vereinbar ≠ ableitbar.
+
+LOGIK-GRUNDGERÜST (auswendig!):
+- Wenn A, dann B (A→B): erlaubt nur Modus ponens (aus A folgt B) und Modus tollens (aus nicht B folgt nicht A).
+- Verboten (Fehlschlüsse): "nicht A → nicht B" und "B → A".
+- Nur wenn A, dann B = B→A (Umkehrung!).
+- und/oder = einschließend (mind. eines). entweder…oder = ausschließend (genau eines).
+- Mehrteilige These: ALLE Teile müssen zutreffen.
+
+BEISPIEL · Mika N. — (1) Schaden→Vogelhäuschen; (2) Nur-wenn Vogelhäuschen→Auto; (3) Vogelhäuschen→Rosenbeet; (4) Schaden→schuldig; (5) schuldig, Vogelhäuschen NICHT umgestürzt. These I: kein Schaden/Vogelhäuschen/Rosenbeet. These II: kein Schaden/Vogelhäuschen/Auto.
+RICHTIG: B (nur II). Kein Vogelhäuschen → kein Auto (R2) → kein Schaden (R1). Über Rosenbeet (R3) nichts → I scheitert.
+SKILL: Modus tollens über Ketten + erkennen, wann aus nicht-eingetretener Bedingung NICHTS folgt.
+
+AUFGABE 3.1 · Kaufhaus-Kasse — (1) nicht Sam→Verdacht auf mich; (2) Sam→auch Pat; (3) Mel war's nicht; (4) kein Verdacht auf mich. These I: Sam und Mel beide nicht. These II: Sam und Pat.
+RICHTIG: B (nur II). Kein Verdacht → (Modus tollens) es war Sam → auch Pat. I widerspricht. R3 = Ablenker. C logisch unmöglich.
+SKILL: Modus tollens + irrelevante Information (Ablenker) aussortieren.
+
+AUFGABE 3.2 · Überflutete Aula — (1) nicht Halluzination→Rohrbruch und/oder Sabotage und/oder Fluss; (2) entweder Rohrbruch oder Sabotage; (3) entweder Rohrbruch oder Fluss. These I: keine Halluzination, Sabotage+Fluss. These II: Halluzination+Rohrbruch.
+RICHTIG: D (keine Widerspruch). Aus 2+3: entweder nur Rohrbruch ODER Sabotage+Fluss. I = erlaubter Fall. Bei Halluzination sagt R1 nichts → Rohrbruch möglich (II).
+SKILL: Einschließendes vs. ausschließendes "Oder" sauber trennen und kombinieren.
+
+AUFGABE 3.3 · Fall Frau Wyss — (1) Spuren→Freude; (2) nur wenn Freude→weiß Tatwaffe; (3) Freude→Täterin; (4) NICHT Freude. These I: Täterin, keine Spuren. These II: nicht Täterin, weiß nicht wo Tatwaffe.
+RICHTIG: C (beide vereinbar). Keine Freude → keine Spuren (R1), weiß nicht wo Tatwaffe (R2). Über Täterschaft nichts ableitbar → beide möglich. (Bei Frage nach ableitbar wäre es D!)
+SKILL: Frageverb-Sensibilität – "vereinbar" von "ableitbar" trennen; "nur wenn" korrekt umkehren.
+
+AUFGABE 3.4 · Eingestürztes Bürohaus — (1) nicht Statikfehler→billig; (2) nicht billig→Statikfehler; (3) bereichern→nicht Statikfehler; (4) Ausland→bereichern; (5) NICHT Ausland. These I: Statikfehler+billig. These II: bereichern+billig.
+RICHTIG: C (beide vereinbar). "Statikfehler+billig" nicht verboten (I). Aus "nicht Ausland" darf man NICHT "nicht bereichern" schließen (Fehlschluss) → Bereicherung möglich (II).
+SKILL: Fehlschluss "Verneinung des Vordersatzes" erkennen und vermeiden.
+
+LERNTRICK: Prämissen als Pfeile + Faktum aufschreiben. Frageverb genau lesen (Widerspruch ≠ vereinbar ≠ ableitbar). Nur Modus ponens/tollens; zwei Fehlschlüsse meiden. Jede Teilbehauptung einzeln. Überflüssige Infos = Ablenker.
+BAUPLAN: 3–5 Personen/Ereignisse, 4–5 Prämissen mit gemischten Operatoren (wenn / nur wenn / und-oder / entweder-oder) + Faktum (oft Verneinung), 1 überflüssige Info. Zwei Thesen, Frageverb variieren – gleiche Konstellation, andere Antwort je Verb. Falle: richtige Entscheidung durch verbotenen Fehlschluss.
+
+==================================================
+4. FÄLLE UND NORMEN (SUBSUMTION)
+Norm + Sachverhalt. Streng am Wortlaut prüfen. Kein eigenes Rechtswissen, kein Rechtsgefühl, keine Vorsatz-/Notwehr-/Schuld-Überlegungen.
+
+DREI GOLDENE REGELN:
+- Begründung zählt: Ableitbar nur, wenn Entscheidung UND Begründung stimmen. Richtige Entscheidung + falsches "weil" = nicht ableitbar.
+- Mehrere Bedingungen: Fehlt eine notwendige Bedingung, ist die Norm nicht erfüllt.
+- oder-Varianten: Bei "A oder B" genügt eine Variante.
+
+BEISPIEL · §306a StGB / Hundehütte — Nachbar zündet Hundehütte an (Kind Heidi sitzt drin, betet dort). These I: Brandstiftung, weil Mensch drin. These II: Brandstiftung, weil religiöses Gebäude.
+RICHTIG: D (keine). Hundehütte dient nicht der Wohnung von Menschen (I); Beten macht sie nicht zum religiösen Gebäude (II).
+SKILL: Tatbestandsmerkmale wörtlich prüfen; Zweckbestimmung nicht "umdeuten".
+
+AUFGABE 4.1 · §123 StGB Hausfriedensbruch — Securitas steigt nach Vertragsende ein, geht auf Aufforderung nicht. These I: Hausfriedensbruch, weil nach Aufforderung nicht gegangen. These II: Chef, weil billigend in Kauf genommen.
+RICHTIG: A (nur I). §123: zwei Varianten (eindringen ODER unbefugt verweilen + nicht entfernen); Variante 2 erfüllt → I. Chef nicht vor Ort, verwirklicht selbst keine Variante; "billigend in Kauf nehmen" (Vorsatz) unzulässig → II nicht.
+SKILL: oder-Varianten einer Norm erkennen; Handlung nur der selbst handelnden Person zurechnen (kein Vorsatzwissen).
+
+AUFGABE 4.2 · §53 BAT / Fall Schuster — Unkündbarkeit erst bei (a) 15 Jahren UND (b) vollendetem 40. Lj. Kündigung am Tag VOR dem 40. Geburtstag. These I: unwirksam (>15 J.). These II: bleibt kündbar, weil 15 Jahre erst nach dem 40. erreicht.
+RICHTIG: D (keine). Bedingung (b) fehlt → wirksam → I falsch. II richtige Entscheidung, aber FALSCHE Begründung (Problem ist das Alter, nicht die 15 Jahre) → nicht ableitbar.
+SKILL: Mehrere kumulative Bedingungen prüfen + Begründungs-Falle (richtig entschieden, falsch begründet) entlarven.
+
+AUFGABE 4.3 · §18 Parteiengesetz — Schwellen (0,5%/1,0%) + Zuwendungs-Match 0,38€/€, aber nur bis 3.300€ je natürlicher Person. These I: Partei A hat Anspruch (Nr.1). These II: Partei C bekommt 22 Mio.×0,38 = 8.360.000€.
+RICHTIG: D (keine). A erreicht keine Schwelle, trat zur LTW nicht an → kein Anspruch (I). Glatte Multiplikation bei C falsch, weil nur Zuwendungen bis 3.300€/Person zählen – Betrag steht nicht fest → nicht berechenbar (II).
+SKILL: Norm-immanente Deckelungen/Schwellen beachten; fehlende Sachverhaltsangaben = nicht berechenbar.
+
+LERNTRICK: Norm in Tatbestandsmerkmale zerlegen (Checkliste), jedes am Sachverhalt abhaken – fehlt eines, ist die Norm nicht erfüllt. Immer das "weil" separat prüfen. Bei Zahlen: Deckelungen/Einschränkungen? Fehlende Angaben = nicht berechenbar. Vorwissen ignorieren.
+BAUPLAN: Kurze echte Norm mit mehreren Merkmalen/oder-Varianten (Mietrecht, StVO, Gebührenordnung). Alltags-Sachverhalt, in dem genau ein Merkmal kippt. Zwei "weil"-Aussagen – Falle: richtige Entscheidung + falsche Begründung. Bei Rechenaufgaben Deckelung einbauen, deren Basiswert im Sachverhalt fehlt.
+
+==================================================
+PRÜFUNGSSTRATEGIE
+Zettel und Stift bereitlegen; Logik-/Planungsaufgaben durch Aufzeichnen lösen (Pfeildiagramme, Tabellen). Bei JEDER Frage zuerst das Frageverb beachten (Widerspruch/vereinbar/ableitbar bzw. kann/muss). Bei "Fälle und Normen" häufigste Falle: richtige Entscheidung mit falscher Begründung – "weil" kritisch lesen. Kein Punktabzug → keine Frage offenlassen, im Zweifel raten. Feste Zeit pro Gruppe einteilen, schwierige Aufgaben markieren und am Ende erneut ansehen.
+
+ÜBERGREIFENDE SKILLS (Meta):
+- Genaues Lesen des Frageverbs/Operators vor dem Lösen.
+- Externalisieren: alles aufzeichnen statt im Kopf lösen.
+- Ablenker/irrelevante Infos bewusst aussortieren.
+- Entscheidung UND Begründung trennen und beide prüfen.
+- Wortbedeutungen exakt nehmen (können/möchten, oder/entweder-oder, nur wenn).

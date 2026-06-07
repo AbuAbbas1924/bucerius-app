@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="de"
+      x-data="trainer()"
+      x-init="init()">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>BLS Aufnahmetest — Trainer</title>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"
+          defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"DM Serif Display"', 'serif'],
+            mono: ['"DM Mono"', 'monospace'],
+            sans: ['"Instrument Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    [x-cloak] {
+      display: none !important
+    }
+
+    .fade-in {
+      animation: fadeIn .2s ease
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(4px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .timer-ring {
+      transform-origin: center;
+      transform: rotate(-90deg);
+      transition: stroke-dashoffset .9s linear
+    }
+  </style>
+</head>
+
+<body class="bg-stone-50 min-h-screen font-sans text-stone-800"
+      x-cloak>
+
+  <div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside
+           class="top-0 left-0 z-10 fixed flex flex-col bg-white p-4 border-stone-200 border-r w-52 h-full overflow-y-auto shrink-0">
+      <div class="mb-5">
+        <div class="font-serif text-stone-800 text-base leading-tight">BLS Trainer</div>
+        <div class="mt-0.5 font-mono text-[10px] text-stone-400 tracking-widest">AUFNAHMETEST</div>
+      </div>
+      <div class="mb-2 font-semibold text-[10px] text-stone-400 uppercase tracking-widest">Bereiche</div>
+      <nav class="flex flex-col gap-0.5">
+        <template x-for="(sec, key) in sections"
+                  :key="key">
+          <button @click="switchSection(key)"
+                  :class="currentSection === key ? 'bg-stone-800 text-white' : 'text-stone-500 hover:bg-stone-100 hover:text-stone-800'"
+                  class="flex items-center gap-2 px-3 py-1.5 rounded-md w-full text-[13px] text-left transition-all duration-150">
+            <span class="rounded-full w-1.5 h-1.5 shrink-0"
+                  :style="'background:'+sec.color"></span>
+            <span x-text="sec.label"></span>
+            <span class="opacity-60 ml-auto font-mono text-[10px]"
+                  x-text="getScore(key)"></span>
+          </button>
+        </template>
+      </nav>
+      <div class="mt-auto pt-4 border-stone-100 border-t">
+        <div class="mb-2 font-semibold text-[10px] text-stone-400 uppercase tracking-widest">Gesamt</div>
+        <div class="flex justify-between py-0.5 text-[12px]"><span class="text-stone-500">Richtig</span><span
+                class="font-mono font-medium"
+                x-text="totalRight"></span></div>
+        <div class="flex justify-between py-0.5 text-[12px]"><span class="text-stone-500">Gesamt</span><span
+                class="font-mono font-medium"
+                x-text="totalAnswered"></span></div>
+        <div class="flex justify-between py-0.5 text-[12px]"><span class="text-stone-500">Quote</span>
+          <span class="font-mono font-medium"
+                x-text="totalAnswered > 0 ? Math.round(totalRight/totalAnswered*100)+'%' : '—'"></span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="flex-1 ml-52 p-8">
+      <div class="max-w-2xl">
+
+        <!-- Error -->
+        <div x-show="error"
+             class="bg-red-50 mb-6 p-4 border border-red-200 rounded-xl text-red-700 text-sm"
+             x-text="error"></div>
+
+        <!-- Loading -->
+        <div x-show="loading"
+             class="flex items-center gap-3 py-12 text-stone-400 text-sm">
+          <svg class="w-5 h-5 animate-spin"
+               fill="none"
+               viewBox="0 0 24 24">
+            <circle class="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    stroke-width="4" />
+            <path class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8v8z" />
+          </svg>
+          <span>Laden…</span>
+        </div>
+
+        <!-- No questions -->
+        <div x-show="!loading && !error && questions.length === 0 && !sectionDone"
+             class="py-12 text-stone-400 text-sm">
+          Keine Fragen für diesen Bereich. Füge Einträge in <code
+                class="bg-stone-100 px-1 rounded font-mono text-xs">bls_fragen.json</code> ein.
+        </div>
+
+        <!-- Question -->
+        <div x-show="!loading && !error && currentQ"
+             class="fade-in">
+
+          <!-- Topbar -->
+          <div class="flex justify-between items-start gap-4 mb-5">
+            <div>
+              <h1 class="font-serif text-2xl leading-tight tracking-tight"
+                  x-text="sections[currentSection]?.label"></h1>
+              <p class="mt-0.5 text-[12px] text-stone-400"
+                 x-text="sections[currentSection]?.desc"></p>
+            </div>
+            <!-- Timer -->
+            <div x-show="sections[currentSection]?.sec > 0"
+                 class="text-center shrink-0">
+              <div class="relative w-14 h-14">
+                <svg class="w-14 h-14 -rotate-90"
+                     viewBox="0 0 56 56">
+                  <circle cx="28"
+                          cy="28"
+                          r="24"
+                          fill="none"
+                          stroke="#e7e5e4"
+                          stroke-width="3" />
+                  <circle cx="28"
+                          cy="28"
+                          r="24"
+                          fill="none"
+                          :stroke="timeLeft <= 10 ? '#dc2626' : timeLeft <= 20 ? '#d97706' : '#1c1917'"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-dasharray="150.796"
+                          :stroke-dashoffset="150.796 * (1 - timeLeft / (sections[currentSection]?.sec || 1))"
+                          class="timer-ring" />
+                </svg>
+                <div class="absolute inset-0 flex justify-center items-center font-mono font-medium text-sm"
+                     :class="timeLeft <= 10 ? 'text-red-600' : timeLeft <= 20 ? 'text-amber-600' : 'text-stone-800'"
+                     x-text="timeLeft >= 60 ? Math.floor(timeLeft/60)+':'+(String(timeLeft%60)).padStart(2,'0') : timeLeft">
+                </div>
+              </div>
+              <div class="mt-1 text-[10px] text-stone-400">Sek.</div>
+            </div>
+          </div>
+
+          <!-- Progress bar -->
+          <div class="bg-stone-100 mb-6 rounded-full h-0.5">
+            <div class="bg-stone-800 rounded-full h-0.5 transition-all duration-500"
+                 :style="'width:'+Math.round(qIdx/Math.max(questions.length,1)*100)+'%'"></div>
+          </div>
+
+          <!-- Card -->
+          <div class="bg-white p-6 border border-stone-200 rounded-2xl">
+
+            <!-- Meta row -->
+            <div class="flex justify-between items-center mb-4">
+              <span class="px-2.5 py-1 border rounded-full font-semibold text-[10px] uppercase tracking-widest"
+                    :style="'background:'+sections[currentSection]?.badgeBg+';border-color:'+sections[currentSection]?.badgeBorder+';color:'+sections[currentSection]?.color"
+                    x-text="sections[currentSection]?.label"></span>
+              <span class="font-mono text-[11px] text-stone-400"
+                    x-text="'Aufgabe '+(qIdx+1)+' / '+questions.length"></span>
+            </div>
+
+            <!-- Question text -->
+            <p class="mb-4 text-[15px] text-stone-700 leading-relaxed"
+               x-text="currentQ?.q"></p>
+
+            <!-- Context -->
+            <div class="bg-stone-50 mb-5 p-4 border border-stone-100 rounded-lg text-[13px] text-stone-700 leading-relaxed whitespace-pre-wrap"
+                 x-html="formatContext(currentQ?.context)"></div>
+
+            <!-- Options -->
+            <div class="flex flex-col gap-2">
+              <template x-for="(opt, i) in (currentQ?.options || [])"
+                        :key="i">
+                <button :disabled="answered"
+                        @click="selectAnswer(i)"
+                        :class="{
+                  'bg-emerald-50 border-emerald-300 text-emerald-900': answered && i === currentQ.answer,
+                  'bg-red-50 border-red-300 text-red-900': answered && i === selected && i !== currentQ.answer,
+                  'border-stone-200 hover:border-stone-300 hover:bg-stone-50 cursor-pointer': !answered,
+                  'border-stone-100 opacity-50 cursor-default': answered && i !== currentQ.answer && i !== selected
+                }"
+                        class="flex items-start gap-3 px-4 py-2.5 border rounded-lg w-full text-[13px] text-left transition-all duration-100">
+                  <span class="mt-0.5 font-mono text-[11px] shrink-0"
+                        :class="{
+                    'text-emerald-600': answered && i === currentQ.answer,
+                    'text-red-500': answered && i === selected && i !== currentQ.answer,
+                    'text-stone-400': !answered || (answered && i !== currentQ.answer && i !== selected)
+                  }"
+                        x-text="String.fromCharCode(65+i)"></span>
+                  <span x-text="opt"></span>
+                </button>
+              </template>
+            </div>
+
+            <!-- Feedback -->
+            <div x-show="answered"
+                 class="mt-5 fade-in">
+              <div :class="selected === currentQ?.answer ? 'bg-emerald-50 border-emerald-200 text-emerald-900' : 'bg-red-50 border-red-200 text-red-900'"
+                   class="p-4 border rounded-lg text-[13px] leading-relaxed">
+                <div class="mb-2 font-semibold text-[10px] uppercase tracking-wider"
+                     :class="selected === currentQ?.answer ? 'text-emerald-600' : 'text-red-500'"
+                     x-text="selected === currentQ?.answer ? '✓ Richtig.' : selected === -1 ? '⏱ Zeit abgelaufen.' : '✗ Falsch.'">
+                </div>
+                <p x-text="currentQ?.erklaerung"></p>
+              </div>
+            </div>
+
+            <!-- Nav -->
+            <div class="flex justify-between items-center mt-5 pt-4 border-stone-100 border-t">
+              <button @click="loadSection(currentSection)"
+                      class="flex items-center gap-1.5 text-[13px] text-stone-400 hover:text-stone-700 transition-colors">
+                <svg class="w-3.5 h-3.5"
+                     fill="none"
+                     stroke="currentColor"
+                     viewBox="0 0 24 24">
+                  <path stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                Neu starten
+              </button>
+              <div class="flex gap-2">
+                <button x-show="!answered"
+                        @click="skipQ()"
+                        class="hover:bg-stone-50 px-4 py-1.5 border border-stone-200 rounded-lg text-[13px] text-stone-500 transition-all">
+                  Überspringen
+                </button>
+                <button x-show="answered"
+                        @click="nextQ()"
+                        class="bg-stone-800 hover:bg-stone-700 px-5 py-1.5 rounded-lg font-medium text-[13px] text-white transition-all">
+                  Weiter →
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section done -->
+        <div x-show="!loading && sectionDone"
+             class="bg-white p-8 border border-stone-200 rounded-2xl text-center fade-in">
+          <div class="mb-1 font-serif text-5xl tracking-tight"
+               x-text="(scores[currentSection]?.[0] ?? 0)+'/'+(scores[currentSection]?.[1] ?? 0)"></div>
+          <div class="mb-6 text-stone-400 text-sm">Aufgaben richtig in diesem Bereich</div>
+          <div class="gap-2 grid grid-cols-3 mb-6 text-left">
+            <template x-for="(sec, key) in sections"
+                      :key="key">
+              <div x-show="(scores[key]?.[1] ?? 0) > 0"
+                   class="bg-stone-50 p-3 rounded-lg">
+                <div class="mb-1 text-[10px] text-stone-400"
+                     x-text="sec.label"></div>
+                <div class="font-mono font-medium text-lg"
+                     x-text="(scores[key][0])+'/'+(scores[key][1])"></div>
+              </div>
+            </template>
+          </div>
+          <button @click="loadSection(currentSection)"
+                  class="bg-stone-800 hover:bg-stone-700 px-6 py-2 rounded-lg text-white text-sm transition-all">
+            Abschnitt wiederholen
+          </button>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script>
+    function trainer() {
+      return {
+        sections: {
+          sprachstile: { label: 'Sprachstile', desc: '15 Aufgaben · 12 Min · 48 Sek/Aufgabe', sec: 48, color: '#2B5CE6', badgeBg: '#EEF2FD', badgeBorder: '#B8C8F5' },
+          indizien: { label: 'Indizien', desc: '15 Aufgaben · 32 Min · ~2 Min/Aufgabe', sec: 128, color: '#B85C00', badgeBg: '#FDF3E8', badgeBorder: '#F0C88A' },
+          faelle: { label: 'Fälle & Normen', desc: '15 Aufgaben · 38 Min · ~2,5 Min/Aufg.', sec: 152, color: '#0E6B5A', badgeBg: '#E8F5F2', badgeBorder: '#8FD0C4' },
+          planen: { label: 'Planen & Org.', desc: '15 Aufgaben · 43 Min · ~3 Min/Aufg.', sec: 172, color: '#B83A1A', badgeBg: '#FDF0EC', badgeBorder: '#F0A898' },
+          eroerterung: { label: 'Erörterung', desc: '45 Min · Kein Timer im Test', sec: 0, color: '#5B3ABF', badgeBg: '#F0ECFD', badgeBorder: '#C0B0F0' },
+        },
+        currentSection: 'sprachstile',
+        questions: [],
+        qIdx: 0,
+        answered: false,
+        selected: null,
+        scores: {
+          sprachstile: [0, 0], indizien: [0, 0], faelle: [0, 0], planen: [0, 0], eroerterung: [0, 0]
+        },
+        loading: false,
+        error: null,
+        timerInterval: null,
+        timeLeft: 0,
+        sectionDone: false,
+        allData: null,
+
+        get currentQ() {
+          return this.questions[this.qIdx] ?? null;
+        },
+        get totalRight() {
+          return Object.values(this.scores).reduce((s, [r]) => s + r, 0);
+        },
+        get totalAnswered() {
+          return Object.values(this.scores).reduce((s, [, t]) => s + t, 0);
+        },
+
+        getScore(key) {
+          const [r, t] = this.scores[key];
+          return t > 0 ? r + '/' + t : '';
+        },
+
+        async init() {
+          await this.fetchData();
+          this.loadSection('sprachstile');
+        },
+
+        async fetchData() {
+          this.loading = true;
+          this.error = null;
+          try {
+            const resp = await fetch('./bls_fragen.json');
+            if (!resp.ok) throw new Error('bls_fragen.json nicht geladen (' + resp.status + '). Stelle sicher, dass beide Dateien im selben Ordner liegen und du sie über einen lokalen Webserver öffnest (z.B. VS Code Live Server, oder: npx serve .)');
+            this.allData = await resp.json();
+          } catch (e) {
+            this.error = e.message;
+          }
+          this.loading = false;
+        },
+
+        loadSection(key) {
+          clearInterval(this.timerInterval);
+          this.currentSection = key;
+          this.answered = false;
+          this.selected = null;
+          this.sectionDone = false;
+          this.qIdx = 0;
+          this.error = null;
+          if (!this.allData) { this.error = 'JSON-Datei nicht geladen.'; return; }
+          const raw = this.allData[key];
+          if (!raw || !Array.isArray(raw) || raw.length === 0) { this.questions = []; return; }
+          this.questions = this.shuffle([...raw]);
+          this.startTimer();
+        },
+
+        switchSection(key) {
+          this.loadSection(key);
+        },
+
+        startTimer() {
+          clearInterval(this.timerInterval);
+          const sec = this.sections[this.currentSection]?.sec ?? 0;
+          if (sec <= 0) return;
+          this.timeLeft = sec;
+          this.timerInterval = setInterval(() => {
+            this.timeLeft--;
+            if (this.timeLeft <= 0) {
+              clearInterval(this.timerInterval);
+              if (!this.answered) this.autoFail();
+            }
+          }, 1000);
+        },
+
+        autoFail() {
+          this.answered = true;
+          this.selected = -1;
+          this.scores[this.currentSection][1]++;
+        },
+
+        selectAnswer(i) {
+          if (this.answered) return;
+          clearInterval(this.timerInterval);
+          this.answered = true;
+          this.selected = i;
+          this.scores[this.currentSection][1]++;
+          if (i === this.currentQ.answer) this.scores[this.currentSection][0]++;
+        },
+
+        skipQ() {
+          clearInterval(this.timerInterval);
+          this.autoFail();
+        },
+
+        nextQ() {
+          this.qIdx++;
+          this.answered = false;
+          this.selected = null;
+          if (this.qIdx >= this.questions.length) {
+            this.sectionDone = true;
+            clearInterval(this.timerInterval);
+          } else {
+            this.startTimer();
+          }
+        },
+
+        formatContext(ctx) {
+          if (!ctx) return '';
+          const escaped = ctx
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+          return escaped
+            .replace(/(Norm|Sachverhalt|Szenario|These|Frage):/g,
+              '<strong class="block mt-3 first:mt-0 mb-0.5 font-semibold text-[10px] text-stone-500 uppercase tracking-wider">$1:</strong>')
+            .replace(/^(• .+)$/gm, '<span class="block pl-1 text-stone-700">$1</span>');
+        },
+
+        shuffle(arr) {
+          for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+          }
+          return arr;
+        }
+      };
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+
+ROLLE FÜR CLAUDE:
+Du bist mein Trainings-Generator für das schriftliche Auswahlverfahren (Multiple-Choice-Test) der
+Bucerius Law School (ITB Online Assessment). Erstelle mir auf Basis der folgenden Original-Analyse
+neue Übungsaufgaben. Halte dich exakt an Format, Logik-Typ und Schwierigkeitsgrad der jeweiligen
+Aufgabengruppe. Gib die Aufgaben IMMER als valides JSON nach dem unten definierten Schema aus.
+Pro Anfrage standardmäßig 5 neue Aufgaben je Gruppe, sofern ich nichts anderes sage. Mische
+Antwortpositionen zufällig und sorge dafür, dass die Lösung sich AUSSCHLIESSLICH aus den
+gegebenen Informationen ableiten lässt (keine externen Annahmen).
+
+TESTSTRUKTUR (4 Aufgabengruppen, je feste Zeit, 1 richtige Antwort pro Frage, kein Punktabzug):
+1) SPRACHSTILE        - 3 Aufgaben / 3 Min
+2) PLANEN IN STUDIUM UND BERUF - 5 Aufgaben / 15 Min (Szenario + 2 Info-Tabs)
+3) INDIZIEN           - 4 Aufgaben / 10 Min (Aussagenlogik)
+4) FÄLLE UND NORMEN   - 3 Aufgaben / 10 Min (juristische Subsumtion)
+
+STANDARD-ANTWORTOPTIONEN bei Gruppen 2-4 (Doppel-Thesen-Schema):
+A) Nur Aussage/These I  B) Nur Aussage/These II  C) Beide  D) Keine
+
+--------------------------------------------------------------------
+GRUPPE 1 — SPRACHSTILE
+Skill: Erkennen unterschiedlicher Textsorten/Sprachregister; den Lückensatz wählen, der sich
+sowohl SPRACHLICH als auch STILISTISCH am besten einfügt (nicht inhaltlich/logisch!).
+Strategie: (1) Textsorte bestimmen (Wetterbericht, Märchen, Wissenschaft, Roman, Kinderbuch, Zeitung).
+(2) Stilmerkmale lesen: Satzbau, Wortwahl, Nominalstil vs. Erzählstil, Archaismen, Fachbegriffe,
+Umgangssprache/Redewendungen. (3) Den Vorschlag wählen, der diese Merkmale spiegelt; umgangssprachliche
+oder bildhaft-blumige Varianten in einem sachlichen Text aussortieren und umgekehrt.
+
+A1: Wetterbericht (nüchtern, telegrammartig, Nominalstil).
+   Lösung: "Am Samstag Durchzug eines Regengebietes." (knapper Nominalstil, kein ganzer Satz).
+   Falsch: ganze, umgangssprachliche oder emotionale Sätze ("Regen, Regen und nochmals Regen").
+A2: Märchen (Grimm, archaisch: "Es war einmal ein Königssohn ...").
+   Lösung: "es war ihm einerlei, wohin ihn der Weg führte." (archaisch "einerlei").
+   Falsch: modern/umgangssprachlich ("ziemlich egal", "nur am Rande", "relativ gleichgültig").
+A3: Wissenschaftliche Abhandlung (sachlich, Passiv, Fachbegriffe).
+   Lösung: "müssen aus der allgemeinen Theorie einzelne Schlussfolgerungen abgeleitet werden,
+   die als 'Hypothesen' zum Gegenstand einer empirischen Überprüfung gemacht werden."
+   Falsch: Redewendung "auf Herz und Nieren", blumig "Widerborstigkeit des Gegebenen", erzählend "spannend im Labor".
+
+--------------------------------------------------------------------
+GRUPPE 2 — PLANEN IN STUDIUM UND BERUF
+Skill: Constraint-Satisfaction / vernetztes, analytisches Denken; Informationen aus Fließtext
+UND zwei Tabellen kombinieren, Kapazitäten/Wünsche/Skills/Verfügbarkeiten gegeneinander abgleichen.
+Strategie: Bedarf (Slots) zählen vs. verfügbare Personen; harte Constraints (Verfügbarkeit, Skill,
+"nur/genau/nicht zusammen") zuerst; am STÄRKSTEN EINGESCHRÄNKTE Person zuerst einplanen; zwischen
+"muss gelten" (ableitbar), "kann gelten" (möglich) und "unmöglich" unterscheiden.
+
+Szenario "Future Days" (Do/Fr/Sa). Bedarf: Lobby (Info I, Info II, Registrierung) je ganztägig
+= 9 Slots; Veranstaltungsebene: 3 Räume an allen 3 Tagen (brauchen HERVORRAGENDE Technik) + 1 Raum
+nur Do+Fr (oberflächlich reicht) = 11 Slots. Gesamt 20 Slots.
+Vorgeplant: Jennica (Raum I Do+Sa, Info I Fr), Parker (Raum I Fr); beide hervorragend.
+Hilfskräfte-Tabelle:
+- Ashley (A, oberflächlich): an allen 3 Tagen; will 1x VE, 1x Registrierung, 1x Infostand (nicht Sa).
+- Dany (B, hervorragend): NICHT Samstag; nur Veranstaltungsebene.
+- Levi (B, gar keine Technik): 1 Wochentag (Do ODER Fr) + Samstag.
+- Mohammed (A, oberflächlich): an allen 3 Tagen; will Fr auf VE.
+- Roberto (A, hervorragend): genau 2x, NICHT an zwei aufeinanderfolgenden Tagen.
+- Sonia (B, hervorragend): an allen 3 Tagen; nicht im selben Bereich wie Ashley.
+- Toni (B, oberflächlich): nur Freitag; nicht an Infoständen.
+
+Lösungen:
+A1: "Beide Aussagen treffen zu."
+   I (alle Kapazitäten werden gebraucht) wahr: max. mögliche Einsätze < 20 benötigte Slots -> alle gebraucht.
+   II (5 Hilfskräfte an allen 3 Tagen einsetzbar) wahr: Ashley, Mohammed, Roberto, Sonia, Jennica.
+A2: "Beide Aussagen treffen zu."
+   I: pro Tag >=3 Hervorragende verfügbar (Sa: Jennica, Roberto, Sonia = genau 3) -> ausreichend.
+   II: Sa laufen nur die 3 Räume, die alle 3 Tage genutzt werden -> alle brauchen hervorragend.
+A3: "Nur Aussage II trifft zu."
+   Prinzip: am stärksten eingeschränkte Person zuerst. Dany (nur VE, nicht Sa) stark eingeschränkt ->
+   früh planen (II wahr). Sonia ist sehr flexibel -> muss NICHT zuerst (I falsch).
+A4: "Nur Aussage II trifft zu."
+   I (jeden Tag 3 aus Team B) falsch: Sa max. Levi+Sonia = 2 (Dany Sa nein, Toni nur Fr).
+   II (Registrierung jeden Tag andere Person) wahr: Fr=Toni, Sa=Ashley, Do=dritte Person -> 3 verschiedene.
+A5: "Beide Aussagen treffen zu."  [WACKEL-KANDIDAT - eventuell hier 1 Fehler im Originaltest]
+   Registrierung am Donnerstag KANN aus Team B sein (Levi oder Sonia) UND KANN aus Team A sein (Mohammed
+   als Zusatzkraft, Ashley/Roberto Do belegt). -> "Es kann sein" = Möglichkeit, nicht Notwendigkeit.
+   ALTERNATIV ernsthaft prüfen, ob nur Team B möglich ist (dann "Nur Aussage I").
+
+--------------------------------------------------------------------
+GRUPPE 3 — INDIZIEN
+Skill: Aussagenlogik. Implikation A->B, Kontraposition (-B -> -A), "nur wenn B, dann A" = A->B
+(B ist NOTWENDIG), inklusives vs. ausschließendes Oder (XOR), Konjunktion in Thesen (alle Teile
+müssen stimmen). Drei Kategorien: WIDERSPRUCH / VEREINBAR / ABLEITBAR. Wichtig: ableitbar => vereinbar,
+aber vereinbar =/=> ableitbar. Frage genau lesen: nach welcher Kategorie wird gefragt?
+
+A1 (gefragt: ABLEITBAR): Prämissen: -S->C ; S->P ; -Mel ; -C.
+   Aus -C + Kontraposition(-S->C => -C->S): S. Aus S->P: P. -> These II (S und P) ableitbar; These I (-S) widerspricht S.
+   Lösung: "Nur These II lässt sich ableiten."
+A2 (gefragt: WIDERSPRUCH): -H->(W v S v F) ; W XOR S ; W XOR F.
+   These I (-H, S, F): konsistent mit W=falsch. These II (H, W): bei H ist Prämisse 1 vacuously wahr; W=wahr -> S,F=falsch, konsistent.
+   Lösung: "Keine der beiden Thesen steht in Widerspruch."
+A3 (gefragt: VEREINBAR): V->F ; K->F (nur-wenn) ; F->T ; -F.
+   Aus -F: -V, -K abgeleitet; T bleibt offen.
+   These I (T und -V): T offen -> erlaubt; vereinbar. These II (-T und -K): erlaubt; vereinbar.
+   Lösung: "Beide Thesen sind vereinbar."
+A4 (gefragt: VEREINBAR): -St->B ; -B->St (= St v B) ; Be->-St ; A->Be ; -A.
+   These I (St und B): mit Be=falsch konsistent. These II (Be und B): Be->-St->(via -St->B)->B, konsistent.
+   Lösung: "Beide Thesen sind vereinbar."
+
+--------------------------------------------------------------------
+GRUPPE 4 — FÄLLE UND NORMEN
+Skill: Juristische Subsumtion. NUR die gegebene Norm anwenden, kein eigenes Rechtsempfinden, kein
+Wissen zu Vorsatz/Notwehr/Schuld. Tatbestandsmerkmale einzeln prüfen; fehlt EINS, ist die Norm nicht
+erfüllt. Eine Aussage ist nur ABLEITBAR, wenn ENTSCHEIDUNG UND BEGRÜNDUNG zutreffen
+(richtige Entscheidung + falsche Begründung = NICHT ableitbar).
+
+A1 (§123 StGB Hausfriedensbruch: eindringen ODER ohne Befugnis verweilen und auf Aufforderung des
+   Berechtigten nicht entfernen):
+   I: Securitas-Leute verweilen ohne Befugnis (Vertrag gekündigt) + Geschäftsführer fordert (telefonisch)
+      zum Verlassen auf + sie bleiben -> Tatbestand (2. Var.) erfüllt -> ableitbar.
+   II: Chef ist weder eingedrungen noch hat er verweilt; "billigend in Kauf nehmen"/Teilnahme nicht in der Norm
+      -> nicht ableitbar.
+   Lösung: "Nur Aussage I lässt sich ableiten."   [WACKEL-KANDIDAT - hier ggf. der 1 Fehler im Originaltest]
+   Gegenargument prüfen: Sind die Mitarbeiter überhaupt rechtswidrig "eingedrungen"? Wenn man (2. Var.)
+   bejaht, ist I ableitbar; wenn man am "Berechtigten"/Aufforderungsbegriff zweifelt, evtl. "Keine".
+A2 (§19/§53 BAT, Datumslogik): §53(1) Unkündbarkeit erfordert 15 J. Beschäftigungszeit UND Vollendung
+   des 40. Lebensjahres. Kündigung erfolgt am TAG VOR dem 40. Geburtstag -> 40. Lj. noch NICHT vollendet.
+   I (Kündigung unwirksam, weil >15 J.): Entscheidung falsch (2. Bedingung fehlt) -> nicht ableitbar.
+   II (bleibt kündbar, weil 15 J. erst nach 40. Geburtstag erreicht): richtige Entscheidung + richtige
+   Begründung -> ableitbar.
+   Lösung: "Nur Aussage II lässt sich ableiten."
+A3 (§18 ParteienG): Abs. 3 Nr. 3 = 0,38 EUR je EUR Zuwendung, ABER nur Zuwendungen bis 3.300 EUR je
+   natürlicher Person anrechenbar; Abs. 4 = Anspruchsschwellen.
+   I (Partei A Anspruch Nr. 1 bei Landtagswahl): A nicht angetreten + EW/BW unter Schwelle -> kein Anspruch -> nicht ableitbar.
+   II (Partei C: 22.000.000 x 0,38 = 8.360.000): ignoriert die 3.300-EUR-Deckelung pro Person -> Betrag/Begründung falsch -> nicht ableitbar.
+   Lösung: "Keine der beiden Aussagen lässt sich ableiten."
+
+--------------------------------------------------------------------
+ÜBERGREIFENDE PRÜFUNGS-SKILLS (worauf achten):
+- Genau auf die GEFRAGTE Kategorie achten (Widerspruch vs. vereinbar vs. ableitbar; "kann" vs. "muss").
+- Aussagenlogik sicher: Kontraposition, "nur wenn" = notwendige Bedingung, XOR, Konjunktion in Thesen.
+- Subsumtion: nur gegebene Norm, jedes Tatbestandsmerkmal einzeln, Entscheidung UND Begründung müssen stimmen.
+- Constraint-Puzzles: Slots zählen, harte Constraints + am stärksten eingeschränkte Einheit zuerst.
+- Stil: Textsorte + Register erkennen, nicht den inhaltlich plausibelsten, sondern den stilistisch passendsten Satz.
+- Zeitdruck: Im Zweifel raten (kein Punktabzug); Tabellen schnell strukturiert erfassen.
+
+--------------------------------------------------------------------
+JSON-AUSGABE-SCHEMA (so sollst du neue Aufgaben liefern):
+{
+  "aufgabengruppe": "Sprachstile | Planen | Indizien | Faelle_und_Normen",
+  "skill_fokus": "string",
+  "aufgaben": [
+    {
+      "id": "string",
+      "kontext": "Fließtext / Szenario / Norm (für Indizien: die Prämissen; für Stil: der Lückentext)",
+      "zusatz_infos": ["optional: Tabellen/Daten als strukturierte Strings"],
+      "frage": "exakte Fragestellung inkl. gefragter Kategorie",
+      "thesen_oder_optionen": ["I ...", "II ..."],
+      "antwortoptionen": ["A ...", "B ...", "C ...", "D ...", "E ..."],
+      "loesung_index": 0,
+      "loesung_text": "string",
+      "erklaerung": "warum richtig",
+      "warum_andere_falsch": ["A weil ...", "B weil ..."],
+      "skill_hinweis": "worauf bei diesem Aufgabentyp zu achten ist",
+      "schwierigkeit": "leicht | mittel | schwer"
+    }
+  ]
+}
+
+AUFTRAG AN CLAUDE NACH DEM EINFÜGEN:
+"Erstelle mir 5 neue Aufgaben pro Aufgabengruppe nach obigem Schema, im gleichen Stil und
+Schwierigkeitsgrad. Variiere Themen/Namen/Zahlen, halte die Logik sauber und eindeutig lösbar.
+Steigere die Schwierigkeit der Gruppen 'Planen' und 'Fälle und Normen' leicht, da dort meine
+Fehlerquote am höchsten war."

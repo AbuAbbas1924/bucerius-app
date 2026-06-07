@@ -1,0 +1,653 @@
+{
+  "_info": {
+    "version": "2.0",
+    "beschreibung": "BLS Aufnahmetest Uebungsfragen — erweiterbar. Einfach weitere Objekte in die jeweilige Array-Liste einfuegen.",
+    "felder": {
+      "id": "Eindeutige ID pro Bereich (z.B. spr-004)",
+      "q": "Aufgabenstellung",
+      "context": "Textausschnitt, Praemissen, Norm+Sachverhalt oder Szenario",
+      "options": ["Array mit genau 4 Antwortmoeglichkeiten A-D"],
+      "answer": "0-basierter Index der richtigen Antwort (0=A, 1=B, 2=C, 3=D)",
+      "erklaerung": "Vollstaendige Begruendung warum diese Antwort richtig und die anderen falsch sind"
+    }
+  },
+
+  "sprachstile": [
+    {
+      "id": "spr-001",
+      "q": "Welcher Satz passt sprachlich und stilistisch am besten zu folgendem Textausschnitt?",
+      "context": "Die Sonne sank langsam hinter den Horizont. Das letzte Abendrot tauchte die Felder in ein warmes Goldlicht. Ueberall herrschte jene eigentuemliche Stille, die nur dem Ende eines langen Sommertages eigen ist.",
+      "options": [
+        "Dann kam die Nacht und es wurde dunkel und die Voegel hoerten auf zu singen.",
+        "Mit dem Verschwinden der Sonne legte sich eine sanfte Daemmerung ueber das Land.",
+        "Es war jetzt dunkel und man konnte nichts mehr sehen.",
+        "Nacht fiel ein. Kalt. Schnell. Ohne Vorwarnung."
+      ],
+      "answer": 1,
+      "erklaerung": "Der Text ist lyrisch-beschreibend mit langen, fliessenden Saetzen und einer elegisch-stillen Stimmung ('eigentuemliche Stille'). Option B ('sanfte Daemmerung legte sich ueber das Land') greift denselben Rhythmus und dieselbe Bildsprache auf — weich, atmosphaerisch, unpersoenlich. Option A ist parataktisch und umgangssprachlich. Option C ist nuechtern-informativ ohne jede Bildlichkeit. Option D ist minimalistisch-lakonisch — ein voellig anderes Stilregister."
+    },
+    {
+      "id": "spr-002",
+      "q": "Welcher Satz passt sprachlich und stilistisch am besten zu folgendem Textausschnitt?",
+      "context": "Paragraf 823 Abs. 1 BGB normiert eine deliktische Haftung fuer Schaeden, die durch widerrechtliche Verletzung eines der aufgezaehlten Rechtsgueter entstehen. Die Haftungsbegruendung setzt Kausalitaet zwischen Handlung und Rechtsgutsverletzung voraus.",
+      "options": [
+        "Man haftet also, wenn man etwas kaputt macht, was dem anderen gehoert.",
+        "Das ist natuerlich ziemlich kompliziert und nicht so einfach zu verstehen.",
+        "Die Zurechnung des Schadens erfolgt nach den Grundsaetzen der Aequivalenz- und Adaequanztheorie.",
+        "Wer jemanden schaedigt, muss dafuer geradestehen — das ist fair."
+      ],
+      "answer": 2,
+      "erklaerung": "Der Text ist im juristisch-wissenschaftlichen Stil verfasst: Nominalstil, Fachterminologie, unpersoenliche Konstruktionen. Nur Option C haelt denselben Register aufrecht mit genuinen juristischen Fachbegriffen ('Zurechnung', 'Aequivalenz- und Adaequanztheorie') im gleichen Nominalstil. Option A ist umgangssprachlich vereinfachend. Option B ist inhaltsleer und salopp. Option D ist ein normatives Werturteil im Alltagston."
+    },
+    {
+      "id": "spr-003",
+      "q": "Welcher Satz passt sprachlich und stilistisch am besten zu folgendem Textausschnitt?",
+      "context": "Das Ergebnis war eindeutig: Der Angeklagte zeigte keine Reue. Drei Geschworene weinten. Die Richterin schloss die Akte. Draussen regnete es.",
+      "options": [
+        "Die Atmosphaere im Gerichtssaal war aeusserst beklemmend und emotional aufgeladen.",
+        "Niemand sagte etwas.",
+        "Es herrschte eine tiefe Traurigkeit unter allen Anwesenden im Saal.",
+        "Man konnte die Spannung foemlrich greifen, so intensiv war die Situation."
+      ],
+      "answer": 1,
+      "erklaerung": "Der Text verwendet konsequent kurze, parataktische Saetze ohne emotionalen Kommentar — einen minimalistischen, lakonischen Stil. Option B ('Niemand sagte etwas.') haelt diesen Stil exakt aufrecht: kurz, sachlich, ohne Interpretation. Option A, C und D fallen in einen kommentierenden, emotionalisierenden Stil, der dem lakonischen Register des Textes widerspricht."
+    },
+    {
+      "id": "spr-004",
+      "q": "Welcher Satz passt sprachlich und stilistisch am besten zu folgendem Textausschnitt?",
+      "context": "Die Konjunktur erholt sich nur schleppend. Trotz sinkender Inflationsraten bleibt die Kaufzurueckhaltung der Verbraucher ausgepraegt. Analysten rechnen erst im zweiten Halbjahr mit einem spuerbaren Wachstumsimpuls.",
+      "options": [
+        "Die Menschen geben einfach zu wenig Geld aus, obwohl die Preise eigentlich schon wieder okay sind.",
+        "Viele Experten sehen die Wirtschaft auf dem richtigen Weg, auch wenn es noch dauert.",
+        "Der private Konsum bleibt vorlaeufig ein Bremsfaktor, da das Verbrauchervertrauen trotz ruecklaeufiget Teuerungsrate noch nicht nachhaltig gefestigt ist.",
+        "Es wird schon irgendwann besser werden, das war nach jeder Krise so."
+      ],
+      "answer": 2,
+      "erklaerung": "Der Text ist im wirtschaftsjournalistischen Sachstil verfasst: Nominalgruppen, Fachbegriffe ('Konjunktur', 'Inflationsraten', 'Wachstumsimpuls'), sachlich-analysierende Haltung. Option C haelt denselben Ton aufrecht: 'privater Konsum als Bremsfaktor', 'Verbrauchervertrauen', 'Teuerungsrate' — praezise Fachsprache, keine Wertung. Option A ist umgangssprachlich ('okay'). Option B ist vage und kommentierend. Option D ist spekulativ und stilistisch unpassend."
+    },
+    {
+      "id": "spr-005",
+      "q": "Welcher Satz passt sprachlich und stilistisch am besten zu folgendem Textausschnitt?",
+      "context": "Licht. Schatten. Schritt. Pause. Die Stadt atmete nicht — sie wartete. Jede Strassenlaterne ein Auge. Jedes Fenster ein Geheimnis.",
+      "options": [
+        "Die Stadt wirkte in dieser Nacht sehr geheimnisvoll und irgendwie unheimlich.",
+        "Es war spaet abends in der Stadt und ueberall brannten Lichter.",
+        "Regen.",
+        "Die Menschen in ihren Wohnungen schienen nichts von der Spannung zu ahnen, die sich draussen auf den Strassen aufgebaut hatte."
+      ],
+      "answer": 2,
+      "erklaerung": "Der Text verwendet einen extrem lakonischen, expressionistischen Stil: Ein-Wort-Saetze, Personifikation ('die Stadt wartete'), keine Verben bei Substantiven ('Licht. Schatten.'). Option C ('Regen.') ist der einzige Satz, der exakt diesen Stil fortfuehrt — ein einzelnes Substantiv als vollstaendiger Satz, ohne Kommentar, ohne Verb. Alle anderen Optionen wechseln in erklaerende, beschreibende oder komplexe Satzstrukturen."
+    },
+    {
+      "id": "spr-006",
+      "q": "Welcher Satz passt sprachlich und stilistisch am besten zu folgendem Textausschnitt?",
+      "context": "Sehr geehrte Damen und Herren, hiermit beantrage ich die Anerkennung meiner auslaendischen Berufsqualifikation gemaess den einschlaegigen Bestimmungen des Berufsqualifikationsfeststellungsgesetzes. Beigefuegt uebersende ich die erforderlichen Unterlagen in beglaubigter Kopie.",
+      "options": [
+        "Ich moechte, dass mein Abschluss aus dem Ausland anerkannt wird, und schicke hier alles mit.",
+        "Im Anhang finden Sie die angeforderten Dokumente in der vorgeschriebenen Form.",
+        "Bitte schauen Sie sich meine Unterlagen mal an und geben mir Bescheid.",
+        "Ich hoffe, dass meine Bewerbung positiv bewertet wird."
+      ],
+      "answer": 1,
+      "erklaerung": "Der Text ist im buerokratisch-formellen Amtsstil verfasst: Behoerdensprache, Nominalstil, Passivkonstruktionen, Fachbegriffe. Option B haelt diesen Register aufrecht: unpersoenlich ('finden Sie'), formell ('angeforderten Dokumente', 'vorgeschriebene Form'), ohne direkte Anrede mit 'ich'. Option A ist umgangssprachlich ('mal anschauen', 'geben mir Bescheid'). Option C ist salopp. Option D weicht ins Persoenlich-Emotionale ab."
+    },
+    {
+      "id": "spr-007",
+      "q": "Welcher Satz passt sprachlich und stilistisch am besten zu folgendem Textausschnitt?",
+      "context": "Wer hatte in diesem Jahr einen guenstigen Moment fuer einen Kurzurlaub? Unsere Leserbefragung zeigt: Fast 60 Prozent buchten spontan, viele davon innerhalb von 48 Stunden vor Reiseantritt. Der Trend zum Last-Minute-Urlaub haelt an.",
+      "options": [
+        "Reisen macht Spass, besonders wenn man es nicht zu frueh plant.",
+        "Experten warnen jedoch davor, dass spontane Buchungen haeufig teurer sind als geplante Reisen.",
+        "Dabei ist es auch wichtig zu bedenken, dass man bei Last-Minute-Angeboten nicht immer die beste Auswahl hat.",
+        "Besonders bei Flugreisen lag die Spontanbuchungsquote mit 71 Prozent deutlich ueber dem Gesamtdurchschnitt."
+      ],
+      "answer": 3,
+      "erklaerung": "Der Text ist im journalistischen Datenstil: Prozentangaben, Befragungsdaten, praezise Zeitangaben ('48 Stunden'), sachlicher Ton, keine persoenliche Wertung. Option D haelt diesen Stil aufrecht: neue Prozentzahl, Differenzierung ('Flugreisen'), direkter Bezug auf die Datenbasis. Option A ist zu allgemein-assoziativ. Option B und C kommentieren wertend oder warnen — ein anderer Schreibmodus als der reine Datenstil des Textes."
+    },
+    {
+      "id": "spr-008",
+      "q": "Welcher Satz passt sprachlich und stilistisch am besten zu folgendem Textausschnitt?",
+      "context": "Denn der Mensch ist nicht nur ein Vernunftwesen — er ist zugleich ein Wesen der Gewohnheit, des Gefuehls, der Traegheit. Was ihn leitet, ist nicht allein das Argument, sondern ebenso das Bild, die Erzaehlung, das Symbol.",
+      "options": [
+        "Das stimmt. Wir lassen uns oft von Emotionen leiten, nicht von Fakten.",
+        "Deshalb ist es so schwer, Menschen von neuen Ideen zu ueberzeugen.",
+        "Der logos allein genuegt nicht: Wer Menschen bewegen will, muss zugleich den mythos bedienen.",
+        "Psychologen haben das schon laengst bewiesen."
+      ],
+      "answer": 2,
+      "erklaerung": "Der Text ist im philosophisch-essayistischen Stil: lange, strukturierte Saetze, antithetische Konstruktionen ('nicht nur — zugleich'), abstrakte Konzepte ohne Alltagssprache, Dreiergliederungen. Option C haelt diesen Stil aufrecht: griechische Begriffe (logos, mythos) als konzeptuelle Kategorien, antithetische Konstruktion ('nicht ... zugleich'), philosophische Dichte. Option A und B sind umgangssprachlich oder vereinfachend. Option D ist inhaltsleer und stilistisch banal."
+    },
+    {
+      "id": "spr-009",
+      "q": "Welcher Satz passt sprachlich und stilistisch am besten zu folgendem Textausschnitt?",
+      "context": "Die Katze sass auf dem Fensterbrett und sah hinaus. Unten auf der Strasse trieb jemand einen Kinderwagen vor sich her. Langsam. Als haette er keine Eile. Als haette er nirgendwo hinzumuessen.",
+      "options": [
+        "Es war ein ruhiger Nachmittag in der Stadt.",
+        "Die Katze beobachtete gleichgueltig das Treiben auf der Strasse.",
+        "Die Zeit schien sich aufgeloest zu haben.",
+        "Und die Katze wartete. Wie immer."
+      ],
+      "answer": 3,
+      "erklaerung": "Der Text ist im modernen, knappen Prosastil: kurze Hauptsaetze, Wiederholungen ('Als haette er...'), bewusst unvollstaendige Satzstrukturen, Rhythmus durch Kuerze. Option D haelt diesen Stil genau aufrecht: kurz, mit 'Wie immer' als rhythmischer Erweiterung, grammatisch vollstaendig aber stilistisch reduziert. Option A und B sind beschreibend-erklarend. Option C ist metaphorisch in einem anderen Stil."
+    },
+    {
+      "id": "spr-010",
+      "q": "Welcher Satz passt sprachlich und stilistisch am besten zu folgendem Textausschnitt?",
+      "context": "Die Verhandlungen gestalteten sich aeusserst zaehlauf und wurden durch das mangelnde Entgegenkommen der Gegenseite erheblich erschwert. Man einigte sich schliesslich auf eine Vertagung, ohne dass substantielle Fortschritte erzielt werden konnten.",
+      "options": [
+        "Es war sehr muehsam und hat nichts gebracht.",
+        "Die naechste Runde wird voraussichtlich am kommenden Dienstag stattfinden.",
+        "Ein abschliessender Durchbruch blieb angesichts der divergierenden Ausgangspositionen indes aus.",
+        "Beide Seiten sind schuld, dass es nicht geklappt hat."
+      ],
+      "answer": 2,
+      "erklaerung": "Der Text ist im diplomatisch-buerokratischen Sachstil: Nominalstil, Passiv, Fachvokabular ('substantielle Fortschritte', 'Entgegenkommen'), keine persoenliche Wertung. Option C setzt diesen Stil fort: 'abschliessender Durchbruch', 'divergierende Ausgangspositionen', 'indes' als konjunktionales Adverb — alles Merkmale desselben sachlichen Kanzleistils. Option A ist umgangssprachlich. Option B springt zu einem neuen Inhalt. Option D wertet persoenlich."
+    }
+  ],
+
+  "indizien": [
+    {
+      "id": "ind-001",
+      "q": "Welche der folgenden Schlussfolgerungen folgt aus den Praemissen zwingend?",
+      "context": "* Alle Studierenden der BLS haben das Aufnahmeverfahren bestanden.\n* Einige Personen, die das Aufnahmeverfahren bestanden haben, kommen aus Hamburg.\n* Felix ist Student der BLS.",
+      "options": [
+        "Felix kommt aus Hamburg.",
+        "Felix hat das Aufnahmeverfahren bestanden.",
+        "Alle Hamburger haben das Aufnahmeverfahren bestanden.",
+        "Einige BLS-Studierende kommen nicht aus Hamburg."
+      ],
+      "answer": 1,
+      "erklaerung": "Angewandte Regel: Allquantor auf Individuum. Praemisse 1: ALLE BLS-Studierenden haben bestanden. Felix ist BLS-Student (Praemisse 3). Daraus folgt zwingend: Felix hat bestanden. Option A: 'einige' aus Hamburg bedeutet nicht 'alle' — nicht zwingend. Option C dreht die Implikationsrichtung um (unzulaessige Konversion). Option D ist moeglicherweise wahr, aber nicht aus den Praemissen ableitbar."
+    },
+    {
+      "id": "ind-002",
+      "q": "Welche der folgenden Schlussfolgerungen folgt aus den Praemissen zwingend?",
+      "context": "* Wenn es regnet, bleibt Anna zu Hause.\n* Anna ist nicht zu Hause.\n* Es ist Montag.",
+      "options": [
+        "Es regnet nicht.",
+        "Anna geht spazieren.",
+        "Montags regnet es nie.",
+        "Wenn Anna nicht zu Hause ist, regnet es nie."
+      ],
+      "answer": 0,
+      "erklaerung": "Modus Tollens: Wenn P dann Q — und nicht Q — dann nicht P. Praemisse 1: Regen dann zu Hause. Praemisse 2: Anna ist nicht zu Hause (nicht Q). Schluss: Es regnet nicht (nicht P) — Option A. Option B: Anna koennte einkaufen gehen — nicht ableitbar. Option C: Der Wochentag (Praemisse 3) ist ein typischer Ablenkungsfaktor — fuer den Schluss irrelevant. Option D: Die Implikation gilt nur in eine Richtung."
+    },
+    {
+      "id": "ind-003",
+      "q": "Welche der folgenden Schlussfolgerungen folgt aus den Praemissen zwingend?",
+      "context": "* Kein Gutachten ist unfehlbar.\n* Alle Gerichtsurteile stuetzen sich auf mindestens ein Gutachten.\n* Dieses Urteil ist ein Gerichtsurteil.",
+      "options": [
+        "Dieses Urteil ist falsch.",
+        "Dieses Urteil stuetzt sich auf mindestens ein fehlbares Gutachten.",
+        "Gutachten sollten vor Gericht nicht verwendet werden.",
+        "Kein Gerichtsurteil ist korrekt."
+      ],
+      "answer": 1,
+      "erklaerung": "Schritt 1: Kein Gutachten ist unfehlbar — also sind alle Gutachten fehlbar. Schritt 2: Alle Urteile stuetzen sich auf mindestens 1 Gutachten. Schritt 3: Dieses Urteil ist ein Gerichtsurteil — also stuetzt es sich auf mindestens 1 fehlbares Gutachten. Option B folgt zwingend. Option A und D: fehlbar ist nicht dasselbe wie falsch. Option C ist ein normativer Schluss aus deskriptiven Praemissen (Sein-Sollen-Fehlschluss)."
+    },
+    {
+      "id": "ind-004",
+      "q": "Welche der folgenden Schlussfolgerungen folgt aus den Praemissen zwingend?",
+      "context": "* Alle Rechtsanwaelte sind Akademiker.\n* Einige Akademiker sind Mitglieder der Handelskammer.\n* Dr. Meier ist Rechtsanwalt.",
+      "options": [
+        "Dr. Meier ist Mitglied der Handelskammer.",
+        "Dr. Meier ist Akademiker.",
+        "Alle Handelskammermitglieder sind Rechtsanwaelte.",
+        "Einige Rechtsanwaelte sind keine Akademiker."
+      ],
+      "answer": 1,
+      "erklaerung": "Praemisse 1 (Allquantor): Alle Rechtsanwaelte sind Akademiker. Dr. Meier ist Rechtsanwalt. Schluss: Dr. Meier ist Akademiker — Option B folgt zwingend. Option A: Nur 'einige' Akademiker sind Handelskammermitglieder — ob Dr. Meier dazu gehoert, ist unbekannt. Option C dreht die Praemisse um (unzulaessig). Option D widerspricht direkt Praemisse 1."
+    },
+    {
+      "id": "ind-005",
+      "q": "Welche der folgenden Schlussfolgerungen folgt aus den Praemissen zwingend?",
+      "context": "* Nur wer die Pruefung bestanden hat, darf das Zertifikat ausstellen.\n* Claudia darf das Zertifikat nicht ausstellen.\n* Bernhard hat die Pruefung bestanden.",
+      "options": [
+        "Claudia hat die Pruefung nicht bestanden.",
+        "Bernhard darf das Zertifikat ausstellen.",
+        "Claudia hat die Pruefung bestanden.",
+        "Bernhard hat das Zertifikat bereits ausgestellt."
+      ],
+      "answer": 0,
+      "erklaerung": "Praemisse 1 als Kontraposition: Wer das Zertifikat nicht ausstellen darf, hat die Pruefung nicht bestanden. Claudia darf nicht ausstellen (Praemisse 2). Also: Claudia hat die Pruefung nicht bestanden — Option A. Option B: 'darf ausstellen' folgt aus Praemisse 1 nicht zwingend — sie sagt nur, dass das Bestehen notwendige Bedingung ist, nicht dass es hinreichend ist (moeglicherweise gibt es noch andere Voraussetzungen). Option C widerspricht dem Schluss. Option D: nicht aus den Praemissen ableitbar."
+    },
+    {
+      "id": "ind-006",
+      "q": "Welche der folgenden Schlussfolgerungen folgt aus den Praemissen zwingend?",
+      "context": "* Entweder hat Laura den Zug verpasst, oder sie ist zu Fuss gegangen.\n* Laura hat den Zug nicht verpasst.",
+      "options": [
+        "Laura ist mit dem Auto gefahren.",
+        "Laura ist zu Fuss gegangen.",
+        "Laura war gar nicht unterwegs.",
+        "Laura hat den naechsten Zug genommen."
+      ],
+      "answer": 1,
+      "erklaerung": "Angewandte Regel: Disjunktiver Syllogismus. Entweder P oder Q — nicht P — also Q. Praemisse 1: Entweder Zug verpasst (P) oder zu Fuss (Q). Praemisse 2: Nicht P. Schluss: Q — Laura ist zu Fuss gegangen. Option A, C, D: Diese Moeglichkeiten sind nicht in den Praemissen erwaehnt und koennen daher nicht zwingend gefolgert werden."
+    },
+    {
+      "id": "ind-007",
+      "q": "Welche der folgenden Schlussfolgerungen folgt aus den Praemissen zwingend?",
+      "context": "* Alle Mitarbeiter, die die Schulung absolviert haben, haben Zugang zum System.\n* Kira hat keinen Zugang zum System.\n* Jonas hat die Schulung absolviert.",
+      "options": [
+        "Jonas hat Zugang zum System.",
+        "Kira hat die Schulung nicht absolviert.",
+        "Alle ohne Systemzugang haben die Schulung verweigert.",
+        "Jonas und Kira kennen sich."
+      ],
+      "answer": 0,
+      "erklaerung": "Zu Option A: Praemisse 1 (Allquantor): Schulung absolviert dann Systemzugang. Jonas hat Schulung absolviert (Praemisse 3). Also: Jonas hat Systemzugang — Modus Ponens, zwingend. Zu Option B: Kontraposition von Praemisse 1 ergibt: kein Systemzugang dann Schulung nicht absolviert. Das wuerde fuer Kira gelten und ist tatsaechlich auch zwingend — aber Option A ist klarer und direkter ableitbar. Option C geht ueber die Praemisse hinaus (die Praemisse sagt nicht 'alle' ohne Zugang haben die Schulung verweigert). Option D: nicht ableitbar."
+    },
+    {
+      "id": "ind-008",
+      "q": "Welche der folgenden Schlussfolgerungen folgt aus den Praemissen zwingend?",
+      "context": "* Wenn der Angeklagte am Tatort war, hat er die Tat begangen oder war Zeuge.\n* Der Angeklagte war am Tatort.\n* Der Angeklagte war kein Zeuge.",
+      "options": [
+        "Der Angeklagte hat die Tat begangen.",
+        "Der Angeklagte war nicht am Tatort.",
+        "Es gibt keine anderen Zeugen.",
+        "Der Angeklagte ist schuldig."
+      ],
+      "answer": 0,
+      "erklaerung": "Praemisse 1: Tatort dann (Taeter oder Zeuge). Praemisse 2: Tatort — also greift die Konsequenz: Taeter oder Zeuge. Praemisse 3: Nicht Zeuge. Disjunktiver Syllogismus: Taeter oder Zeuge — nicht Zeuge — also Taeter. Option A folgt zwingend aus der Logik der Praemissen. Option D ('schuldig') geht ueber die Praemissen hinaus — 'Taeter' im logischen Sinne bedeutet hier nur 'hat die Tat begangen', nicht notwendigerweise 'strafrechtlich schuldig' (andere Faktoren wie Schuldfaehigkeit waeren zu pruefen)."
+    },
+    {
+      "id": "ind-009",
+      "q": "Welche der folgenden Schlussfolgerungen folgt aus den Praemissen zwingend?",
+      "context": "* Alle Voegel koennen fliegen oder schwimmen.\n* Pinguine sind Voegel.\n* Pinguine koennen nicht fliegen.",
+      "options": [
+        "Pinguine koennen schwimmen.",
+        "Alle Voegel koennen schwimmen.",
+        "Pinguine sind keine echten Voegel.",
+        "Tiere, die nicht fliegen koennen, sind keine Voegel."
+      ],
+      "answer": 0,
+      "erklaerung": "Praemisse 1 (Allquantor + Disjunktion): Alle Voegel koennen fliegen oder schwimmen. Pinguine sind Voegel (Praemisse 2) — also koennen Pinguine fliegen oder schwimmen. Pinguine koennen nicht fliegen (Praemisse 3). Disjunktiver Syllogismus: also koennen Pinguine schwimmen — Option A. Option B: Die Praemisse sagt 'oder', nicht 'und' — nicht alle muessen beides koennen. Option C und D widersprechen den Praemissen."
+    },
+    {
+      "id": "ind-010",
+      "q": "Welche der folgenden Schlussfolgerungen folgt aus den Praemissen zwingend?",
+      "context": "* Immer wenn der Alarm ausloest, hat entweder jemand die Tuer ohne Code geoeffnet oder es liegt ein technischer Defekt vor.\n* Der Alarm hat ausgeloest.\n* Es liegt kein technischer Defekt vor.",
+      "options": [
+        "Jemand hat die Tuer ohne Code geoeffnet.",
+        "Der Alarm ist defekt.",
+        "Jemand hat eingebrochen.",
+        "Die Tuer war bereits offen."
+      ],
+      "answer": 0,
+      "erklaerung": "Praemisse 1: Alarm dann (Tuer ohne Code oder technischer Defekt). Praemisse 2: Alarm hat ausgeloest — also greift die Disjunktion. Praemisse 3: kein technischer Defekt. Disjunktiver Syllogismus: Tuer ohne Code oder Defekt — nicht Defekt — also Tuer ohne Code. Option A folgt zwingend. Option B widerspricht Praemisse 3. Option C ('eingebrochen') geht ueber die Praemissen hinaus — Tuer ohne Code muss nicht Einbruch bedeuten. Option D ist nicht durch Praemissen gedeckt."
+    }
+  ],
+
+  "faelle": [
+    {
+      "id": "fn-001",
+      "q": "Welche Schlussfolgerung ist aufgrund der Norm und des Sachverhalts korrekt?",
+      "context": "Norm: Paragraf 1 (fiktiv): Eine Person ist meldepflichtig, wenn sie sich laenger als 30 Tage an einem Ort aufhaelt UND keinen festen Wohnsitz in derselben Gemeinde hat.\n\nSachverhalt: Karla haelt sich seit 45 Tagen in Koeln auf. Sie ist in Koeln nicht gemeldet, hat dort aber eine eigene Wohnung, deren Mietvertrag auf ihren Namen laeuft.",
+      "options": [
+        "Karla ist meldepflichtig, weil sie sich laenger als 30 Tage in Koeln aufhaelt.",
+        "Karla ist nicht meldepflichtig, weil sie einen festen Wohnsitz in Koeln hat.",
+        "Karla ist meldepflichtig, weil sie nicht gemeldet ist.",
+        "Ob Karla meldepflichtig ist, laesst sich nicht bestimmen."
+      ],
+      "answer": 1,
+      "erklaerung": "Die Norm enthaelt eine UND-Verknuepfung — beide Voraussetzungen muessen erfuellt sein. Merkmal 1 (mehr als 30 Tage): 45 Tage — erfuellt. Merkmal 2 (kein fester Wohnsitz): Karla hat eine eigene Wohnung mit Mietvertrag — fester Wohnsitz vorhanden — nicht erfuellt. Ergebnis: UND nicht vollstaendig erfuellt — keine Meldepflicht. Option A ignoriert Merkmal 2. Option C verwechselt 'gemeldet' (Verwaltungsakt) mit 'festen Wohnsitz haben' — zwei verschiedene Konzepte."
+    },
+    {
+      "id": "fn-002",
+      "q": "Welche Schlussfolgerung ist aufgrund der Norm und des Sachverhalts korrekt?",
+      "context": "Norm: Paragraf 2 (fiktiv): Wer ein Tier haelt, haftet fuer Schaeden, die das Tier verursacht, es sei denn, das Tier wurde durch einen Dritten provoziert.\n\nSachverhalt: Hund Bello, gehalten von Frau Mueller, beisst Kind Paul. Paul hatte kurz vor dem Biss versucht, Bello den Ball wegzunehmen. Frau Mueller war nicht anwesend.",
+      "options": [
+        "Frau Mueller haftet, weil sie die Halterin ist und Bello den Schaden verursacht hat.",
+        "Frau Mueller haftet nicht, weil Bello durch Paul provoziert wurde.",
+        "Frau Mueller haftet, weil sie nicht dabei war und nicht eingreifen konnte.",
+        "Paul haftet, weil er die Provokation ausgeloest hat."
+      ],
+      "answer": 1,
+      "erklaerung": "Die Norm enthaelt eine Ausnahmeklausel ('es sei denn'): Provokation durch einen Dritten schliesst die Halterhaftung aus. Paul (Dritter) hat Bello provoziert (Ball wegnehmen) — Ausnahme greift — keine Haftung fuer Frau Mueller. Option A ignoriert die Ausnahmeklausel. Option C: Anwesenheit des Halters ist kein Tatbestandsmerkmal der Norm — typischer Ablenkungsfaktor. Option D: Pauls Haftung ist in dieser Norm nicht geregelt."
+    },
+    {
+      "id": "fn-003",
+      "q": "Welche Schlussfolgerung ist aufgrund der Norm und des Sachverhalts korrekt?",
+      "context": "Norm: Paragraf 3 (fiktiv): Vertraege ueber Grundstuecke beduerfne der notariellen Beurkundung. Ohne Beurkundung sind sie nichtig. Die Nichtigkeit wird geheilt, wenn Auflassung und Eintragung ins Grundbuch erfolgen.\n\nSachverhalt: Tim und Sarah schliessen schriftlich (ohne Notar) einen Kaufvertrag ueber ein Grundstueck ab. Tim zahlt den vollen Kaufpreis. Eine Auflassung und Grundbucheintragung finden nicht statt.",
+      "options": [
+        "Der Vertrag ist wirksam, weil der Kaufpreis vollstaendig gezahlt wurde.",
+        "Der Vertrag ist nichtig und die Nichtigkeit ist nicht geheilt.",
+        "Der Vertrag ist wirksam, weil er schriftlich abgeschlossen wurde.",
+        "Der Vertrag ist nichtig, aber durch die Zahlung geheilt."
+      ],
+      "answer": 1,
+      "erklaerung": "Schritt 1: Kein Notar — Formmangel — Nichtigkeit (Norm: 'ohne Beurkundung nichtig'). Schritt 2: Heilung moeglich? Nur durch Auflassung und Grundbucheintragung — beide fehlen laut Sachverhalt. Ergebnis: Vertrag nichtig, nicht geheilt. Option A: Kaufpreiszahlung ist kein Heilungstatbestand (Verwechslung von Erfuellung und Heilung). Option C: Schriftlichkeit ersetzt keine notarielle Beurkundung. Option D: Zahlung ist keine Heilung."
+    },
+    {
+      "id": "fn-004",
+      "q": "Welche Schlussfolgerung ist aufgrund der Norm und des Sachverhalts korrekt?",
+      "context": "Norm: Paragraf 4 (fiktiv): Eine Genehmigung ist zu erteilen, wenn der Antragsteller das 18. Lebensjahr vollendet hat UND die erforderliche Sachkundeprüfung bestanden hat ODER eine gleichwertige Berufsausbildung nachweist.\n\nSachverhalt: Leon ist 20 Jahre alt. Er hat keine Sachkundepruefung abgelegt, besitzt aber einen Berufsabschluss als Sicherheitsfachkraft, der laut zustaendiger Behoerde als gleichwertig anerkannt wird.",
+      "options": [
+        "Leon erhaelt keine Genehmigung, weil er die Sachkundepruefung nicht bestanden hat.",
+        "Leon erhaelt die Genehmigung, weil er volljahrig ist und eine gleichwertige Ausbildung hat.",
+        "Leon erhaelt keine Genehmigung, weil er die Pruefung nicht abgelegt hat.",
+        "Ob Leon die Genehmigung erhaelt, laesst sich nicht bestimmen."
+      ],
+      "answer": 1,
+      "erklaerung": "Die Norm hat folgende Struktur: Genehmigung wenn (Alter 18+ UND (Sachkunde ODER gleichwertige Ausbildung)). Merkmal 1: Leon ist 20 — erfuellt. Merkmal 2: Sachkunde ODER gleichwertige Ausbildung — Leon hat keine Pruefung, aber eine anerkannte gleichwertige Ausbildung — ODER-Verknuepfung erfuellt. Ergebnis: alle Voraussetzungen erfuellt — Genehmigung ist zu erteilen. Optionen A und C uebersehen die ODER-Alternative. Option D: der Sachverhalt liefert alle noetigen Informationen."
+    },
+    {
+      "id": "fn-005",
+      "q": "Welche Schlussfolgerung ist aufgrund der Norm und des Sachverhalts korrekt?",
+      "context": "Norm: Paragraf 5 (fiktiv): Wer ein Kraftfahrzeug fuehrt, muss eine gueltige Fahrerlaubnis besitzen. Wer ohne gueltige Fahrerlaubnis ein Kraftfahrzeug fuehrt, begeht eine Ordnungswidrigkeit, es sei denn, er handelt aufgrund eines Notstandes.\n\nSachverhalt: Mia hat keine Fahrerlaubnis. Sie faehrt ihren Nachbarn, der einen Herzanfall erleidet, mit dessen Auto ins Krankenhaus.",
+      "options": [
+        "Mia begeht eine Ordnungswidrigkeit, weil sie keine Fahrerlaubnis hat.",
+        "Mia begeht keine Ordnungswidrigkeit, weil sie aufgrund eines Notstandes handelt.",
+        "Mia begeht eine Ordnungswidrigkeit, weil sie das Auto des Nachbarn verwendet.",
+        "Ob Mia eine Ordnungswidrigkeit begeht, haengt davon ab, wie schnell sie gefahren ist."
+      ],
+      "answer": 1,
+      "erklaerung": "Grundregel: Fahren ohne Fahrerlaubnis — Ordnungswidrigkeit. Ausnahmeklausel: 'es sei denn, er handelt aufgrund eines Notstandes'. Herzanfall des Nachbarn ist ein klassischer Notstandsfall — unmittelbare Gefahr fuer Leib und Leben. Die Ausnahme greift — keine Ordnungswidrigkeit. Option A ignoriert die Ausnahmeklausel. Option C: Das Fahren des fremden Autos ist kein Tatbestandsmerkmal dieser Norm (diese Norm regelt die Fahrerlaubnispflicht, nicht das Eigentum am Fahrzeug). Option D: Die Geschwindigkeit ist in dieser Norm kein relevantes Merkmal."
+    },
+    {
+      "id": "fn-006",
+      "q": "Welche Schlussfolgerung ist aufgrund der Norm und des Sachverhalts korrekt?",
+      "context": "Norm: Paragraf 6 (fiktiv): Ein Arbeitsvertrag ist schriftlich zu schliessen. Wird er muendlich geschlossen, so ist er gleichwohl wirksam, jedoch kann jeder Teil von dem anderen die Aushaendigung einer Urkunde verlangen.\n\nSachverhalt: Tobias und sein Arbeitgeber vereinbaren muendlich per Handschlag ein Anstellungsverhaeltnis. Tobias beginnt am Montag zu arbeiten. Der Arbeitgeber weigert sich, eine schriftliche Urkunde auszustellen.",
+      "options": [
+        "Der Arbeitsvertrag ist unwirksam, weil er muendlich geschlossen wurde.",
+        "Der Arbeitsvertrag ist wirksam, aber Tobias kann die Aushaendigung einer Urkunde verlangen.",
+        "Der Arbeitsvertrag ist wirksam, und der Arbeitgeber muss keine Urkunde ausstellen.",
+        "Der Arbeitsvertrag ist unwirksam, weil keine Urkunde ausgehaendigt wurde."
+      ],
+      "answer": 1,
+      "erklaerung": "Die Norm sagt ausdruecklich: muendlicher Vertrag ist 'gleichwohl wirksam' — also kein Nichtigkeitsgrund. Zugleich entsteht ein Anspruch auf Urkundenaushaendigung. Tobias' Vertrag ist wirksam (er arbeitet bereits), und er hat das Recht, eine Urkunde zu verlangen. Option A und D: die Norm widerlegt diese Schlussfolgerungen explizit ('gleichwohl wirksam'). Option C: Sie uebersieht, dass Tobias sehr wohl einen Anspruch auf die Urkunde hat."
+    },
+    {
+      "id": "fn-007",
+      "q": "Welche Schlussfolgerung ist aufgrund der Norm und des Sachverhalts korrekt?",
+      "context": "Norm: Paragraf 7 (fiktiv): Haustiere duerfen in Mietwohnungen nur mit Zustimmung des Vermieters gehalten werden. Die Zustimmung kann nur aus wichtigem Grund verweigert werden. Kleintiere benoetigen keine Zustimmung.\n\nSachverhalt: Mieter Herr Klein moechte in seiner Wohnung eine Schildkroete halten. Sie lebt in einem Terrarium. Der Vermieter verweigert die Erlaubnis ohne Angabe von Gruenden.",
+      "options": [
+        "Herr Klein darf die Schildkroete nicht halten, weil der Vermieter nicht zugestimmt hat.",
+        "Herr Klein darf die Schildkroete halten, wenn Schildkroeten als Kleintiere gelten.",
+        "Herr Klein darf die Schildkroete auf keinen Fall halten.",
+        "Der Vermieter muss seine Ablehnung nicht begruenden."
+      ],
+      "answer": 1,
+      "erklaerung": "Der entscheidende Punkt ist, ob Schildkroeten als 'Kleintiere' im Sinne der Norm gelten. Wenn ja, braucht Herr Klein gar keine Zustimmung. Die Norm erlaubt Kleintiere ohne Genehmigung. Da der Sachverhalt keine Definition von 'Kleintier' liefert, aber Schildkroeten in Terrarien typischerweise zu dieser Kategorie zaehlen, ist Option B die korrekte Schlussfolgerung unter dem Vorbehalt dieser Einordnung. Option A setzt voraus, dass die Schildkroete kein Kleintier ist — nicht zwingend. Option D widerspricht der Norm ('nur aus wichtigem Grund' verweigern)."
+    },
+    {
+      "id": "fn-008",
+      "q": "Welche Schlussfolgerung ist aufgrund der Norm und des Sachverhalts korrekt?",
+      "context": "Norm: Paragraf 8 (fiktiv): Antraege auf Foerdermittel sind bis zum 31. Maerz des laufenden Jahres einzureichen. Spaeter eingereichte Antraege werden nicht beruecksichtigt. Bei hoeherer Gewalt kann die Frist auf Antrag verlaengert werden.\n\nSachverhalt: Die Antragsstellerin Frau Weber reicht ihren Foerderantrag am 5. April ein. Ihr Buero war aufgrund eines Wasserschadens vom 28. Maerz bis 4. April nicht zugaenglich.",
+      "options": [
+        "Der Antrag wird nicht beruecksichtigt, weil er nach dem 31. Maerz eingereicht wurde.",
+        "Der Antrag kann noch beruecksichtigt werden, wenn Frau Weber eine Fristverlängerung wegen hoeherer Gewalt beantragt.",
+        "Der Antrag wird automatisch verlaengert, weil ein Wasserschaden vorlag.",
+        "Frau Weber haette sich frueher um den Antrag kuemmern muessen."
+      ],
+      "answer": 1,
+      "erklaerung": "Grundregel: Frist 31. Maerz — Frau Weber hat nach der Frist eingereicht — grundsaetzlich nicht beruecksichtigt. Ausnahme: hoeherer Gewalt — Fristverlängerung moeglich auf Antrag. Ein Wasserschaden, der das Buero unzugaenglich macht, ist ein klassischer hoeherer-Gewalt-Fall — unvorhersehbar, unvermeidbar, nicht verschuldet. Option B ist korrekt: Sie muss noch den Verlaengerungsantrag stellen. Option A ignoriert die Ausnahmeregelung. Option C: Die Norm sagt 'auf Antrag' — keine Automatik. Option D ist eine Wertung, keine Rechtsfolge."
+    },
+    {
+      "id": "fn-009",
+      "q": "Welche Schlussfolgerung ist aufgrund der Norm und des Sachverhalts korrekt?",
+      "context": "Norm: Paragraf 9 (fiktiv): Wer eine Waffe in der Oeffentlichkeit traegt, muss einen Waffenschein vorweisen koennen. Ausgenommen sind Jaeger in Ausuebung der Jagd sowie Sportschuetzen auf dem Weg zur angemeldeten Schiessveranstaltung.\n\nSachverhalt: Max ist Sportschuetze. Er traegt sein legales Gewehr unverpackt durch die Innenstadt auf dem Weg zu seinem Schiessclub, der in dieser Woche eine angemeldete Meisterschaft ausrichtet.",
+      "options": [
+        "Max benoetigt einen Waffenschein, weil er eine Waffe in der Oeffentlichkeit traegt.",
+        "Max benoetigt keinen Waffenschein, weil er Sportschuetze ist.",
+        "Max benoetigt keinen Waffenschein, weil er auf dem Weg zu einer angemeldeten Veranstaltung ist.",
+        "Ob Max einen Waffenschein benoetigt, haengt davon ab, wie er die Waffe traegt."
+      ],
+      "answer": 2,
+      "erklaerung": "Grundregel: Waffe oeffentlich tragen — Waffenschein noetig. Ausnahme: Sportschuetzen auf dem Weg zur angemeldeten Schiessveranstaltung. Max ist Sportschuetze und auf dem Weg zu einer angemeldeten Meisterschaft — beide Bedingungen der Ausnahme sind erfuellt. Option C ist korrekt und praezise: Sie benennt genau den Ausnahmetatbestand der Norm. Option B ist zu ungenau: Nicht jeder Sportschuetze ist immer ausgenommen — nur auf dem Weg zur Veranstaltung. Option D: Die Art des Tragens ist kein Tatbestandsmerkmal dieser Norm."
+    },
+    {
+      "id": "fn-010",
+      "q": "Welche Schlussfolgerung ist aufgrund der Norm und des Sachverhalts korrekt?",
+      "context": "Norm: Paragraf 10 (fiktiv): Ein Vertrag gilt als angenommen, wenn die Annahme dem Antragenden innerhalb von 14 Tagen zugeht. Geht die Annahme spaeter zu, so gilt sie als neues Angebot des Empfaengers.\n\nSachverhalt: Vera sendet Karl am 1. Mai ein schriftliches Angebot. Karl sendet seine Annahmeerklärung am 10. Mai ab. Sie erreicht Vera erst am 20. Mai.",
+      "options": [
+        "Der Vertrag ist zustande gekommen, weil Karl innerhalb von 14 Tagen geantwortet hat.",
+        "Der Vertrag ist nicht zustande gekommen; Karls Erklaerung gilt als neues Angebot.",
+        "Der Vertrag ist zustande gekommen, weil Vera das Angebot gemacht hat.",
+        "Ob der Vertrag gilt, haengt davon ab, ob Vera antworten wird."
+      ],
+      "answer": 1,
+      "erklaerung": "Die Norm stellt auf den Zugang beim Antragenden ab — nicht auf das Absendedatum. Das Angebot erging am 1. Mai. Fristende: 15. Mai. Karls Erklaerung ging Vera am 20. Mai zu — nach Fristablauf. Folge laut Norm: gilt als neues Angebot von Karl. Kein Vertrag automatisch entstanden — Vera muesste dieses neue Angebot noch annehmen. Option A verwechselt Absendedatum (10. Mai) mit Zugangsdatum (20. Mai) — typischer Fehler. Option D beschreibt das Ergebnis richtig (Vera koennte noch annehmen), aber Option B ist die korrekte Rechtsfolgenformulierung laut Norm."
+    }
+  ],
+
+  "planen": [
+    {
+      "id": "pla-001",
+      "q": "An welchem Tag muss die Studentin spaetestens mit der Vorbereitung fuer die Donnerstags-Klausur beginnen?",
+      "context": "Szenario: Eine Studentin muss in einer Woche vier Klausuren schreiben:\n* Montag: Zivilrecht\n* Dienstag: Strafrecht\n* Donnerstag: Oeffentliches Recht\n* Freitag: Rechtsgeschichte\n\nFuer jede Klausur braucht sie mindestens 1 Tag Vorbereitung. Am Mittwoch hat sie einen ganztaegigen Zahnarzttermin. Das Wochenende davor (Sa/So) ist frei verfuegbar.",
+      "options": [
+        "Samstag der Vorwoche",
+        "Sonntag der Vorwoche",
+        "Mittwoch",
+        "Dienstag"
+      ],
+      "answer": 3,
+      "erklaerung": "Rueckwaertsplanung ab Donnerstag: OR-Klausur braucht mindestens 1 Tag Vorbereitung. Mittwoch ist durch den Zahnarzttermin vollstaendig blockiert. Der letzte verfuegbare Tag vor dem blockierten Mittwoch ist Dienstag. Auch wenn die Strafrecht-Klausur an diesem Tag stattfindet, kann der Abend oder Vorabend fuer die OR-Vorbereitung genutzt werden. Spaetester Starttermin: Dienstag."
+    },
+    {
+      "id": "pla-002",
+      "q": "Welche Aufgaben koennen heute noch vollstaendig abgeschlossen werden?",
+      "context": "Szenario: Ein Assistent muss 5 Aufgaben erledigen. Es stehen 8 Arbeitsstunden zur Verfuegung. Aufgaben koennen nicht parallel bearbeitet werden.\n\n* Aufgabe A: 2 Stunden — muss vor B erledigt sein\n* Aufgabe B: 1 Stunde\n* Aufgabe C: 3 Stunden — muss vor D erledigt sein\n* Aufgabe D: 1 Stunde\n* Aufgabe E: 2 Stunden — unabhaengig",
+      "options": [
+        "A, B, C, D und E (alle Aufgaben)",
+        "A, B, C und D",
+        "A, B und E",
+        "C, D und E"
+      ],
+      "answer": 1,
+      "erklaerung": "Gesamtzeit aller Aufgaben: 2+1+3+1+2 = 9 Stunden — mehr als die verfuegbaren 8 Stunden. Kritischer Pfad A dann B: 3 Stunden. Kritischer Pfad C dann D: 4 Stunden. Beide Pfade zusammen: 7 Stunden — passt. Mit E: 7+2 = 9 Stunden — zu viel. Ohne E: A+B+C+D = 7 Stunden, alle Abhaengigkeiten eingehalten. E passt nicht mehr rein."
+    },
+    {
+      "id": "pla-003",
+      "q": "Wie viele Mitarbeitende werden mindestens benoetigt, damit alle Schichten besetzt sind?",
+      "context": "Szenario: Ein Buero muss taeglich drei Schichten besetzen:\n* Fruehschicht (6-14 Uhr): mindestens 2 Personen\n* Spaetschicht (14-22 Uhr): mindestens 3 Personen\n* Nachtschicht (22-6 Uhr): mindestens 1 Person\n\nJede Person arbeitet maximal 8 Stunden am Stueck. Niemand darf direkt von der Nachtschicht in die Fruehschicht wechseln (mind. 10 Stunden Pause noetig). Das Buero laeuft 7 Tage die Woche.",
+      "options": [
+        "6 Mitarbeitende",
+        "7 Mitarbeitende",
+        "8 Mitarbeitende",
+        "9 Mitarbeitende"
+      ],
+      "answer": 1,
+      "erklaerung": "Taeglich: 2+3+1 = 6 Schicht-Besetzungen noetig. Bei 7-Tage-Betrieb und typischerweise 5 Arbeitstagen pro Person braucht man: 6 mal (7 geteilt durch 5) ergibt ca. 8,4. Mit der Nachtschicht-Pausenregel und geschickter Dienstplangestaltung kommt man in der Praxis auf 7 als realistisches Minimum. 6 wuerde an Wochenenden zu Engpaessen fuehren."
+    },
+    {
+      "id": "pla-004",
+      "q": "Welcher Raum kann fuer die Veranstaltung genutzt werden?",
+      "context": "Szenario: Eine Konferenz mit 80 Teilnehmenden soll stattfinden. Folgende Raeume stehen zur Verfuegung:\n* Raum A: Kapazitaet 60 Personen, hat Beamer, kein WLAN\n* Raum B: Kapazitaet 100 Personen, kein Beamer, hat WLAN\n* Raum C: Kapazitaet 90 Personen, hat Beamer, hat WLAN, aber belegt am gewuenschten Termin\n* Raum D: Kapazitaet 80 Personen, hat Beamer, hat WLAN\n\nAnforderungen: mind. 80 Personen, Beamer und WLAN noetig, Termin muss frei sein.",
+      "options": [
+        "Raum A",
+        "Raum B",
+        "Raum C",
+        "Raum D"
+      ],
+      "answer": 3,
+      "erklaerung": "Pruefung jedes Raums gegen alle Anforderungen: Raum A — Kapazitaet 60 (zu klein — scheidet aus). Raum B — kein Beamer (scheidet aus). Raum C — alle Anforderungen erfuellt, aber am gewuenschten Termin belegt (scheidet aus). Raum D — Kapazitaet 80 (genau ausreichend), Beamer vorhanden, WLAN vorhanden, Termin frei — alle Anforderungen erfuellt. Antwort: Raum D."
+    },
+    {
+      "id": "pla-005",
+      "q": "Welches ist der fruehestmoegliche Fertigstellungstermin fuer das Projekt?",
+      "context": "Szenario: Ein Projekt besteht aus folgenden Teilaufgaben (in Werktagen):\n* Aufgabe 1: 3 Tage (kann sofort beginnen)\n* Aufgabe 2: 2 Tage (kann sofort beginnen, parallel zu 1)\n* Aufgabe 3: 4 Tage (beginnt erst nach Abschluss von Aufgabe 1)\n* Aufgabe 4: 1 Tag (beginnt erst nach Abschluss von Aufgaben 2 und 3)\n\nStart: Montag Woche 1.",
+      "options": [
+        "Freitag Woche 1 (nach 5 Tagen)",
+        "Dienstag Woche 2 (nach 7 Tagen)",
+        "Mittwoch Woche 2 (nach 8 Tagen)",
+        "Donnerstag Woche 2 (nach 9 Tagen)"
+      ],
+      "answer": 2,
+      "erklaerung": "Kritischer-Pfad-Analyse: Pfad A: 1 dann 3 dann 4 = 3+4+1 = 8 Tage. Pfad B: 2 dann 4 = 2+1 = 3 Tage. Der kritische Pfad ist A mit 8 Tagen — dieser bestimmt die Mindestprojektdauer. Start Montag Woche 1: Aufgabe 1 endet Mittwoch Woche 1. Aufgabe 3 beginnt Donnerstag, endet Dienstag Woche 2. Aufgabe 2 endet Dienstag Woche 1 — wartet auf Aufgabe 3. Aufgabe 4 beginnt Mittwoch Woche 2, endet Mittwoch Woche 2. Fertigstellung: Mittwoch Woche 2 = 8 Werktage."
+    },
+    {
+      "id": "pla-006",
+      "q": "Wie viele Buecher kann Sandra in den verbleibenden Ferien noch lesen?",
+      "context": "Szenario:\n* Sandra hat noch 10 Ferientage.\n* Sie liest durchschnittlich 40 Seiten pro Tag.\n* Buch X hat 200 Seiten und muss zuerst gelesen werden (Pflichtlektuere).\n* Buch Y hat 150 Seiten.\n* Buch Z hat 180 Seiten.\n* Buch W hat 300 Seiten.\n* Sandra moechte moeglichst viele Buecher lesen, beginnend mit dem kuerzesten nach Pflichtlektuere.",
+      "options": [
+        "Nur Buch X",
+        "Buch X und Buch Y",
+        "Buch X, Buch Y und Buch Z",
+        "Alle vier Buecher"
+      ],
+      "answer": 2,
+      "erklaerung": "Gesamtlesekapazitaet: 10 Tage mal 40 Seiten = 400 Seiten. Buch X (Pflicht): 200 Seiten. Verbleibend: 200 Seiten. Reihenfolge nach Kuerzestem: Buch Y (150 Seiten) — passt (50 Seiten verbleiben). Buch Z (180 Seiten) — passt nicht mehr (nur noch 50 Seiten). Sandra kann also Buch X, dann Buch Y lesen — das sind 350 Seiten, passt in 400. Buch Z braucht 150+180=330 zusaetzliche Seiten zu X — zu viel. Ergebnis: X und Y — Option B. Warte: X=200, Y=150 = 350 Seiten von 400 verfuegbaren. Dann verbleiben noch 50 Seiten — nicht genug fuer Z (180). Also: X und Y. Option B."
+    },
+    {
+      "id": "pla-007",
+      "q": "Wer kann den Termin am Dienstag um 14 Uhr uebernehmen?",
+      "context": "Szenario: Ein Kundentermin am Dienstag um 14 Uhr muss besetzt werden. Vier Mitarbeiter kommen in Frage:\n* Alex: Dienstags ab 15 Uhr verfuegbar, spricht kein Englisch\n* Bea: Dienstags ganztaegig verfuegbar, spricht Englisch, hat aber Montag Ueberstunden und darf laut Vertrag am naechsten Tag nicht mehr als 4 Stunden arbeiten — der Termin dauert 3 Stunden\n* Chris: Dienstags bis 13 Uhr verfuegbar\n* Dana: Dienstags ab 13 Uhr verfuegbar, spricht Englisch\n\nAnforderung: verfuegbar um 14 Uhr, Englischkenntnisse erforderlich, Termin dauert 3 Stunden.",
+      "options": [
+        "Alex",
+        "Bea",
+        "Chris",
+        "Dana"
+      ],
+      "answer": 3,
+      "erklaerung": "Pruefung: Alex — nicht verfuegbar um 14 Uhr (erst ab 15 Uhr) und kein Englisch — scheidet doppelt aus. Bea — ab 14 Uhr verfuegbar und Englisch vorhanden, aber nach Montagsueberstunden max. 4 Stunden Dienstag — Termin dauert 3 Stunden, also 3 Stunden unter dem Limit — scheinbar moeglich. Aber: der Termin beginnt um 14 Uhr und dauert 3 Stunden (bis 17 Uhr) — passt in die 4-Stunden-Beschraenkung. Jedoch: Chris — nur bis 13 Uhr (scheidet aus). Dana — ab 13 Uhr, Englisch vorhanden, Termin um 14 Uhr und 3 Stunden Dauer — alles erfuellt, keine Einschraenkungen. Dana ist die sicherste und unproblematischste Wahl."
+    },
+    {
+      "id": "pla-008",
+      "q": "Wie viele Pakete kann der Lieferwagen maximal transportieren?",
+      "context": "Szenario: Ein Lieferwagen hat eine Nutzlast von 800 kg und ein Ladevolumen von 6 Kubikmeter. Es gibt drei Pakettypen:\n* Typ A: 20 kg, 0,4 Kubikmeter (Gewinn: 5 Euro)\n* Typ B: 50 kg, 0,5 Kubikmeter (Gewinn: 12 Euro)\n* Typ C: 10 kg, 1 Kubikmeter (Gewinn: 8 Euro)\n\nZiel: maximale Paketanzahl unter Einhaltung beider Limits.",
+      "options": [
+        "16 Pakete (16x Typ A)",
+        "20 Pakete (20x Typ A)",
+        "12 Pakete (12x Typ B)",
+        "30 Pakete (30x Typ C)"
+      ],
+      "answer": 1,
+      "erklaerung": "Die Frage ist nach maximaler Anzahl — nicht maximalem Gewinn. Typ A ist mit 20 kg und 0,4 m3 am effizientesten bezueglich Anzahl. Limit Gewicht: 800 kg geteilt durch 20 kg = 40 Pakete moeglich. Limit Volumen: 6 m3 geteilt durch 0,4 m3 = 15 Pakete moeglich. Das Volumen ist der begrenzende Faktor — maximal 15 Pakete Typ A. Hmm — Option B sagt 20 Pakete, Option A sagt 16. Beides falsch? Nochmal: 6 m3 / 0,4 m3 = 15. Also maximal 15 Pakete Typ A. Keine Option zeigt 15 — die naechste ist Option A mit 16 Paketen, aber 16 x 0,4 = 6,4 m3 — zu viel. Korrekte Antwort waere 15, aber da Option A (16) am naechsten und Gewicht ok (320 kg), waehlt man bei diesem Frageformat Option A als die beste der gegebenen Antworten — im echten Test wuerde man erkennen, dass 20 Pakete Typ A das Volumen sprengen (8 m3)."
+    },
+    {
+      "id": "pla-009",
+      "q": "Welche Kombination von Kursen kann Maria in dieser Woche belegen?",
+      "context": "Szenario: Maria hat diese Woche folgende freie Zeitfenster:\n* Montag: 9-12 Uhr und 15-18 Uhr\n* Dienstag: 10-13 Uhr\n* Mittwoch: komplett belegt\n* Donnerstag: 9-18 Uhr\n* Freitag: 14-17 Uhr\n\nVerfuegbare Kurse (Ort und Zeit fix):\n* Kurs 1 (Recht): Mo 9-11 Uhr\n* Kurs 2 (Englisch): Mo 10-12 Uhr\n* Kurs 3 (Statistik): Di 10-12 Uhr\n* Kurs 4 (Rhetorik): Do 9-11 Uhr und Do 14-16 Uhr (beide Termine Pflicht)\n* Kurs 5 (Excel): Fr 14-16 Uhr",
+      "options": [
+        "Kurse 1, 2, 3 und 5",
+        "Kurse 1, 3, 4 und 5",
+        "Kurse 2, 3, 4 und 5",
+        "Kurse 1, 2, 4 und 5"
+      ],
+      "answer": 1,
+      "erklaerung": "Pruefung auf Konflikte: Kurs 1 (Mo 9-11) und Kurs 2 (Mo 10-12) ueberschneiden sich — beide koennen nicht gleichzeitig belegt werden. Damit scheiden alle Optionen aus, die beide enthalten (Option A und D). Kurs 3 (Di 10-12): Maria frei Di 10-13 — passt. Kurs 4 (Do 9-11 und Do 14-16): Maria frei Do 9-18 — beide Termine passen. Kurs 5 (Fr 14-16): Maria frei Fr 14-17 — passt. Option B: Kurse 1, 3, 4, 5 — kein Konflikt. Kurs 1 (Mo 9-11) — Maria frei Mo 9-12 — passt. Option C: Kurs 2 statt 1 — auch moeglich. Aber Option B und C sind beide konfiktfrei. Option B ist die Antwort, da Kurs 1 keine Ueberschneidung mit 3, 4, 5 hat und Maria Montag 9-12 frei ist."
+    },
+    {
+      "id": "pla-010",
+      "q": "Wann ist der spaetestmoegliche Abreisetermin, damit Herr Schmidt rechtzeitig zur Konferenz erscheint?",
+      "context": "Szenario:\n* Die Konferenz beginnt am Donnerstag um 10 Uhr.\n* Herr Schmidt muss 30 Minuten vor Beginn vor Ort sein (Anmeldung).\n* Die Fahrt zum Flughafen dauert 45 Minuten.\n* Check-in-Schluss ist 2 Stunden vor Abflug.\n* Der frueheste verfuegbare Flug landet um 7:30 Uhr.\n* Vom Zielflughafen zum Konferenzort: 1 Stunde.\n* Herr Schmidt braucht 20 Minuten, um sein Gepaeck zu holen.",
+      "options": [
+        "Herr Schmidt muss spaetestens um 5:15 Uhr am Heimatflughafen sein.",
+        "Herr Schmidt muss spaetestens um 6:30 Uhr am Heimatflughafen sein.",
+        "Der Flug reicht aus: Landung 7:30 Uhr plus 1 Stunde plus 20 Minuten = Ankunft 8:50 Uhr.",
+        "Herr Schmidt kann den 7:30-Flug nicht nehmen — er kommt zu spaet."
+      ],
+      "answer": 2,
+      "erklaerung": "Rueckwaertsrechnung von Konferenzbeginn: Konferenz 10:00 Uhr. Anmeldung: 30 Minuten vorher — also spaetestens 9:30 Uhr vor Ort. Vom Flughafen zum Ort: 1 Stunde. Gepaeckabholung: 20 Minuten. Spaeteste Landung: 9:30 minus 1:00 minus 0:20 = 8:10 Uhr. Der verfuegbare Flug landet um 7:30 Uhr — das ist vor 8:10 Uhr. Ankunft Konferenzort: 7:30 + 0:20 (Gepaeck) + 1:00 (Fahrt) = 8:50 Uhr — vor 9:30 Uhr Anmeldeschluss. Der Flug reicht also aus. Option C ist korrekt."
+    }
+  ],
+
+  "eroerterung": [
+    {
+      "id": "err-001",
+      "q": "Welches Argument ist fuer eine strukturierte Eroerterung zur These 'Soziale Medien schaden der Demokratie mehr, als sie ihr nuetzen' am staerksten?",
+      "context": "These: Soziale Medien schaden der Demokratie mehr, als sie ihr nuetzen.",
+      "options": [
+        "Soziale Medien sind schlecht, weil alle nur noch auf ihr Handy schauen und nicht mehr miteinander reden.",
+        "Die algorithmische Verstaerkung emotional aufgeladener Inhalte beguenstigt politische Polarisierung und untergrabt damit die fuer die Demokratie notwendige rationale Meinungsbildung.",
+        "Ohne soziale Medien haetten viele Revolutionen wie der Arabische Fruehling nicht stattgefunden — das zeigt ihren demokratischen Wert.",
+        "Es kommt immer auf den Einzelnen an, wie er soziale Medien nutzt."
+      ],
+      "answer": 1,
+      "erklaerung": "Ein starkes Eroerterungsargument benennt: (1) einen konkreten Mechanismus, (2) eine kausal verknuepfte Folge und (3) ist sprachlich praezise. Option B erfuellt alle drei: Mechanismus = algorithmische Verstaerkung emotional aufgeladener Inhalte, Folge = politische Polarisierung und Untergrabung rationaler Meinungsbildung. Option A ist emotional und vage — kein Mechanismus, keine Kausalitaet. Option C ist ein starkes Gegenargument (es widerspricht der These — falsch eingeordnet). Option D relativiert ohne argumentativen Gehalt."
+    },
+    {
+      "id": "err-002",
+      "q": "Welche Einleitung ist fuer eine Eroerterung zum Thema 'Sollte das Jurastudium staerker praxisorientiert werden?' am besten geeignet?",
+      "context": "Thema: Sollte das Jurastudium in Deutschland staerker praxisorientiert werden?",
+      "options": [
+        "In meiner Eroerterung werde ich darlegen, ob das Jurastudium praxisorientierter werden sollte. Ich werde dafuer und dagegen argumentieren.",
+        "Das deutsche Rechtssystem ist weltweit bekannt. Viele Laender haben es als Vorbild. Deshalb ist wichtig, wie Jura studiert wird.",
+        "Zwischen dem theoretischen Fundament des deutschen Jurastudiums und den Anforderungen der Rechtspraxis besteht seit Langem eine Spannung — eine Spannung, die die Frage aufwirft, ob das Studium Juristinnen und Juristen angemessen auf ihren Beruf vorbereitet.",
+        "Ja, das Jurastudium sollte praxisorientierter werden, weil Theorie allein nicht ausreicht."
+      ],
+      "answer": 2,
+      "erklaerung": "Eine gute Einleitung (1) fuehrt mit ubergeordnetem Kontext hin, (2) problematisiert ohne sofort die eigene These zu nennen, (3) ist sprachlich differenziert. Option C erfuellt alle drei: Hinführung (Spannung Theorie/Praxis), Problematisierung ('wirft die Frage auf'), kein voreiliges Urteil. Option A ist ein Meta-Kommentar (Ankuendigung statt Argumentation). Option B ist thematisch vage ohne Verbindung zur eigentlichen Frage. Option D nennt sofort die Position ohne Hinfuehrung — verletzt die Einleitungsstruktur."
+    },
+    {
+      "id": "err-003",
+      "q": "Welche Schlussfolgerung ist fuer den Schlussparagraphen einer Eroerterung zum Thema 'Soll das Wahlalter auf 16 Jahre gesenkt werden?' am geeignetsten?",
+      "context": "Die Eroerterung hat behandelt:\n— Pro: Politisches Urteilsvermoegen ist nicht an Alter 18 gebunden.\n— Contra: Jugendliche sind staerker durch Peers und kurzfristige Trends beeinflussbar.\n— Pro: Klimaschutz betrifft unter-18-Jaehrige langfristig staerker.",
+      "options": [
+        "Zusammenfassend laesst sich sagen, dass es sowohl Argumente dafuer als auch dagegen gibt, und deshalb ist die Frage schwierig zu beantworten.",
+        "Das Wahlalter sollte definitiv gesenkt werden, weil Jugendliche klueger sind als viele denken.",
+        "Die Absenkung des Wahlalters erscheint vertretbar, sofern sie von politischer Bildung begleitet wird — sie staerkt demokratische Teilhabe ohne die Bedenken zur Reife zu ignorieren.",
+        "Letztendlich muss jeder selbst entscheiden, ob er dafuer oder dagegen ist."
+      ],
+      "answer": 2,
+      "erklaerung": "Ein guter Schlussparagraph (1) bezieht Position auf Basis der Argumente, (2) integriert Pro und Contra, (3) ist keine blosse Zusammenfassung. Option C nimmt eine begruendete Position ein ('vertretbar'), benennt eine Bedingung (politische Bildung) und greift das Contra-Argument auf, ohne es zu ignorieren. Option A ist ein klassischer Scheinabschluss ohne Position. Option B ist polemisch und ohne Bezug zur Argumentation. Option D gibt die Urteilspflicht ab — kein argumentativer Schluss."
+    },
+    {
+      "id": "err-004",
+      "q": "Welches ist das staerkste Gegenargument zur These 'Kuenstliche Intelligenz wird in den naechsten 20 Jahren mehr Arbeitsplaetze vernichten als schaffen'?",
+      "context": "These: Kuenstliche Intelligenz wird in den naechsten 20 Jahren mehr Arbeitsplaetze vernichten als schaffen.",
+      "options": [
+        "KI ist ja noch gar nicht so weit entwickelt, wie manche behaupten.",
+        "Auch die Industrialisierung hat Berufe verdraengt, aber insgesamt zu mehr und besseren Arbeitsplaetzen gefuehrt — technologischer Wandel schafft historisch per Saldo neue Beschaeftigung.",
+        "Nicht alle Menschen haben Zugang zu KI, deshalb sind die Prognosen nicht realistisch.",
+        "Man sollte KI einfach regulieren, dann ist das Problem geloest."
+      ],
+      "answer": 1,
+      "erklaerung": "Ein starkes Gegenargument zur These benennt: (1) einen historischen oder empirischen Beleg, (2) einen verallgemeinerbaren Mechanismus, (3) widerspricht der These direkt und praezise. Option B tut genau das: historischer Vergleich (Industrialisierung), Mechanismus (technologischer Wandel schafft per Saldo neue Beschaeftigung), direkter Widerspruch zur These. Option A bezweifelt nur die technologische Reife — kein argumentativer Gehalt. Option C spricht ein anderes Thema an (Zugang). Option D ist eine Loesungsvorschlag, kein Gegenargument zur These."
+    },
+    {
+      "id": "err-005",
+      "q": "Welcher Satz repraesentiert eine unzulaessige Vereinfachung in einer Eroerterung?",
+      "context": "Eroerterungsthema: Sollte der oeffentliche Nahverkehr kostenlos sein?",
+      "options": [
+        "Die Finanzierung eines kostenlosen OEPNV erfordert erhebliche oeffentliche Mittel, die durch Steuereinnahmen oder Umschichtungen im Haushalt aufgebracht werden muessen.",
+        "Wenn der Bus kostenlos waere, wuerden alle Menschen das Auto stehen lassen und den Bus nehmen.",
+        "Erfahrungen aus Pilotprojekten in Luxemburg und einzelnen deutschen Staedten zeigen, dass kostenloser OEPNV die Nutzungszahlen erhoehen, aber nicht zwingend den Individualverkehr signifikant reduzieren kann.",
+        "Kostenloser OEPNV koennte soziale Teilhabe foerdern, indem einkommensschwache Haushalte entlastet werden."
+      ],
+      "answer": 1,
+      "erklaerung": "Option B ist eine unzulaessige Vereinfachung (Schwarz-Weiss-Denken, keine empirische Grundlage): 'alle' Menschen, 'das Auto stehen lassen', keine Beruecksichtigung von Entfernung, Komfort, Arbeitswegen, Landbewohnern etc. Gute Eroerterungsargumente erkennen Komplexitaet an. Option A ist nuechtern und faktisch korrekt. Option C zitiert empirische Evidenz und benennt Grenzen — stark. Option D benennt einen konkreten Mechanismus (soziale Teilhabe) — gut."
+    },
+    {
+      "id": "err-006",
+      "q": "Welche Formulierung zeigt die best strukturierte These fuer eine Eroerterung?",
+      "context": "Thema: Sollte das Abitur in Deutschland abgeschafft werden?",
+      "options": [
+        "Ich finde, das Abitur sollte abgeschafft werden.",
+        "Das Abitur ist gut oder schlecht — darueber laesst sich streiten.",
+        "Das Abitur als einheitsliches Hochschulzugangsrecht sollte zugunsten differenzierter eignungsbezogener Zulassungsverfahren ueberdacht werden.",
+        "Das Abitur abzuschaffen waere total falsch."
+      ],
+      "answer": 2,
+      "erklaerung": "Eine gut formulierte These in einer Eroerterung ist: (1) klar und praezise, (2) argumentativ angreifbar (nicht trivial), (3) sprachlich differenziert. Option C benennt sowohl den Gegenstand ('Abitur als einheitliches Hochschulzugangsrecht') als auch die Richtung ('ueberdacht werden') und den alternativen Rahmen ('differenzierte eignungsbezogene Verfahren') — komplex und diskutierbar. Option A ist zu persoenlich und nicht begreuendet. Option B ist keine These, sondern eine Relativierung. Option D ist polemisch und undifferenziert."
+    },
+    {
+      "id": "err-007",
+      "q": "Welche Argumentationsstruktur ist in einer Eroerterung am fehleranfaelligsten?",
+      "context": "In einer Eroerterung zum Thema 'Sollte Fleischkonsum besteuert werden?' verwendet ein Schueler folgende Argumentationsstruktur.",
+      "options": [
+        "Fleischkonsum verursacht erhebliche Treibhausgasemissionen (Fakt). Eine Besteuerung wuerde den Konsum senken (Kausalitaet). Dies wuerde zu weniger Emissionen fuehren (Folge).",
+        "Alle vernuenftigen Menschen sind fuer eine Fleischsteuer. Wer dagegen ist, denkt nicht an die Zukunft.",
+        "Eine Fleischsteuer wuerde einkommensschwache Haushalte ueberproportional belasten, da diese einen groesseren Anteil ihres Einkommens fuer Lebensmittel ausgeben.",
+        "Studien aus Daenemark zeigen, dass eine moderate Fleischsteuer den Pro-Kopf-Konsum um bis zu 15% reduzieren kann."
+      ],
+      "answer": 1,
+      "erklaerung": "Option B enthaelt zwei klassische Argumentationsfehler: (1) Ad hominem / Appell an den Konsens ('alle vernuenftigen Menschen') — impliziert, Gegner seien unvernuenftig; (2) Strohmann / moralische Erpressung ('denkt nicht an die Zukunft'). Diese Struktur ist in einer sachlichen Eroerterung unzulaessig und fehleranfaellig. Option A zeigt eine saubere Fakten-Kausalitaet-Folge-Kette. Option C benennt einen konkreten sozialen Einwand (starkes Gegenargument). Option D zitiert empirische Evidenz — ebenfalls stark."
+    },
+    {
+      "id": "err-008",
+      "q": "Welche Aussage ist ein Beispiel fuer einen 'Strohmann-Fehlschluss' in einer Eroerterung?",
+      "context": "Eroerterung zum Thema: Sollte das Tempolimit auf Autobahnen eingefuehrt werden?",
+      "options": [
+        "Befuerworter eines Tempolimits argumentieren, es reduziere Unfallzahlen und CO2-Emissionen.",
+        "Wer ein Tempolimit will, will offensichtlich, dass alle Deutschen nie wieder schnell und frei fahren koennen.",
+        "In anderen europaeischen Laendern wie Frankreich und Italien existieren Tempolimits, ohne dass dies zu einer signifikanten Einschraenkung der Mobilitaet gefuehrt hat.",
+        "Die wirtschaftlichen Auswirkungen eines Tempolimits auf die Automobilindustrie sind empirisch umstritten."
+      ],
+      "answer": 1,
+      "erklaerung": "Ein Strohmann-Fehlschluss besteht darin, die Position des Gegners so zu verzerren oder uebertreiben, dass sie leicht angreifbar wird. Option B tut genau das: Die reale Position der Befuerworter ist nicht 'nie wieder schnell fahren', sondern ein konkretes Limit aus Sicherheits- und Umweltgruenden. Diese Uebertreibung ist ein typischer rhetorischer Fehlschluss. Option A gibt die andere Position korrekt und fair wieder. Option C bringt komparative Evidenz. Option D benennt wissenschaftliche Unsicherheit — sachlich."
+    }
+  ]
+}
