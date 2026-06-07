@@ -7,12 +7,13 @@
         content="width=device-width, initial-scale=1">
   <title>Auswahltest-Trainer &middot; Bucerius Law School</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <style>
     [x-cloak] {
       display: none !important
     }
 
-    /* Antwort-Zustaende als feste CSS-Klassen (zuverlaessig, unabhaengig vom Tailwind-Scan) */
     .opt-idle {
       border-color: #e5e7eb;
       background: #fff
@@ -95,7 +96,7 @@
           Spickzettel
         </button>
       </div>
-      </header>
+    </header>
 
     <main class="flex-1 mx-auto px-4 py-6 w-full max-w-3xl">
 
@@ -147,7 +148,7 @@
                     <option :value="g.key"
                             x-text="g.name"></option>
                   </template>
-                  </select>
+                </select>
                 <select x-model="fSchwer"
                         @change="buildPool()"
                         class="bg-white px-2.5 py-1.5 border border-gray-300 rounded-md text-sm">
@@ -156,7 +157,7 @@
                   <option value="mittel">mittel</option>
                   <option value="schwer">schwer</option>
                 </select>
-                </div>
+              </div>
             </template>
 
 
@@ -194,8 +195,8 @@
               <button @click="startExam()"
                       class="bg-[#921925] hover:bg-[#76141d] px-5 py-2.5 rounded-md font-semibold text-white text-sm">Test
                 starten</button>
-              </div>
-              </template>
+            </div>
+            </template>
 
 
           <template x-if="mode==='pruefung' && examFinished">
@@ -206,7 +207,7 @@
                        x-text="examScore() + ' / ' + total"></div>
                   <div class="mt-1 text-gray-500 text-sm"
                        x-text="Math.round(examScore()/Math.max(total,1)*100) + ' % richtig'"></div>
-                  </div>
+                </div>
                 <div class="flex gap-2 ml-auto">
                   <button @click="exitExam()"
                           class="px-4 py-2 border border-gray-300 hover:border-gray-500 rounded-md font-medium text-sm">Zum
@@ -215,7 +216,7 @@
                           class="bg-[#921925] hover:bg-[#76141d] px-4 py-2 rounded-md font-semibold text-white text-sm">Neuer
                     Test</button>
                 </div>
-                </div>
+              </div>
               <div class="gap-3 grid grid-cols-2 sm:grid-cols-4 mt-5">
                 <template x-for="r in examPerGroup()"
                           :key="r.key">
@@ -229,8 +230,8 @@
               </div>
               <p class="mt-4 text-gray-500 text-sm">Bl&auml;ttere unten durch alle Aufgaben &ndash; mit Aufl&ouml;sung
                 und Lerntipp.</p>
-              </div>
-              </template>
+            </div>
+            </template>
 
 
           <template x-if="(mode==='lernen' || (mode==='pruefung' && examStarted)) && cur()">
@@ -258,8 +259,8 @@
                     </span>
                     <p class="mt-1.5 text-gray-500 text-xs italic"
                        x-text="verbHint(cur().frageverb)"></p>
-                    </div>
-                    </template>
+                  </div>
+                  </template>
                 <template x-if="cur().gruppe==='sprachstile'">
                   <div>
                     <span
@@ -295,8 +296,8 @@
                       </li>
                     </template>
                   </ol>
-                  </div>
-                  </template>
+                </div>
+                </template>
 
 
               <template x-if="cur().gruppe==='faelle'">
@@ -307,8 +308,8 @@
                   <div class="mt-4 mb-1.5 text-[11px] text-gray-400 uppercase tracking-wider">Sachverhalt</div>
                   <p class="text-[15px] leading-relaxed"
                      x-text="cur().sachverhalt"></p>
-                  </div>
-                  </template>
+                </div>
+                </template>
 
 
               <template x-if="cur().gruppe==='planen'">
@@ -344,12 +345,12 @@
                               </template>
                             </tr>
                           </template>
-                          </tbody>
-                          </table>
-                          </div>
-                          </template>
-                          </div>
-                          </template>
+                        </tbody>
+                        </table>
+                        </div>
+                        </template>
+                        </div>
+                        </template>
 
 
               <p class="mt-5 mb-4 font-semibold text-[17px] leading-snug"
@@ -393,13 +394,13 @@
                   <button @click="check()"
                           :disabled="selected===null"
                           class="bg-[#921925] hover:bg-[#76141d] disabled:opacity-40 px-5 py-2.5 rounded-md font-semibold text-white text-sm">Pr&uuml;fen</button>
-                  </template>
-                  <template x-if="mode==='lernen' && checked">
+                </template>
+                <template x-if="mode==='lernen' && checked">
                   <button @click="next()"
                           :disabled="idx>=total-1"
                           class="bg-[#921925] hover:bg-[#76141d] disabled:opacity-40 px-5 py-2.5 rounded-md font-semibold text-white text-sm">N&auml;chste
                     Aufgabe</button>
-                  </template>
+                </template>
                 <div class="flex gap-2 ml-auto">
                   <button @click="prev()"
                           :disabled="idx<=0"
@@ -408,9 +409,9 @@
                     <button @click="next()"
                             :disabled="idx>=total-1"
                             class="disabled:opacity-40 px-4 py-2 border border-gray-300 hover:border-gray-500 rounded-md font-medium text-sm">Weiter</button>
-                    </template>
-                    </div>
-                    </div>
+                  </template>
+                  </div>
+                  </div>
 
 
               <template x-if="locked()">
@@ -450,21 +451,21 @@
                               </template>
                             </tr>
                           </template>
-                          </tbody>
-                          </table>
-                          </div>
-                          </template>
+                        </tbody>
+                        </table>
+                        </div>
+                        </template>
 
                   <div class="flex gap-2 bg-[#921925]/5 mt-3 px-3 py-2.5 border border-[#921925]/20 rounded-md">
                     <span class="pt-0.5 font-semibold text-[#921925] text-[10px] uppercase tracking-wider shrink-0">Merke</span>
                     <p class="text-[13px] text-gray-800 leading-snug"
                        x-text="cur().lerntipp"></p>
                   </div>
-                  </div>
-                  </template>
+                </div>
+                </template>
 
             </div>
-            </template>
+          </template>
 
 
           <template x-if="mode==='lernen' && !cur()">
@@ -492,7 +493,7 @@
                   class="bg-[#921925] hover:bg-[#76141d] ml-auto px-5 py-2 rounded-md font-semibold text-white text-sm">Abgeben</button>
         </div>
       </div>
-      </template>
+    </template>
 
 
     <template x-if="showSpick">
@@ -520,18 +521,18 @@
                     </li>
                   </template>
                 </ul>
-                </div>
-                </template>
+              </div>
+              </template>
           </div>
         </div>
       </div>
-      </template>
+    </template>
 
   </div>
 
   <script>
-        function trainer() {
-          return {
+      function trainer() {
+        return {
           loading: true, ready: false, error: false,
           data: null, gruppenArr: [], lernhilfenArr: [],
           mode: 'lernen', fGruppe: 'alle', fSchwer: 'alle',
@@ -541,122 +542,121 @@
           examScope: 'alle', examStarted: false, examFinished: false, answers: {},
           timeLeft: 0, planned: 0, timer: null,
 
-          init() {
-            fetch('data.json', { cache: 'no-store' })
-              .then(r => { if (!r.ok) throw new Error('http'); return r.json(); })
-              .then(d => {
-                this.data = d;
+        init() {
+          fetch('data.json', { cache: 'no-store' })
+            .then(r => { if (!r.ok) throw new Error('http'); return r.json(); })
+            .then(d => {
+              this.data = d;
               this.gruppenArr = Object.keys(d.gruppen).map(k => Object.assign({ key: k }, d.gruppen[k]));
               this.lernhilfenArr = Object.keys(d.lernhilfen).map(t => ({ title: t, items: d.lernhilfen[t] }));
               d.aufgaben.forEach(a => { if (a.gruppe === 'sprachstile') this.shuffle(a.optionen); });
               this.buildPool();
               this.loading = false; this.ready = true;
             })
-              .catch(() => { this.loading = false; this.error = true; });
-          },
+            .catch(() => { this.loading = false; this.error = true; });
+        },
 
-          shuffle(arr) { for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[arr[i], arr[j]] = [arr[j], arr[i]]; } },
+        shuffle(arr) { for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[arr[i], arr[j]] = [arr[j], arr[i]]; } },
 
-          gOrder: { sprachstile: 0, planen: 1, indizien: 2, faelle: 3 },
-          dOrder: { leicht: 0, mittel: 1, schwer: 2 },
-          buildPool() {
-            let list = this.data.aufgaben.filter(a =>
-              (this.fGruppe === 'alle' || a.gruppe === this.fGruppe) &&
-              (this.fSchwer === 'alle' || a.schwierigkeit === this.fSchwer));
-            list.sort((a, b) => (this.gOrder[a.gruppe] - this.gOrder[b.gruppe]) || (this.dOrder[a.schwierigkeit] - this.dOrder[b.schwierigkeit]) || a.id.localeCompare(b.id));
-            this.pool = list; this.idx = 0; this.selected = null; this.checked = false;
-          },
+        gOrder: { sprachstile: 0, planen: 1, indizien: 2, faelle: 3 },
+        dOrder: { leicht: 0, mittel: 1, schwer: 2 },
+        buildPool() {
+          let list = this.data.aufgaben.filter(a =>
+            (this.fGruppe === 'alle' || a.gruppe === this.fGruppe) &&
+            (this.fSchwer === 'alle' || a.schwierigkeit === this.fSchwer));
+          list.sort((a, b) => (this.gOrder[a.gruppe] - this.gOrder[b.gruppe]) || (this.dOrder[a.schwierigkeit] - this.dOrder[b.schwierigkeit]) || a.id.localeCompare(b.id));
+          this.pool = list; this.idx = 0; this.selected = null; this.checked = false;
+        },
 
-          cur() { return this.pool[this.idx] || null; },
-          get total() { return this.pool.length; },
-          scen() { const q = this.cur(); return (q && q.szenario && this.data.szenarien[q.szenario]) || { titel: '', kontext: '', tabellen: [] }; },
-          passage() { const k = (this.cur() && this.cur().kontext) || ''; const i = k.indexOf('____'); return i < 0 ? { a: k, b: '' } : { a: k.slice(0, i), b: k.slice(i + 4) }; },
-          skillName(id) { return (this.data.skills[id] && this.data.skills[id].name) || id; },
-          letter(i) { return String.fromCharCode(65 + i); },
-          verbLabel(v) { return ({ ableitbar: 'Ableitbar?', vereinbar: 'Vereinbar?', widerspruch: 'Widerspruch?', trifft_zu: 'Trifft zu?', kann: 'Kann sein?' })[v] || 'Pr\u00fcfen'; },
-          verbHint(v) {
-            return ({
-              ableitbar: 'Nur was zwingend (logisch) folgt.',
-              vereinbar: 'Was m\u00f6glich ist, ohne Widerspruch.',
-              widerspruch: 'Was den Aussagen widerspricht.',
-              trifft_zu: 'Gilt in jeder g\u00fcltigen Planung; jede Aussage einzeln pr\u00fcfen.',
-              kann: 'Ein einziges g\u00fcltiges Beispiel gen\u00fcgt.'
-            })[v] || '';
-          },
+        cur() { return this.pool[this.idx] || null; },
+        get total() { return this.pool.length; },
+        scen() { const q = this.cur(); return (q && q.szenario && this.data.szenarien[q.szenario]) || { titel: '', kontext: '', tabellen: [] }; },
+        passage() { const k = (this.cur() && this.cur().kontext) || ''; const i = k.indexOf('____'); return i < 0 ? { a: k, b: '' } : { a: k.slice(0, i), b: k.slice(i + 4) }; },
+        skillName(id) { return (this.data.skills[id] && this.data.skills[id].name) || id; },
+        letter(i) { return String.fromCharCode(65 + i); },
+        verbLabel(v) { return ({ ableitbar: 'Ableitbar?', vereinbar: 'Vereinbar?', widerspruch: 'Widerspruch?', trifft_zu: 'Trifft zu?', kann: 'Kann sein?' })[v] || 'Pr\u00fcfen'; },
+        verbHint(v) {
+          return ({
+            ableitbar: 'Nur was zwingend (logisch) folgt.',
+            vereinbar: 'Was m\u00f6glich ist, ohne Widerspruch.',
+            widerspruch: 'Was den Aussagen widerspricht.',
+            trifft_zu: 'Gilt in jeder g\u00fcltigen Planung; jede Aussage einzeln pr\u00fcfen.',
+            kann: 'Ein einziges g\u00fcltiges Beispiel gen\u00fcgt.'
+          })[v] || '';
+        },
 
-          locked() { return this.mode === 'lernen' ? this.checked : this.examFinished; },
-          sel() { return this.mode === 'pruefung' ? (this.answers[this.cur().id] ?? null) : this.selected; },
-          select(i) {
-            if (this.locked()) return;
-            this.selected = i;
-            if (this.mode === 'pruefung') this.answers[this.cur().id] = i;
-          },
-          check() {
-            if (this.mode !== 'lernen' || this.selected === null) return;
-            this.checked = true;
-            const q = this.cur(), id = q.id;
-            if (!this.answeredSet.has(id)) { this.answeredSet.add(id); if (q.optionen[this.selected].richtig) this.correctSet.add(id); }
-          },
-          answeredThis() { return this.sel() !== null && this.sel() !== undefined; },
-          isRight() { const s = this.sel(); return s != null && this.cur().optionen[s] && this.cur().optionen[s].richtig; },
-          optClass(i) {
-            const s = this.sel();
-            if (!this.locked()) return s === i ? 'opt-sel' : 'opt-idle';
-            const o = this.cur().optionen[i];
-            if (o.richtig) return 'opt-correct';
-            if (s === i) return 'opt-wrong';
-            return 'opt-muted';
-          },
-          letterClass(i) {
-            const s = this.sel();
-            if (!this.locked()) return s === i ? 'lt-sel' : 'lt-idle';
-            const o = this.cur().optionen[i];
-            if (o.richtig) return 'lt-correct';
-            if (s === i) return 'lt-wrong';
-            return 'lt-muted';
-          },
+        locked() { return this.mode === 'lernen' ? this.checked : this.examFinished; },
+        sel() { return this.mode === 'pruefung' ? (this.answers[this.cur().id] ?? null) : this.selected; },
+        select(i) {
+          if (this.locked()) return;
+          this.selected = i;
+          if (this.mode === 'pruefung') this.answers[this.cur().id] = i;
+        },
+        check() {
+          if (this.mode !== 'lernen' || this.selected === null) return;
+          this.checked = true;
+          const q = this.cur(), id = q.id;
+          if (!this.answeredSet.has(id)) { this.answeredSet.add(id); if (q.optionen[this.selected].richtig) this.correctSet.add(id); }
+        },
+        answeredThis() { return this.sel() !== null && this.sel() !== undefined; },
+        isRight() { const s = this.sel(); return s != null && this.cur().optionen[s] && this.cur().optionen[s].richtig; },
+        optClass(i) {
+          const s = this.sel();
+          if (!this.locked()) return s === i ? 'opt-sel' : 'opt-idle';
+          const o = this.cur().optionen[i];
+          if (o.richtig) return 'opt-correct';
+          if (s === i) return 'opt-wrong';
+          return 'opt-muted';
+        },
+        letterClass(i) {
+          const s = this.sel();
+          if (!this.locked()) return s === i ? 'lt-sel' : 'lt-idle';
+          const o = this.cur().optionen[i];
+          if (o.richtig) return 'lt-correct';
+          if (s === i) return 'lt-wrong';
+          return 'lt-muted';
+        },
 
-          next() { if (this.idx < this.total - 1) { this.idx++; this.selected = null; this.checked = false; window.scrollTo({ top: 0, behavior: 'smooth' }); } },
-          prev() { if (this.idx > 0) { this.idx--; this.selected = null; this.checked = false; window.scrollTo({ top: 0, behavior: 'smooth' }); } },
+        next() { if (this.idx < this.total - 1) { this.idx++; this.selected = null; this.checked = false; window.scrollTo({ top: 0, behavior: 'smooth' }); } },
+        prev() { if (this.idx > 0) { this.idx--; this.selected = null; this.checked = false; window.scrollTo({ top: 0, behavior: 'smooth' }); } },
 
-          get answered() { return this.answeredSet.size; },
-          get correct() { return this.correctSet.size; },
+        get answered() { return this.answeredSet.size; },
+        get correct() { return this.correctSet.size; },
 
-          setMode(m) {
-            if (m === this.mode) { return; }
-            clearInterval(this.timer);
-            this.mode = m; this.examStarted = false; this.examFinished = false; this.selected = null; this.checked = false;
-            if (m === 'lernen') this.buildPool();
-          },
+        setMode(m) {
+          if (m === this.mode) { return; }
+          clearInterval(this.timer);
+          this.mode = m; this.examStarted = false; this.examFinished = false; this.selected = null; this.checked = false;
+          if (m === 'lernen') this.buildPool();
+        },
 
-          scopeList() { return this.data.aufgaben.filter(a => this.examScope === 'alle' || a.gruppe === this.examScope); },
-          scopeCount() { return this.scopeList().length; },
-          scopeTime() { return this.scopeList().reduce((s, a) => s + (this.data.gruppen[a.gruppe].zeitProAufgabeSek || 60), 0); },
-          startExam() {
-            this.answers = {};
-            let list = this.scopeList().slice();
-            list.sort((a, b) => (this.gOrder[a.gruppe] - this.gOrder[b.gruppe]) || (this.dOrder[a.schwierigkeit] - this.dOrder[b.schwierigkeit]) || a.id.localeCompare(b.id));
-            this.pool = list; this.idx = 0; this.selected = null; this.checked = false;
-            this.examStarted = true; this.examFinished = false;
-            this.planned = this.scopeTime(); this.timeLeft = this.planned;
-            clearInterval(this.timer);
-            this.timer = setInterval(() => { if (this.timeLeft > 0) { this.timeLeft--; } else { this.submit(); } }, 1000);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          },
-          submit() { clearInterval(this.timer); this.examFinished = true; this.idx = 0; this.selected = null; window.scrollTo({ top: 0, behavior: 'smooth' }); },
-          exitExam() { clearInterval(this.timer); this.mode = 'lernen'; this.examStarted = false; this.examFinished = false; this.buildPool(); },
-          examScore() { let n = 0; this.pool.forEach(q => { const a = this.answers[q.id]; if (a != null && q.optionen[a] && q.optionen[a].richtig) n++; }); return n; },
-          examPerGroup() {
-            const map = {};
-            this.pool.forEach(q => { if (!map[q.gruppe]) map[q.gruppe] = { key: q.gruppe, kurz: this.data.gruppen[q.gruppe].kurz, ok: 0, n: 0 }; map[q.gruppe].n++; const a = this.answers[q.id]; if (a != null && q.optionen[a] && q.optionen[a].richtig) map[q.gruppe].ok++; });
-            return Object.values(map);
-          },
-          fmt(s) { s = Math.max(0, Math.floor(s)); const m = Math.floor(s / 60), r = s % 60; return m + ':' + (r < 10 ? '0' : '') + r; },
+        scopeList() { return this.data.aufgaben.filter(a => this.examScope === 'alle' || a.gruppe === this.examScope); },
+        scopeCount() { return this.scopeList().length; },
+        scopeTime() { return this.scopeList().reduce((s, a) => s + (this.data.gruppen[a.gruppe].zeitProAufgabeSek || 60), 0); },
+        startExam() {
+          F
+                  this.answers = {};
+                  let list = this.scopeList().slice();
+                  list.sort((a, b) => (this.gOrder[a.gruppe] - this.gOrder[b.gruppe]) || (this.dOrder[a.schwierigkeit] - this.dOrder[b.schwierigkeit]) || a.id.localeCompare(b.id));
+                  this.pool = list; this.idx = 0; this.selected = null; this.checked = false;
+                  this.examStarted = true; this.examFinished = false;
+                  this.planned = this.scopeTime(); this.timeLeft = this.planned;
+                  clearInterval(this.timer);
+                  this.timer = setInterval(() => { if (this.timeLeft > 0) { this.timeLeft--; } else { this.submit(); } }, 1000);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                },
+                submit() { clearInterval(this.timer); this.examFinished = true; this.idx = 0; this.selected = null; window.scrollTo({ top: 0, behavior: 'smooth' }); },
+                exitExam() { clearInterval(this.timer); this.mode = 'lernen'; this.examStarted = false; this.examFinished = false; this.buildPool(); },
+                examScore() { let n = 0; this.pool.forEach(q => { const a = this.answers[q.id]; if (a != null && q.optionen[a] && q.optionen[a].richtig) n++; }); return n; },
+                examPerGroup() {
+                  const map = {};
+                  this.pool.forEach(q => { if (!map[q.gruppe]) map[q.gruppe] = { key: q.gruppe, kurz: this.data.gruppen[q.gruppe].kurz, ok: 0, n: 0 }; map[q.gruppe].n++; const a = this.answers[q.id]; if (a != null && q.optionen[a] && q.optionen[a].richtig) map[q.gruppe].ok++; });
+                  return Object.values(map);
+                },
+                fmt(s) { s = Math.max(0, Math.floor(s)); const m = Math.floor(s / 60), r = s % 60; return m + ':' + (r < 10 ? '0' : '') + r; },
               };
             }
           </script>
-  <script defer
-          src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 
 </html>
