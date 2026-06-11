@@ -2,7 +2,7 @@
   "meta": {
     "titel": "Auswahltest-Training - Bucerius Law School (ITB)",
     "quelle": "Eigenes Uebungsmaterial nach Vorbild der offiziellen ITB-/Bucerius-Vorbereitungsbroschuere. Gesetzestexte sind amtlich/gemeinfrei (Paragraph 5 UrhG); Faelle, Logikaufgaben und Erklaerungen sind eigenstaendig formuliert. Kein offizielles Testmaterial.",
-    "stand": "Juni 2026",
+    "stand": "Juni 2026 (erweitert)",
     "hinweis": "Nur zur persoenlichen Pruefungsvorbereitung. Im echten Test gibt es vier Gruppen mit je ca. 15 Aufgaben (Sprachstile 12 Min, Planen 43 Min, Indizien 32 Min, Faelle und Normen 38 Min), eine richtige Antwort pro Frage, kein Punktabzug. Zusaetzlich enthaelt der schriftliche Teil eine Eroerterung (Aufsatz zu einem von zwei Themen, mit Mindestergebnis).",
     "version": 1
   },
@@ -527,6 +527,251 @@
           ]
         }
       ]
+    },
+    "literaturtage": {
+      "titel": "Literaturtage in der Stadtbibliothek",
+      "kontext": "Die Stadtbibliothek richtet von Freitag bis Sonntag die 'Literaturtage' aus. Geplant werden muss, welche Hilfskraft wann wo eingesetzt wird; die Wuensche der Hilfskraefte sollen beruecksichtigt werden.\n\nBenoetigt werden Hilfskraefte fuer zwei Bereiche:\n\nFOYER: Kasse, Garderobe und Infostand werden jeweils ganztaegig mit je einer Hilfskraft besetzt - an allen drei Tagen (= 9 Einsaetze).\n\nLESESAELE: In Saal A und Saal B finden an allen drei Tagen Lesungen statt; wer dort die Technik betreut, braucht ROUTINIERTE Technikkenntnisse. Saal C wird nur Freitag und Samstag genutzt, dort genuegen Grundkenntnisse. Pro Saal und Tag wird eine Hilfskraft benoetigt (= 8 Einsaetze).\n\nBereits eingeplant sind Greta und Henri (beide routinierte Technikkenntnisse): Greta betreut Freitag und Sonntag die Technik in Saal A und steht am Samstag am Infostand; Henri steht nur am Samstag zur Verfuegung und betreut dann die Technik in Saal A.",
+      "tabellen": [
+        {
+          "titel": "Hilfskraefte",
+          "kopf": [
+            "Name",
+            "Team",
+            "Wuensche / Kenntnisse"
+          ],
+          "zeilen": [
+            [
+              "Alex",
+              "X",
+              "kann an allen drei Tagen; moechte je einmal in einem Lesesaal, einmal an der Garderobe und einmal an der Kasse eingesetzt werden - an der Kasse aber nicht am Sonntag; Grundkenntnisse"
+            ],
+            [
+              "Bo",
+              "Y",
+              "kann Sonntag nicht; moechte nur in den Lesesaelen eingesetzt werden; routinierte Kenntnisse"
+            ],
+            [
+              "Chris",
+              "Y",
+              "moechte an einem der beiden ersten Tage (Freitag ODER Samstag) und am Sonntag eingesetzt werden; gar keine Technikkenntnisse"
+            ],
+            [
+              "Emre",
+              "X",
+              "moechte genau zweimal eingesetzt werden, aber nicht an zwei aufeinanderfolgenden Tagen; routinierte Kenntnisse"
+            ],
+            [
+              "Fee",
+              "Y",
+              "kann an allen drei Tagen; moechte nicht am selben Tag im selben Bereich (Foyer bzw. Lesesaele) wie Alex arbeiten; routinierte Kenntnisse"
+            ],
+            [
+              "Gil",
+              "Y",
+              "kann nur am Samstag; moechte nicht an der Garderobe eingesetzt werden; Grundkenntnisse"
+            ]
+          ]
+        },
+        {
+          "titel": "Planungsraster (leer)",
+          "kopf": [
+            "",
+            "Freitag",
+            "Samstag",
+            "Sonntag"
+          ],
+          "zeilen": [
+            [
+              "Kasse",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Garderobe",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Infostand",
+              "",
+              "Greta",
+              ""
+            ],
+            [
+              "Saal A (Technik)",
+              "Greta",
+              "Henri",
+              "Greta"
+            ],
+            [
+              "Saal B (Technik)",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Saal C (Technik)",
+              "",
+              "",
+              "faellt weg"
+            ]
+          ]
+        }
+      ],
+      "loesungstabelle": {
+        "titel": "Eine moegliche Loesungsuebersicht (Fr: Garderobe/Infostand sowie So: Kasse/Infostand sind jeweils tauschbar; Fr: Saal B/C ebenfalls)",
+        "kopf": [
+          "",
+          "Freitag",
+          "Samstag",
+          "Sonntag"
+        ],
+        "zeilen": [
+          [
+            "Kasse",
+            "Alex",
+            "Gil",
+            "Emre/Chris"
+          ],
+          [
+            "Garderobe",
+            "Chris/Emre",
+            "Fee",
+            "Alex"
+          ],
+          [
+            "Infostand",
+            "Emre/Chris",
+            "Greta",
+            "Chris/Emre"
+          ],
+          [
+            "Saal A",
+            "Greta",
+            "Henri",
+            "Greta"
+          ],
+          [
+            "Saal B",
+            "Bo/Fee",
+            "Bo",
+            "Fee"
+          ],
+          [
+            "Saal C",
+            "Fee/Bo",
+            "Alex",
+            "faellt weg"
+          ]
+        ]
+      }
+    },
+    "offene-tuer": {
+      "titel": "Tag der offenen Tuer auf dem Campus",
+      "kontext": "Eine Hochschule veranstaltet am Samstag und Sonntag einen Tag der offenen Tuer. Beide Tage sind in einen Vormittagsblock und einen Nachmittagsblock geteilt (insgesamt vier Bloecke). In jedem Block sind eine Campusfuehrung (eine Person, die ORTSKUNDIG sein muss) und der Empfangstresen (eine Person, keine besonderen Anforderungen) zu besetzen. NUR am Sonntag findet zusaetzlich in beiden Bloecken eine Labor-Demonstration statt (eine Person mit LABORERFAHRUNG). Insgesamt sind also 10 Einsaetze zu besetzen (Samstag 2 + 2, Sonntag 3 + 3). Jede Person kann pro Block hoechstens eine Aufgabe uebernehmen; die Wuensche sollen beruecksichtigt werden.",
+      "tabellen": [
+        {
+          "titel": "Helferinnen und Helfer",
+          "kopf": [
+            "Name",
+            "Wuensche / Kenntnisse"
+          ],
+          "zeilen": [
+            [
+              "Jonas",
+              "kann an beiden Tagen; moechte hoechstens einen Block pro Tag uebernehmen; ortskundig UND Laborerfahrung"
+            ],
+            [
+              "Karla",
+              "kann nur am Sonntag; ortskundig"
+            ],
+            [
+              "Lior",
+              "kann nur am Sonntag; moechte nicht am Empfangstresen eingesetzt werden; Laborerfahrung, NICHT ortskundig"
+            ],
+            [
+              "Mona",
+              "moechte genau zwei Einsaetze an zwei verschiedenen Tagen uebernehmen; keine besonderen Kenntnisse"
+            ],
+            [
+              "Nick",
+              "kann nur am Samstag; ortskundig"
+            ],
+            [
+              "Olga",
+              "kann an beiden Tagen, aber nur vormittags; keine besonderen Kenntnisse"
+            ]
+          ]
+        },
+        {
+          "titel": "Planungsraster (leer)",
+          "kopf": [
+            "",
+            "Sa Vormittag",
+            "Sa Nachmittag",
+            "So Vormittag",
+            "So Nachmittag"
+          ],
+          "zeilen": [
+            [
+              "Campusfuehrung",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Empfangstresen",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Labor-Demonstration",
+              "entfaellt",
+              "entfaellt",
+              "",
+              ""
+            ]
+          ]
+        }
+      ],
+      "loesungstabelle": {
+        "titel": "Eine moegliche Loesungsuebersicht (weitere Plaene sind zulaessig)",
+        "kopf": [
+          "",
+          "Sa Vormittag",
+          "Sa Nachmittag",
+          "So Vormittag",
+          "So Nachmittag"
+        ],
+        "zeilen": [
+          [
+            "Campusfuehrung",
+            "Nick",
+            "Jonas",
+            "Karla",
+            "Karla"
+          ],
+          [
+            "Empfangstresen",
+            "Olga",
+            "Mona",
+            "Olga",
+            "Mona"
+          ],
+          [
+            "Labor-Demonstration",
+            "entfaellt",
+            "entfaellt",
+            "Lior",
+            "Lior"
+          ]
+        ]
+      }
     }
   },
   "lernhilfen": {
@@ -8872,6 +9117,1490 @@
       ],
       "erklaerung": "Eva ist um 11 Uhr zwar verfuegbar; uebernaehme sie aber die 11-Uhr-Schicht, bliebe die 9-Uhr-Schicht unbesetzt, denn die kann nur Eva uebernehmen. Eva um 11 Uhr ist daher in keiner gueltigen Planung moeglich (These I trifft nicht zu). Die 13-Uhr-Schicht kann ausschliesslich Gina uebernehmen - das gilt in jeder Planung (These II trifft zu).",
       "lerntipp": "'Verfuegbar' heisst nicht 'einsetzbar': Wird die Person zu einem anderen Termin zwingend gebraucht, ist der Einsatz hier unmoeglich."
+    },
+    {
+      "id": "spr-risotto",
+      "gruppe": "sprachstile",
+      "skill": "spr-register",
+      "schwierigkeit": "leicht",
+      "kontext": "Zwiebel und Knoblauch fein wuerfeln und in Butter glasig duensten. Reis zugeben und unter Ruehren anschwitzen, bis die Koerner glaenzen. Mit Weisswein abloeschen und diesen vollstaendig einkochen lassen. Nach und nach heisse Bruehe angiessen, dabei haeufig umruehren, bis der Reis cremig, aber noch bissfest ist.  ____",
+      "frage": "Welcher Vorschlag fuegt sich sprachlich und stilistisch (nicht inhaltlich!) am besten in die Luecke ein?",
+      "thesen": null,
+      "optionen": [
+        {
+          "text": "Jetzt muesst ihr nur noch Parmesan unterruehren - und fertig ist euer Risotto!",
+          "richtig": false,
+          "hinweis": "Direkte Anrede ('ihr'), Ausruf und Plauderton - das Rezept ist aber im knappen Infinitivstil ohne Anrede gehalten."
+        },
+        {
+          "text": "Der Duft von frischem Parmesan entfuehrt Sie geradewegs nach Italien.",
+          "richtig": false,
+          "hinweis": "Werbliche Bildsprache ('entfuehrt Sie nach Italien') statt sachlicher Anweisung - Stilbruch."
+        },
+        {
+          "text": "Zum Schluss geriebenen Parmesan und kalte Butter unterruehren.",
+          "richtig": true,
+          "hinweis": "Setzt den verblos-knappen Infinitiv-Anweisungsstil exakt fort: keine Anrede, keine Wertung, nur die Handlung."
+        },
+        {
+          "text": "Abschliessend empfiehlt es sich aus kulinarischer Perspektive, dem Gericht durch Parmesan zusaetzliche geschmackliche Tiefe zu verleihen.",
+          "richtig": false,
+          "hinweis": "Geschwollener Nominal- und Gutachtenstil ('empfiehlt es sich aus kulinarischer Perspektive') - viel zu umstaendlich fuer ein Rezept."
+        },
+        {
+          "text": "Man kann am Ende auch noch ein bisschen Kaese reinmachen.",
+          "richtig": false,
+          "hinweis": "Salopp und vage ('ein bisschen', 'reinmachen') - bricht den praezisen Anweisungston."
+        }
+      ],
+      "erklaerung": "Rezepttexte stehen im knappen Infinitiv-Anweisungsstil: keine Anrede, kein Verb in Personalform, keine Wertung, keine Bilder. Nur Vorschlag 3 fuehrt diesen Stil fort; die anderen wechseln in Plauderton, Werbung, Gutachtensprache oder Umgangssprache.",
+      "lerntipp": "Bestimme zuerst die Textsorte und ihre Marker. Beim Rezept: Infinitive ('wuerfeln', 'angiessen'), keine Anrede, kein Schmuck. Jede Option, die 'ihr/Sie' anredet oder wertet, ist raus."
+    },
+    {
+      "id": "spr-reisig",
+      "gruppe": "sprachstile",
+      "skill": "spr-epoche",
+      "schwierigkeit": "leicht",
+      "kontext": "Es war einmal eine arme Muellerstochter, die musste jeden Tag in den Wald gehen und Reisig sammeln. Eines Tages geriet sie tiefer und tiefer zwischen die alten Baeume, und als der Abend hereinbrach,  ____",
+      "frage": "Welcher Vorschlag fuegt sich sprachlich und stilistisch (nicht inhaltlich!) am besten in die Luecke ein?",
+      "thesen": null,
+      "optionen": [
+        {
+          "text": "da hatte sie sich verirrt und wusste weder aus noch ein.",
+          "richtig": true,
+          "hinweis": "Maerchentypische Fuegung: einleitendes 'da', altertuemliche Wendung 'weder aus noch ein' - passt zu 'Es war einmal'."
+        },
+        {
+          "text": "hatte sie die Orientierung komplett verloren.",
+          "richtig": false,
+          "hinweis": "'komplett' und der nuechterne Ausdruck 'Orientierung verloren' klingen modern-alltagssprachlich, nicht nach Maerchen."
+        },
+        {
+          "text": "war ihr Standort nicht mehr zweifelsfrei zu bestimmen.",
+          "richtig": false,
+          "hinweis": "Technisch-amtlicher Stil ('Standort', 'zweifelsfrei bestimmen') - voelliger Registerbruch."
+        },
+        {
+          "text": "war die Sache ziemlich bloed gelaufen.",
+          "richtig": false,
+          "hinweis": "Salopp-umgangssprachlich ('ziemlich bloed') - unvereinbar mit dem Maerchenton."
+        },
+        {
+          "text": "erwies sich die gewaehlte Route als nicht zielfuehrend.",
+          "richtig": false,
+          "hinweis": "Projekt- und Verwaltungssprache ('Route', 'zielfuehrend') - moderner Fachjargon im Maerchen."
+        }
+      ],
+      "erklaerung": "Der Text ist ein Maerchen ('Es war einmal', 'Muellerstochter', 'Reisig'). Dazu gehoeren formelhafte, leicht altertuemliche Wendungen wie 'weder aus noch ein' und das weiterfuehrende 'da'. Alle anderen Optionen importieren moderne Alltags-, Technik- oder Verwaltungssprache.",
+      "lerntipp": "Achte bei literarisch-altertuemlichen Texten auf Formeln ('Es war einmal', 'da...') und altmodische Redewendungen. Moderne Woerter wie 'komplett', 'Route' oder 'zielfuehrend' verraten die Ablenker sofort."
+    },
+    {
+      "id": "spr-b73",
+      "gruppe": "sprachstile",
+      "skill": "spr-register",
+      "schwierigkeit": "leicht",
+      "kontext": "Auf der Bundesstrasse 73 sind am Dienstagabend zwei Autos zusammengestossen. Nach Angaben der Polizei wollte ein 34-jaehriger Fahrer bei Neugraben nach links abbiegen und uebersah dabei ein entgegenkommendes Fahrzeug. Beide Fahrer wurden leicht verletzt und in ein Krankenhaus gebracht. Die Strasse blieb fuer rund zwei Stunden gesperrt.  ____",
+      "frage": "Welcher Vorschlag fuegt sich sprachlich und stilistisch (nicht inhaltlich!) am besten in die Luecke ein?",
+      "thesen": null,
+      "optionen": [
+        {
+          "text": "Zum Glueck ist den Beteiligten nicht mehr passiert.",
+          "richtig": false,
+          "hinweis": "'Zum Glueck' ist eine Wertung - die nuechterne Meldung kommentiert nicht."
+        },
+        {
+          "text": "Die beiden Wagen sahen hinterher ziemlich uebel aus.",
+          "richtig": false,
+          "hinweis": "Salopp ('ziemlich uebel') und unpraezise - passt nicht zum sachlichen Nachrichtenstil."
+        },
+        {
+          "text": "Wieder einmal zeigt sich, wie ruecksichtslos auf unseren Strassen gefahren wird.",
+          "richtig": false,
+          "hinweis": "Meinungssatz im Kommentarstil ('Wieder einmal zeigt sich...') - eine Meldung berichtet nur."
+        },
+        {
+          "text": "Den Sachschaden schaetzt die Polizei auf rund 20 000 Euro.",
+          "richtig": true,
+          "hinweis": "Reine Sachinformation mit Quellenangabe ('schaetzt die Polizei') - genau der Stil einer Polizei-/Pressemeldung."
+        },
+        {
+          "text": "Blech krachte auf Blech, Splitter regneten auf den Asphalt.",
+          "richtig": false,
+          "hinweis": "Dramatisierende Bildsprache ('krachte', 'regneten') - Reportage- oder Romanton statt Meldung."
+        }
+      ],
+      "erklaerung": "Eine Zeitungs- bzw. Polizeimeldung berichtet nuechtern, mit Quellenangaben und ohne Wertung oder Dramatik. Nur die Sachschadens-Angabe mit Quelle ('schaetzt die Polizei') fuehrt diesen Stil fort; die uebrigen Optionen werten, kommentieren oder dramatisieren.",
+      "lerntipp": "Meldungsstil-Marker: Fakten, Zahlen, Quellen ('nach Angaben der Polizei'), keine Adjektive der Bewertung. Streiche alles mit 'zum Glueck', 'leider' oder Bildern."
+    },
+    {
+      "id": "spr-schlafstudie",
+      "gruppe": "sprachstile",
+      "skill": "spr-fach",
+      "schwierigkeit": "mittel",
+      "kontext": "In der vorliegenden Untersuchung wurde der Zusammenhang zwischen Schlafdauer und Gedaechtnisleistung analysiert. Hierzu wurden 120 Probandinnen und Probanden in zwei Gruppen eingeteilt, deren Schlafdauer ueber vier Wochen systematisch variiert wurde. Die Gedaechtnisleistung wurde im Anschluss mit standardisierten Testverfahren erfasst.  ____",
+      "frage": "Welcher Vorschlag fuegt sich sprachlich und stilistisch (nicht inhaltlich!) am besten in die Luecke ein?",
+      "thesen": null,
+      "optionen": [
+        {
+          "text": "Und siehe da: Wer mehr schlief, konnte sich auch mehr merken.",
+          "richtig": false,
+          "hinweis": "Erzaehlerisch-salopper Ausruf ('Und siehe da') - bricht den distanzierten Wissenschaftsstil."
+        },
+        {
+          "text": "Die Ergebnisse weisen auf einen signifikanten positiven Zusammenhang zwischen beiden Variablen hin.",
+          "richtig": true,
+          "hinweis": "Unpersoenlich, nominal, mit Fachvokabular ('signifikant', 'Variablen') - exakt der Duktus eines Forschungsberichts."
+        },
+        {
+          "text": "Erfreulicherweise bestaetigte sich unsere Vermutung, woraufhin das Team sehr gluecklich war.",
+          "richtig": false,
+          "hinweis": "Emotional und persoenlich ('erfreulicherweise', 'sehr gluecklich') - Wissenschaftsprosa bleibt distanziert."
+        },
+        {
+          "text": "Schlaf ist eben doch die beste Medizin, wie schon der Volksmund weiss.",
+          "richtig": false,
+          "hinweis": "Redewendung und Volksmund-Berufung - keine wissenschaftliche Aussageform."
+        },
+        {
+          "text": "Die Daten erzaehlen eine faszinierende Geschichte ueber das naechtliche Gehirn.",
+          "richtig": false,
+          "hinweis": "Bildhafte Personifizierung ('Daten erzaehlen eine Geschichte') und Wertung ('faszinierend') - populaerwissenschaftlich, nicht Berichtsstil."
+        }
+      ],
+      "erklaerung": "Der Text ist ein wissenschaftlicher Bericht: Passiv ('wurde analysiert'), Nominalstil, unpersoenliche Distanz, Fachbegriffe. Nur die Aussage ueber den 'signifikanten positiven Zusammenhang zwischen beiden Variablen' haelt dieses Register; die anderen sind erzaehlend, emotional, sprichwoertlich oder bildhaft.",
+      "lerntipp": "Wissenschaftsstil erkennst du an Passiv, Nominalisierungen und Fachtermini - und am Fehlen von Ich/Wir-Gefuehl, Ausrufen und Metaphern. Personifizierungen ('Daten erzaehlen') sind ein klassischer Ablenker."
+    },
+    {
+      "id": "spr-stadion",
+      "gruppe": "sprachstile",
+      "skill": "spr-register",
+      "schwierigkeit": "mittel",
+      "kontext": "72. Minute hier im ausverkauften Stadion: Kovac zieht von der Strafraumkante ab - Querlatte! Die Arena tobt, die Gastgeber druecken jetzt mit aller Macht auf den Ausgleich. Eckball von rechts, Kopfball - vorbei!  ____",
+      "frage": "Welcher Vorschlag fuegt sich sprachlich und stilistisch (nicht inhaltlich!) am besten in die Luecke ein?",
+      "thesen": null,
+      "optionen": [
+        {
+          "text": "Eine systematische Auswertung der Torschussstatistik erfolgt nach Spielende.",
+          "richtig": false,
+          "hinweis": "Nuechterner Verwaltungs-/Analysestil - im Live-Kommentar voellig fehl am Platz."
+        },
+        {
+          "text": "Es bleibt festzuhalten, dass die Heimmannschaft um den Ausgleich bemueht ist.",
+          "richtig": false,
+          "hinweis": "Distanziert-protokollarische Floskel ('Es bleibt festzuhalten') - bremst den atemlosen Live-Ton aus."
+        },
+        {
+          "text": "Irgendwie ist hier jetzt ganz schoen was los, muss man sagen.",
+          "richtig": false,
+          "hinweis": "Vage Fuellwoerter ('irgendwie', 'ganz schoen was los') - unpraezise statt schnell und konkret."
+        },
+        {
+          "text": "Gemaechlich plaetschert die Partie ihrem Ende entgegen.",
+          "richtig": false,
+          "hinweis": "Inhaltlich-stilistischer Tempobruch: 'gemaechlich plaetschert' widerspricht dem hektischen Druckspiel der Szene."
+        },
+        {
+          "text": "Und wieder Kovac, diesmal mit links - knapp am langen Eck vorbei!",
+          "richtig": true,
+          "hinweis": "Kurze, elliptische Saetze, Namensnennung, Ausruf - genau der Rhythmus der Live-Reportage."
+        }
+      ],
+      "erklaerung": "Ein Live-Kommentar lebt von kurzen, elliptischen Saetzen, Gegenwartsbezug und Ausrufen. Nur 'Und wieder Kovac, diesmal mit links...' haelt Tempo und Ton; die anderen Optionen sind analytisch, protokollarisch, vage oder widersprechen dem Spielgeschehen im Duktus.",
+      "lerntipp": "Bei muendlich-gepraegten Sorten (Liveticker, Reportage, Durchsage) zaehlt der Rhythmus: Ellipsen, Ausrufe, Praesens. Lange Nominalsaetze und Floskeln wie 'Es bleibt festzuhalten' sind Ablenker."
+    },
+    {
+      "id": "spr-bescheid",
+      "gruppe": "sprachstile",
+      "skill": "spr-fach",
+      "schwierigkeit": "leicht",
+      "kontext": "Sehr geehrte Frau Petersen, auf Ihren Antrag vom 12. Maerz wird Ihnen die beantragte Sondernutzungserlaubnis fuer das Aufstellen von zwei Tischen vor Ihrem Cafe erteilt. Die Erlaubnis gilt bis zum 31. Oktober und ist auf die im Lageplan gekennzeichnete Flaeche beschraenkt. Die Gebuehr betraegt 120 Euro und wird mit gesondertem Bescheid festgesetzt.  ____",
+      "frage": "Welcher Vorschlag fuegt sich sprachlich und stilistisch (nicht inhaltlich!) am besten in die Luecke ein?",
+      "thesen": null,
+      "optionen": [
+        {
+          "text": "Fuer Rueckfragen stehen wir Ihnen unter Angabe des oben genannten Aktenzeichens zur Verfuegung.",
+          "richtig": true,
+          "hinweis": "Formelhafte, sachlich-hoefliche Verwaltungssprache mit Aktenzeichen-Bezug - typischer Bescheid-Schluss."
+        },
+        {
+          "text": "Melden Sie sich einfach kurz, wenn noch was unklar ist.",
+          "richtig": false,
+          "hinweis": "Salopp ('einfach kurz', 'noch was') - zu locker fuer ein Behoerdenschreiben."
+        },
+        {
+          "text": "Wir freuen uns riesig, dass Ihr Cafe bald noch schoener wird.",
+          "richtig": false,
+          "hinweis": "Emotional-werblich ('riesig', 'noch schoener') - Behoerden formulieren neutral."
+        },
+        {
+          "text": "Die Einhaltung der Auflagen werden wir mit Argusaugen ueberwachen.",
+          "richtig": false,
+          "hinweis": "Bildungssprachliche Metapher ('Argusaugen') - Bildsprache passt nicht in den nuechternen Bescheid."
+        },
+        {
+          "text": "Hoffentlich bringt der Sommer Ihnen viele Gaeste.",
+          "richtig": false,
+          "hinweis": "Persoenlicher Wunsch ('hoffentlich') - private Anteilnahme statt amtlicher Distanz."
+        }
+      ],
+      "erklaerung": "Ein Verwaltungsbescheid ist formelhaft, distanziert und praezise (Antrag, Frist, Gebuehr, Aktenzeichen). Nur der Rueckfragen-Satz mit Aktenzeichen entspricht diesem Register; die uebrigen sind salopp, emotional, metaphorisch oder privat.",
+      "lerntipp": "Amtsdeutsch-Marker: Nominalstil ('die Einhaltung', 'unter Angabe'), Passiv, Aktenzeichen, keine Gefuehle. Alles, was nach Smalltalk oder Werbung klingt, scheidet aus."
+    },
+    {
+      "id": "spr-baer",
+      "gruppe": "sprachstile",
+      "skill": "spr-register",
+      "schwierigkeit": "leicht",
+      "kontext": "Der kleine Baer Paul wachte auf, weil ihm die Sonne auf die Nase schien. Er blinzelte, gaehnte einmal ganz laut ____. Drinnen wartete schon seine Mama mit einem grossen Topf Honigbrei.",
+      "frage": "Welcher Vorschlag fuegt sich sprachlich und stilistisch (nicht inhaltlich!) am besten in die Luecke ein?",
+      "thesen": null,
+      "optionen": [
+        {
+          "text": "und verliess seine Schlafstaette zum Zwecke der Nahrungsaufnahme",
+          "richtig": false,
+          "hinweis": "Buerokratischer Nominalstil ('zum Zwecke der Nahrungsaufnahme') - absurd im Kinderbuch."
+        },
+        {
+          "text": "und reflektierte zunaechst eingehend seine weitere Tagesplanung",
+          "richtig": false,
+          "hinweis": "Abstrakte Erwachsenensprache ('reflektierte', 'Tagesplanung') - kindfern."
+        },
+        {
+          "text": "und checkte erst mal, was so abging",
+          "richtig": false,
+          "hinweis": "Jugendslang ('checkte', 'was so abging') - falsches Register fuer die Vorlesegeschichte."
+        },
+        {
+          "text": "und kletterte flink aus seinem kuscheligen Bett",
+          "richtig": true,
+          "hinweis": "Einfache, bildhafte und warme Woerter ('flink', 'kuschelig') - genau der Ton eines Kinderbuchs."
+        },
+        {
+          "text": "und war von einer dumpfen Vorahnung erfuellt, die sich wie Blei auf ihn legte",
+          "richtig": false,
+          "hinweis": "Duester-schwere Erwachsenenmetaphorik ('dumpfe Vorahnung', 'wie Blei') - bricht die heitere Kinderbuchstimmung."
+        }
+      ],
+      "erklaerung": "Kinderbuchsprache ist konkret, einfach und warm ('blinzelte', 'Honigbrei'). 'Kletterte flink aus seinem kuscheligen Bett' fuehrt das fort. Buerokratie, Abstraktion, Slang und duestere Metaphorik sind jeweils klare Registerbrueche.",
+      "lerntipp": "Frage dich: Koennte man den Satz einem Kind vorlesen, ohne zu stolpern? Konkrete Verben und liebevolle Adjektive passen; Nominalstil und Slang nicht."
+    },
+    {
+      "id": "spr-salon",
+      "gruppe": "sprachstile",
+      "skill": "spr-epoche",
+      "schwierigkeit": "mittel",
+      "kontext": "Helene stand am Fenster des Salons und blickte hinab auf die regennasse Strasse, ueber die vereinzelt Droschken rollten. Eine seltsame Unruhe hatte sie den ganzen Tag begleitet, und  ____",
+      "frage": "Welcher Vorschlag fuegt sich sprachlich und stilistisch (nicht inhaltlich!) am besten in die Luecke ein?",
+      "thesen": null,
+      "optionen": [
+        {
+          "text": "ihr Stresslevel war auch jetzt noch deutlich erhoeht.",
+          "richtig": false,
+          "hinweis": "Anglizismus 'Stresslevel' - modernes Vokabular im Roman des 19. Jahrhunderts."
+        },
+        {
+          "text": "irgendwie fuehlte sich alles komisch an.",
+          "richtig": false,
+          "hinweis": "Vage Umgangssprache ('irgendwie', 'komisch') - bricht den getragenen Erzaehlton."
+        },
+        {
+          "text": "auch jetzt wollte das beklommene Gefuehl nicht von ihr weichen.",
+          "richtig": true,
+          "hinweis": "Gehoben-altertuemliche Wendung ('beklommen', 'nicht von ihr weichen') - passt zu Salon und Droschken."
+        },
+        {
+          "text": "objektiv liess sich ihr Zustand als innere Anspannung konstatieren.",
+          "richtig": false,
+          "hinweis": "Nuechtern-fachsprachlich ('objektiv', 'konstatieren') - Gutachtenton statt Erzaehlprosa."
+        },
+        {
+          "text": "sie kam einfach nicht runter.",
+          "richtig": false,
+          "hinweis": "Saloppe Gegenwartssprache ('nicht runterkommen') - doppelter Registerbruch."
+        }
+      ],
+      "erklaerung": "Szenerie (Salon, Droschken) und Erzaehlton verweisen auf einen Roman des 19. Jahrhunderts. Dazu passt nur die gehobene Wendung 'das beklommene Gefuehl wollte nicht von ihr weichen'. Anglizismen, Umgangssprache und Fachjargon zerstoeren die Stilebene.",
+      "lerntipp": "Pruefe bei historisch klingender Prosa jedes Wort auf sein Alter: 'Stresslevel' oder 'runterkommen' gab es damals nicht - solche Anachronismen entlarven die Ablenker."
+    },
+    {
+      "id": "spr-zivilurteil",
+      "gruppe": "sprachstile",
+      "skill": "spr-fach",
+      "schwierigkeit": "mittel",
+      "kontext": "Die Klage ist zulaessig, aber unbegruendet. Der Klaegerin steht der geltend gemachte Anspruch auf Zahlung von 4 800 Euro gegen den Beklagten nicht zu.  ____ Auf die Frage der Verjaehrung kommt es daher nicht mehr an.",
+      "frage": "Welcher Vorschlag fuegt sich sprachlich und stilistisch (nicht inhaltlich!) am besten in die Luecke ein?",
+      "thesen": null,
+      "optionen": [
+        {
+          "text": "Da hat sich die Klaegerin wohl zu frueh gefreut.",
+          "richtig": false,
+          "hinweis": "Ironisch-salopper Kommentar - mit der nuechternen Urteilssprache unvereinbar."
+        },
+        {
+          "text": "Die Voraussetzungen der allein in Betracht kommenden Anspruchsgrundlage liegen nicht vor.",
+          "richtig": true,
+          "hinweis": "Praeziser juristischer Subsumtionsstil ('Voraussetzungen', 'in Betracht kommende Anspruchsgrundlage') - fuegt sich nahtlos zwischen Ergebnis und Verjaehrungssatz."
+        },
+        {
+          "text": "Das Gericht bedauert diese fuer die Klaegerin schmerzliche Entscheidung aufrichtig.",
+          "richtig": false,
+          "hinweis": "Emotionale Anteilnahme ('bedauert aufrichtig', 'schmerzlich') - Urteile begruenden, sie troesten nicht."
+        },
+        {
+          "text": "Gerechtigkeit ist ein grosses Wort, das hier leider verhallt.",
+          "richtig": false,
+          "hinweis": "Pathetisch-bildhafte Sentenz ('verhallt') plus Wertung ('leider') - Essayistik statt Entscheidungsgruende."
+        },
+        {
+          "text": "Es waere ja auch zu einfach gewesen, wenn das Geld einfach so fliessen wuerde.",
+          "richtig": false,
+          "hinweis": "Ironie und Umgangssprache ('einfach so fliessen') - doppelter Stilbruch im Urteil."
+        }
+      ],
+      "erklaerung": "Entscheidungsgruende eines Urteils sind unpersoenlich, praezise und wertungsfrei. Nur der Satz ueber die fehlenden Voraussetzungen der Anspruchsgrundlage haelt dieses Register und schlaegt zugleich die Bruecke zum folgenden Verjaehrungshinweis.",
+      "lerntipp": "Urteilsstil-Marker: 'zulaessig/begruendet', 'Voraussetzungen liegen (nicht) vor', kein Ich, keine Gefuehle, keine Ironie. Emotion und Pathos sind sichere Ausschlusskriterien."
+    },
+    {
+      "id": "spr-stechpalme",
+      "gruppe": "sprachstile",
+      "skill": "spr-fach",
+      "schwierigkeit": "mittel",
+      "kontext": "Die Europaeische Stechpalme (Ilex aquifolium) ist ein immergruener Strauch oder kleiner Baum aus der Familie der Stechpalmengewaechse. Sie erreicht Wuchshoehen von zwei bis zehn Metern und kommt in Westeuropa sowie im westlichen Mitteleuropa vor allem in schattigen Laubwaeldern vor.  ____",
+      "frage": "Welcher Vorschlag fuegt sich sprachlich und stilistisch (nicht inhaltlich!) am besten in die Luecke ein?",
+      "thesen": null,
+      "optionen": [
+        {
+          "text": "Wer einmal hineingefasst hat, vergisst diese Pflanze garantiert nie wieder.",
+          "richtig": false,
+          "hinweis": "Anekdotische Leseransprache ('Wer einmal...') - Lexikonartikel sprechen niemanden an."
+        },
+        {
+          "text": "Majestaetisch reckt sie ihr dunkelgruenes Haupt dem Licht entgegen.",
+          "richtig": false,
+          "hinweis": "Poetische Personifizierung ('Haupt recken') - Naturlyrik statt Sachbeschreibung."
+        },
+        {
+          "text": "Ihre Blaetter sind echt fies stachelig.",
+          "richtig": false,
+          "hinweis": "Salopp und wertend ('echt fies') - falsches Register."
+        },
+        {
+          "text": "Vorsicht ist besser als Nachsicht, wie der Gaertner weiss - Handschuhe nicht vergessen!",
+          "richtig": false,
+          "hinweis": "Sprichwort, Ratgeberton und Ausruf - Ratgeber-, nicht Lexikonstil."
+        },
+        {
+          "text": "Die ledrigen Blaetter sind am Rand wellig und meist dornig gezaehnt.",
+          "richtig": true,
+          "hinweis": "Nuechterne botanische Merkmalsbeschreibung mit Fachadjektiven ('ledrig', 'dornig gezaehnt') - reiner Lexikonstil."
+        }
+      ],
+      "erklaerung": "Der Text ist ein botanischer Lexikoneintrag: Definition, Masse, Verbreitung. Folgerichtig schliesst nur die sachliche Blattbeschreibung an. Anrede, Poesie, Umgangssprache und Ratgeber-Sprichwort verfehlen das Register.",
+      "lerntipp": "Lexikonstil heisst: beschreiben, nicht erleben. Dritte Person, Fachbegriffe, keine Anrede, kein Ausrufezeichen - so filterst du die vier Ablenker in Sekunden."
+    },
+    {
+      "id": "pla-lit-1",
+      "gruppe": "planen",
+      "skill": "plan-koennen",
+      "schwierigkeit": "mittel",
+      "szenario": "literaturtage",
+      "frageverb": "trifft_zu",
+      "frage": "Welche der folgenden Aussagen ueber eine Planung unter Beruecksichtigung aller Vorgaben trifft bzw. treffen zu?",
+      "thesen": [
+        "I. Unter Beruecksichtigung der Verfuegbarkeiten und Wuensche werden alle zeitlichen Kapazitaeten der sechs Hilfskraefte gebraucht.",
+        "II. Es gibt vier Personen (einschliesslich der bereits eingeplanten), die unter Beruecksichtigung ihrer Wuensche an allen drei Tagen eingesetzt werden koennen."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I trifft zu.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen treffen zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Offen sind 17 - 4 = 13 Einsaetze (Greta und Henri belegen vier). Die Kapazitaeten der Hilfskraefte: Alex 3, Bo 2 (nur Fr/Sa), Chris 2, Emre 2 (wegen 'genau zweimal, nicht aufeinanderfolgend' zwingend Fr + So), Fee 3, Gil 1 - zusammen genau 13. Also wird jede Kapazitaet gebraucht; Aussage I trifft zu. Fuer Aussage II zaehlen laut Fragestellung auch die Wuensche: An allen drei Tagen einsetzbar sind nur Greta (bereits Fr/Sa/So eingeplant), Alex und Fee - das sind DREI Personen. Emre KOENNTE zwar an drei Tagen, moechte aber nur zweimal; Henri kann nur samstags, Bo nicht sonntags, Chris nur an zwei Tagen, Gil nur samstags. Aussage II trifft nicht zu.",
+      "lerntipp": "Pruefe bei 'alle Kapazitaeten noetig?' stets: Summe der moeglichen Einsaetze = Zahl der offenen Slots? Und trenne 'koennen' von 'moechten' - nennt die Frage die Wuensche ausdruecklich, schraenkt auch 'moechte genau zweimal' ein."
+    },
+    {
+      "id": "pla-lit-2",
+      "gruppe": "planen",
+      "skill": "plan-muss",
+      "schwierigkeit": "mittel",
+      "szenario": "literaturtage",
+      "frageverb": "trifft_zu",
+      "frage": "Welche der folgenden Aussagen ueber eine Planung unter Beruecksichtigung aller Vorgaben trifft bzw. treffen zu?",
+      "thesen": [
+        "I. Fuer jeden der drei Tage stehen genuegend Kraefte mit routinierten Technikkenntnissen zur Verfuegung.",
+        "II. Am Sonntag koennen in den Lesesaelen nur Kraefte mit routinierten Technikkenntnissen eingesetzt werden."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen treffen zu.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Pro Tag brauchen Saal A und Saal B je eine routinierte Kraft; Saal C verlangt nur Grundkenntnisse. Routiniert sind Greta, Henri, Bo, Emre und Fee. Freitag: Greta (Saal A) plus Bo, Emre oder Fee fuer Saal B. Samstag: Henri (Saal A) plus Bo oder Fee. Sonntag: Greta (Saal A) plus Fee oder Emre. Es reicht also an jedem Tag - Aussage I trifft zu. Am Sonntag laufen nur Saal A und Saal B, und beide verlangen routinierte Kenntnisse; der Grundkenntnis-Saal C faellt sonntags weg. Aussage II trifft ebenfalls zu.",
+      "lerntipp": "Zaehle den taeglichen Bedarf an Sonderqualifikationen und gleiche ihn mit den verfuegbaren qualifizierten Personen ab - Tag fuer Tag, nicht pauschal."
+    },
+    {
+      "id": "pla-lit-3",
+      "gruppe": "planen",
+      "skill": "plan-restriktion",
+      "schwierigkeit": "mittel",
+      "szenario": "literaturtage",
+      "frageverb": "trifft_zu",
+      "frage": "Welche der folgenden Aussagen ueber eine Planung unter Beruecksichtigung aller Vorgaben trifft bzw. treffen zu?",
+      "thesen": [
+        "I. Fee sollte als eine der Ersten eingeplant werden.",
+        "II. Bo sollte als einer der Ersten eingeplant werden."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II trifft zu.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen treffen zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Bo ist stark eingeschraenkt: Er kann nur Freitag und Samstag UND will nur in die Lesesaele - seine beiden Einsaetze liegen damit praktisch fest und sollten frueh eingetragen werden. Aussage II trifft zu. Fee dagegen ist maximal flexibel (alle drei Tage, alle Bereiche); ihre einzige Bedingung haengt davon ab, wo ALEX steht. Sie laesst sich sinnvoll erst einplanen, nachdem Alex verteilt ist - als Erste einzuplanen waere sie gerade falsch. Aussage I trifft nicht zu.",
+      "lerntipp": "Plane zuerst, wer die wenigsten Moeglichkeiten hat (enge Verfuegbarkeit + enger Bereich). Personen mit RELATIVEN Bedingungen ('nicht wie X') kommen logisch NACH der Bezugsperson."
+    },
+    {
+      "id": "pla-lit-4",
+      "gruppe": "planen",
+      "skill": "plan-muss",
+      "schwierigkeit": "schwer",
+      "szenario": "literaturtage",
+      "frageverb": "trifft_zu",
+      "frage": "Welche der folgenden Aussagen ueber eine Planung unter Beruecksichtigung aller Vorgaben trifft bzw. treffen zu?",
+      "thesen": [
+        "I. An jedem der drei Tage sind drei Hilfskraefte aus Team Y im Einsatz.",
+        "II. Die Garderobe wird an jedem der drei Tage von einer anderen Person betreut."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II trifft zu.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen treffen zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Team Y = Bo, Chris, Fee, Gil. Freitag arbeiten daraus Bo, Fee und Chris (drei), Samstag Bo, Fee und Gil (drei) - am Sonntag aber nur Fee und Chris (zwei), denn Bo kann sonntags nicht und Gil nur samstags. Aussage I trifft nicht zu. Zur Garderobe: Alex muss seinen Lesesaal-Einsatz in Saal C (Grundkenntnisse) nehmen, also Freitag oder Samstag, und seine Kasse nicht am Sonntag - sonntags bleibt ihm nur die Garderobe. Naehme Alex die Kasse am Samstag, muesste Gil in Saal C, Bo in Saal B und Fee an die Garderobe - dann waeren Fee und Alex beide im Foyer, was Fee ausschliesst. Also: Alex Freitag Kasse, Samstag Saal C; am Samstag uebernimmt Gil die Kasse (Garderobe lehnt er ab, Saal B verlangt Routine), Bo Saal B und Fee die Garderobe. Freitags betreuen Chris oder Emre die Garderobe. Damit sind es Fr: Chris/Emre, Sa: Fee, So: Alex - in jedem zulaessigen Plan drei verschiedene Personen. Aussage II trifft zu.",
+      "lerntipp": "Bei 'in jedem Plan'-Aussagen lohnt es, erst die erzwungenen Platzierungen abzuleiten (Qualifikation + Verbote + Wechselwirkungen wie 'nicht im selben Bereich wie X') - oft bleibt pro Slot nur eine Person uebrig."
+    },
+    {
+      "id": "pla-lit-5",
+      "gruppe": "planen",
+      "skill": "plan-kann",
+      "schwierigkeit": "schwer",
+      "szenario": "literaturtage",
+      "frageverb": "kann",
+      "frage": "Welche der folgenden Aussagen ueber die Betreuung der Kasse am Sonntag bei einer Planung unter Beruecksichtigung aller Vorgaben trifft bzw. treffen zu?",
+      "thesen": [
+        "I. Es kann sein, dass die Kasse am Sonntag von einer Hilfskraft aus Team X betreut wird.",
+        "II. Es kann sein, dass die Kasse am Sonntag von einer Hilfskraft aus Team Y betreut wird."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen treffen zu.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Sonntags arbeiten von den Hilfskraeften Alex, Fee, Emre und Chris: Bo und Gil sind nicht verfuegbar, Emre muss wegen 'genau zweimal, nicht aufeinanderfolgend' Freitag UND Sonntag nehmen, und Chris braucht den Sonntag als einen seiner beiden Tage (samstags fuellen bereits Alex, Bo, Fee und Gil die vier offenen Positionen). Alex uebernimmt sonntags zwingend die Garderobe (Kasse ist ihm sonntags untersagt, sein Saal-C-Einsatz geht nur Fr/Sa, Saal A/B verlangen Routine). Fee darf dann nicht ins Foyer und uebernimmt Saal B. Fuer Kasse und Infostand bleiben Emre (Team X) und Chris (Team Y) - in beliebiger Verteilung. Beides ist also moeglich: Antwort C.",
+      "lerntipp": "Bei 'kann sein' genuegt EIN gueltiger Gesamtplan pro These. Leite erst die erzwungenen Platzierungen ab und schaue dann, welche Freiheit im Rest steckt."
+    },
+    {
+      "id": "pla-off-1",
+      "gruppe": "planen",
+      "skill": "plan-kapazitaet",
+      "schwierigkeit": "leicht",
+      "szenario": "offene-tuer",
+      "frageverb": "trifft_zu",
+      "frage": "Welche der folgenden Aussagen ueber eine Planung unter Beruecksichtigung aller Vorgaben trifft bzw. treffen zu?",
+      "thesen": [
+        "I. Unter Beruecksichtigung der Verfuegbarkeiten und Wuensche werden alle zeitlichen Kapazitaeten der Helferinnen und Helfer gebraucht.",
+        "II. Fuer die beiden Campusfuehrungen am Samstag kommen nur Jonas und Nick infrage."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II trifft zu.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen treffen zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Zu besetzen sind 10 Einsaetze. Die maximalen Kapazitaeten: Jonas 2 (hoechstens ein Block pro Tag), Karla 2, Lior 2, Mona genau 2, Nick 2, Olga 2 - zusammen 12, also MEHR als noetig. Es gibt folglich zulaessige Plaene, in denen jemand (z. B. Nick oder Lior) nur einmal eingesetzt wird; Aussage I trifft nicht zu. Ortskundig sind nur Jonas, Karla und Nick; Karla kann samstags nicht. Fuer die Samstagsfuehrungen bleiben also genau Jonas und Nick - Aussage II trifft zu.",
+      "lerntipp": "Vergleiche zuerst Slots mit Maximalkapazitaet: Ist die Kapazitaet groesser, kann 'alle Kapazitaeten werden gebraucht' nicht stimmen. Danach Qualifikation mal Verfuegbarkeit schneiden."
+    },
+    {
+      "id": "pla-off-2",
+      "gruppe": "planen",
+      "skill": "plan-muss",
+      "schwierigkeit": "mittel",
+      "szenario": "offene-tuer",
+      "frageverb": "trifft_zu",
+      "frage": "Welche der folgenden Aussagen ueber eine Planung unter Beruecksichtigung aller Vorgaben trifft bzw. treffen zu?",
+      "thesen": [
+        "I. Nick muss am Samstag mindestens eine der beiden Campusfuehrungen uebernehmen.",
+        "II. Olga kann an beiden Tagen am Empfangstresen eingesetzt werden."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen treffen zu.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Fuer die zwei Samstagsfuehrungen kommen nur Jonas und Nick infrage; Jonas moechte hoechstens einen Block pro Tag, kann also hoechstens EINE der beiden Fuehrungen abdecken - mindestens eine faellt zwingend an Nick. Aussage I trifft zu. Fuer Aussage II genuegt ein Beispielplan: Sa-Vormittag Fuehrung Nick / Empfang Olga; Sa-Nachmittag Fuehrung Jonas / Empfang Mona; So-Vormittag Fuehrung Karla / Empfang Olga / Demo Lior; So-Nachmittag Fuehrung Karla / Empfang Mona / Demo Lior. Alle Vorgaben sind erfuellt (Olga nur vormittags, Mona genau zwei Einsaetze an zwei Tagen, Jonas ein Block, Lior nur Demo). Aussage II trifft zu.",
+      "lerntipp": "'Muss'-Aussagen folgen oft aus einem Engpass (zwei Slots, aber nur eine flexible plus eine limitierte Person). 'Kann'-Aussagen belegst du mit einem einzigen vollstaendigen Plan."
+    },
+    {
+      "id": "pla-off-3",
+      "gruppe": "planen",
+      "skill": "plan-restriktion",
+      "schwierigkeit": "mittel",
+      "szenario": "offene-tuer",
+      "frageverb": "trifft_zu",
+      "frage": "Welche der folgenden Aussagen ueber eine Planung unter Beruecksichtigung aller Vorgaben trifft bzw. treffen zu?",
+      "thesen": [
+        "I. Lior sollte als einer der Ersten eingeplant werden.",
+        "II. Mona sollte als eine der Ersten eingeplant werden."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I trifft zu.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen treffen zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Lior ist maximal eingeschraenkt: nur Sonntag verfuegbar, fuer Fuehrungen fehlt ihm die Ortskunde, an den Empfang moechte er nicht - es bleibt einzig die Labor-Demonstration am Sonntag. Solche praktisch festliegenden Einsaetze traegt man zuerst ein; Aussage I trifft zu. Mona dagegen kann jede Position in jedem Block uebernehmen und ist nur durch 'genau zwei Einsaetze an zwei verschiedenen Tagen' gebunden - sie laesst sich problemlos zum Schluss verteilen. Aussage II trifft nicht zu.",
+      "lerntipp": "Sortiere Personen nach Zahl ihrer Einsatzmoeglichkeiten (Verfuegbarkeit x erlaubte Positionen). Wer fast keine Wahl hat, kommt zuerst ins Raster."
+    },
+    {
+      "id": "pla-off-4",
+      "gruppe": "planen",
+      "skill": "plan-kann",
+      "schwierigkeit": "schwer",
+      "szenario": "offene-tuer",
+      "frageverb": "kann",
+      "frage": "Welche der folgenden Aussagen ueber moegliche Planungen unter Beruecksichtigung aller Vorgaben trifft bzw. treffen zu?",
+      "thesen": [
+        "I. Es kann sein, dass Jonas eine der beiden Labor-Demonstrationen uebernimmt.",
+        "II. Es kann sein, dass beide Empfangs-Einsaetze am Sonntag von derselben Person uebernommen werden."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I trifft zu.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen treffen zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Zu Aussage I genuegt ein Beispielplan: Sa-Vormittag Fuehrung Nick / Empfang Olga; Sa-Nachmittag Fuehrung Nick / Empfang Mona; So-Vormittag Fuehrung Karla / Empfang Olga / Demo JONAS; So-Nachmittag Fuehrung Karla / Empfang Mona / Demo Lior. Alles passt (Nick darf zweimal am Samstag, Jonas nur ein Block am Sonntag, Mona zwei Tage) - I trifft zu. Fuer Aussage II muesste eine Person beide Sonntagsbloecke am Empfang stehen: Olga kann nur vormittags, Mona nicht zweimal am selben Tag, Jonas hoechstens einen Block, Lior will nicht an den Empfang, Nick kann sonntags nicht - es bliebe nur Karla. Stuende Karla aber zweimal am Empfang, gaebe es fuer die beiden Sonntagsfuehrungen nur noch Jonas, der hoechstens EINEN Block uebernimmt; eine Fuehrung bliebe unbesetzt. Aussage II trifft nicht zu.",
+      "lerntipp": "Bei 'kann sein' zwei Werkzeuge: ein konkreter Beispielplan (fuer JA) oder ein Engpass-Beweis (fuer NEIN). Pruefe beim NEIN-Beweis, welche Folge-Slots durch die Annahme unbesetzbar werden."
+    },
+    {
+      "id": "pla-off-5",
+      "gruppe": "planen",
+      "skill": "plan-muss",
+      "schwierigkeit": "mittel",
+      "szenario": "offene-tuer",
+      "frageverb": "trifft_zu",
+      "frage": "Welche der folgenden Aussagen ueber eine Planung unter Beruecksichtigung aller Vorgaben trifft bzw. treffen zu?",
+      "thesen": [
+        "I. Wenn Jonas am Samstag eine Campusfuehrung uebernimmt, dann uebernimmt Nick die andere Campusfuehrung an diesem Tag.",
+        "II. Jonas kann sowohl am Samstag als auch am Sonntag eingesetzt werden."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen treffen zu.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen trifft zu.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Fuer die Samstagsfuehrungen kommen nur Jonas und Nick infrage. Uebernimmt Jonas eine davon, ist sein Tageskontingent (hoechstens ein Block pro Tag) ausgeschoepft - die zweite Fuehrung muss Nick uebernehmen. Aussage I trifft zu. Zu Aussage II genuegt ein Beispielplan: Sa-Vormittag Fuehrung Jonas / Empfang Olga; Sa-Nachmittag Fuehrung Nick / Empfang Mona; So-Vormittag Fuehrung Karla / Empfang Olga / Demo Lior; So-Nachmittag Fuehrung Karla / Empfang Mona / Demo Jonas. Jonas arbeitet je einen Block pro Tag - zulaessig. Aussage II trifft zu.",
+      "lerntipp": "Wenn fuer zwei gleichzeitige bzw. gleichtaegige Slots nur zwei Personen infrage kommen und eine davon limitiert ist, entstehen zwingende Wenn-dann-Ketten."
+    },
+    {
+      "id": "ind-raddieb",
+      "gruppe": "indizien",
+      "skill": "ind-tollens",
+      "schwierigkeit": "leicht",
+      "kontext": "Aus einem Hinterhof wurde ein Fahrrad gestohlen. Die Ermittlerin haelt fest:",
+      "praemissen": [
+        "Wenn das Schloss geknackt wurde, hatte der Dieb Spezialwerkzeug dabei.",
+        "Nur wenn der Dieb Spezialwerkzeug dabei hatte, wurde der Rahmen beim Diebstahl beschaedigt.",
+        "Wenn der Dieb gestoert wurde, liess er das Rad zurueck.",
+        "Fest steht: Der Dieb hatte kein Spezialwerkzeug dabei."
+      ],
+      "frageverb": "ableitbar",
+      "frage": "Welche der folgenden Thesen laesst bzw. lassen sich logisch ableiten?",
+      "thesen": [
+        "I. Das Schloss wurde nicht geknackt und der Rahmen wurde nicht beschaedigt.",
+        "II. Der Dieb wurde gestoert."
+      ],
+      "optionen": [
+        {
+          "text": "Nur These I laesst sich ableiten.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur These II laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Thesen lassen sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Thesen laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Aussage 2 ('Nur wenn Werkzeug, dann Rahmenschaden') bedeutet: Rahmenschaden -> Werkzeug. Da kein Werkzeug dabei war (Aussage 4), folgt per Modus tollens: kein Rahmenschaden. Ebenso aus Aussage 1: Schloss geknackt -> Werkzeug; kein Werkzeug, also wurde das Schloss nicht geknackt. These I ist damit vollstaendig ableitbar. Ueber ein Stoeren des Diebs (Aussage 3) ist nichts bekannt - das Rad ist ja gerade weg; These II ist nicht ableitbar (Aussage 3 ist ein reiner Ablenker).",
+      "lerntipp": "'Nur wenn A, dann B' heisst B -> A. Mit einer gesicherten Verneinung (kein Werkzeug) raeumst du per Modus tollens alle Pfeile ab, die auf sie zeigen."
+    },
+    {
+      "id": "ind-pokal",
+      "gruppe": "indizien",
+      "skill": "ind-oder",
+      "schwierigkeit": "mittel",
+      "kontext": "Der Wanderpokal des Sportvereins ist aus der Vitrine verschwunden. Der Vorstand ueberlegt:",
+      "praemissen": [
+        "Wenn der Pokal nicht verlegt wurde, dann wurde er gestohlen und/oder entsorgt.",
+        "Entweder wurde der Pokal gestohlen oder er wurde verlegt (genau eines von beidem).",
+        "Entweder wurde der Pokal gestohlen oder er wurde entsorgt (genau eines von beidem)."
+      ],
+      "frageverb": "widerspruch",
+      "frage": "Welche der folgenden Thesen steht bzw. stehen im Widerspruch zu den Ueberlegungen?",
+      "thesen": [
+        "I. Der Pokal wurde nicht verlegt, aber gestohlen.",
+        "II. Der Pokal wurde verlegt und spaeter versehentlich entsorgt."
+      ],
+      "optionen": [
+        {
+          "text": "Nur These I steht im Widerspruch.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur These II steht im Widerspruch.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Thesen stehen im Widerspruch.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Thesen steht im Widerspruch.",
+          "richtig": true,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "These I durchspielen: nicht verlegt, gestohlen. Aussage 2 (gestohlen ODER verlegt, genau eines) passt; Aussage 3 erzwingt dann 'nicht entsorgt'; Aussage 1 ist erfuellt, denn 'gestohlen und/oder entsorgt' ist mit 'gestohlen' wahr. Kein Widerspruch. These II durchspielen: verlegt und entsorgt. Aussage 2 erzwingt dann 'nicht gestohlen' - und Aussage 3 (gestohlen ODER entsorgt, genau eines) ist mit 'nicht gestohlen, aber entsorgt' erfuellt. Aussage 1 greift nicht, weil ihr Wenn-Teil ('nicht verlegt') falsch ist. Auch hier kein Widerspruch. Antwort: Keine der beiden Thesen steht im Widerspruch.",
+      "lerntipp": "Bei 'Widerspruch?' setzt du die These als wahr ein und pruefst jede Aussage einzeln. Ein ausschliessendes Oder verbietet nur das gemeinsame Zutreffen SEINER beiden Glieder - nicht anderer Kombinationen."
+    },
+    {
+      "id": "ind-tresorraum",
+      "gruppe": "indizien",
+      "skill": "ind-frageverb",
+      "schwierigkeit": "mittel",
+      "kontext": "In ein Museum wurde eingebrochen. Die Polizei haelt fest:",
+      "praemissen": [
+        "Wenn die Alarmanlage ausgeloest hat, wurde der Wachdienst informiert.",
+        "Nur wenn der Taeter den Zahlencode kannte, konnte der Tresorraum geoeffnet werden.",
+        "Wenn der Wachdienst informiert wurde, war die Polizei rechtzeitig vor Ort.",
+        "Fest steht: Die Polizei war nicht rechtzeitig vor Ort."
+      ],
+      "frageverb": "vereinbar",
+      "frage": "Welche der folgenden Thesen ist bzw. sind mit den Feststellungen vereinbar?",
+      "thesen": [
+        "I. Die Alarmanlage hat nicht ausgeloest und der Taeter kannte den Zahlencode.",
+        "II. Der Tresorraum wurde geoeffnet und der Wachdienst wurde nicht informiert."
+      ],
+      "optionen": [
+        {
+          "text": "Nur These I ist vereinbar.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur These II ist vereinbar.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Thesen sind vereinbar.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Thesen ist vereinbar.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Ableitbar ist per doppeltem Modus tollens: Polizei nicht rechtzeitig -> Wachdienst nicht informiert (Aussage 3) -> Alarmanlage hat nicht ausgeloest (Aussage 1). Ob der Taeter den Code kannte und ob der Tresorraum geoeffnet wurde, bleibt offen; Aussage 2 verlangt nur: Oeffnung -> Code. These I (kein Alarm + Code bekannt) widerspricht nichts - vereinbar. These II (Tresorraum geoeffnet + Wachdienst nicht informiert) ist ebenfalls vereinbar; die Oeffnung erzwingt dann lediglich die Code-Kenntnis. Achtung Frageverb: Waere nach 'ableitbar' gefragt, waere die Antwort D, denn weder Code-Kenntnis noch Oeffnung lassen sich aus den Feststellungen ABLEITEN - vereinbar sind sie aber sehr wohl.",
+      "lerntipp": "Lies das Frageverb zweimal: 'vereinbar' verlangt nur Widerspruchsfreiheit, 'ableitbar' verlangt zwingende Folgerung. Offene Aussagen sind vereinbar, aber nie ableitbar."
+    },
+    {
+      "id": "ind-stipendium",
+      "gruppe": "indizien",
+      "skill": "ind-antecedent",
+      "schwierigkeit": "mittel",
+      "kontext": "Lena hat sich um ein Stipendium beworben. Ihre Freundinnen rekonstruieren:",
+      "praemissen": [
+        "Wenn Lena das Stipendium erhaelt, zieht sie nach Hamburg.",
+        "Nur wenn die Bewerbung vollstaendig war, erhaelt Lena das Stipendium.",
+        "Wenn die Bewerbung vollstaendig war, ist auch das Gutachten rechtzeitig eingegangen.",
+        "Fest steht: Das Gutachten ist nicht rechtzeitig eingegangen."
+      ],
+      "frageverb": "ableitbar",
+      "frage": "Welche der folgenden Thesen laesst bzw. lassen sich logisch ableiten?",
+      "thesen": [
+        "I. Lena erhaelt das Stipendium nicht und zieht nicht nach Hamburg.",
+        "II. Lena erhaelt das Stipendium nicht."
+      ],
+      "optionen": [
+        {
+          "text": "Nur These I laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur These II laesst sich ableiten.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Thesen lassen sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Thesen laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Aus Aussage 4 und Aussage 3 folgt per Modus tollens: Die Bewerbung war nicht vollstaendig. Aussage 2 ('Nur wenn vollstaendig, dann Stipendium') bedeutet Stipendium -> vollstaendig; aus 'nicht vollstaendig' folgt also: kein Stipendium. These II ist damit ableitbar. These I behauptet zusaetzlich 'zieht nicht nach Hamburg' - das waere die Verneinung des Wenn-Satzes von Aussage 1: Aus 'kein Stipendium' folgt NICHT 'kein Umzug'; Lena koennte aus anderen Gruenden nach Hamburg ziehen. Die Konjunktion in These I ist daher nicht vollstaendig ableitbar.",
+      "lerntipp": "Eine Und-These ist nur ableitbar, wenn JEDES Glied zwingend folgt. Aus der Verneinung des Wenn-Satzes (kein Stipendium) folgt nichts ueber den Dann-Satz (Hamburg)."
+    },
+    {
+      "id": "ind-labor",
+      "gruppe": "indizien",
+      "skill": "ind-oder",
+      "schwierigkeit": "leicht",
+      "kontext": "Im Praktikum ist ein Experiment misslungen. Die Betreuerin notiert:",
+      "praemissen": [
+        "Wenn das Experiment misslang, war die Probe verunreinigt und/oder das Messgeraet defekt.",
+        "Wenn das Messgeraet defekt war, ist die Kalibrierung am Morgen fehlgeschlagen.",
+        "Die Kalibrierung am Morgen ist nicht fehlgeschlagen.",
+        "Das Experiment misslang."
+      ],
+      "frageverb": "widerspruch",
+      "frage": "Welche der folgenden Thesen steht bzw. stehen im Widerspruch zu den Ueberlegungen?",
+      "thesen": [
+        "I. Das Messgeraet war defekt.",
+        "II. Die Probe war verunreinigt."
+      ],
+      "optionen": [
+        {
+          "text": "Nur These I steht im Widerspruch.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur These II steht im Widerspruch.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Thesen stehen im Widerspruch.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Thesen steht im Widerspruch.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Aus Aussage 3 und Aussage 2 folgt per Modus tollens: Das Messgeraet war NICHT defekt. These I behauptet das Gegenteil und steht damit im Widerspruch. Weiter: Aus Aussage 4 und Aussage 1 folgt per Modus ponens 'verunreinigt und/oder defekt'; da 'defekt' ausscheidet, muss die Probe verunreinigt gewesen sein. These II ist also sogar ableitbar - und damit erst recht nicht im Widerspruch.",
+      "lerntipp": "Erst die sichere Verneinung ableiten (Tollens), dann das einschliessende Oder aufloesen: Faellt ein Glied weg, bleibt das andere zwingend uebrig."
+    },
+    {
+      "id": "ind-rennen",
+      "gruppe": "indizien",
+      "skill": "ind-consequent",
+      "schwierigkeit": "mittel",
+      "kontext": "Beim Vereinslauf am Sonntag gilt nach Auskunft des Veranstalters:",
+      "praemissen": [
+        "Wenn Timo regelmaessig trainiert hat, gewinnt er das Rennen.",
+        "Entweder gewinnt Timo das Rennen oder Ricarda gewinnt es (genau eines von beidem).",
+        "Wenn Ricarda das Rennen gewinnt, erhaelt sie den Wanderpokal.",
+        "Fest steht: Ricarda erhaelt den Wanderpokal nicht."
+      ],
+      "frageverb": "vereinbar",
+      "frage": "Welche der folgenden Thesen ist bzw. sind mit den Feststellungen vereinbar?",
+      "thesen": [
+        "I. Timo hat regelmaessig trainiert und gewinnt das Rennen.",
+        "II. Timo hat nicht regelmaessig trainiert und gewinnt das Rennen."
+      ],
+      "optionen": [
+        {
+          "text": "Nur These I ist vereinbar.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur These II ist vereinbar.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Thesen sind vereinbar.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Thesen ist vereinbar.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Ableitbar ist: Ricarda gewinnt nicht (Modus tollens aus Aussagen 3 und 4), also gewinnt nach dem ausschliessenden Oder (Aussage 2) Timo. Ob Timo trainiert hat, bleibt offen: Aussage 1 sagt nur 'Training -> Sieg'; aus dem Sieg darf man NICHT auf das Training schliessen (Bejahung des Dann-Satzes). These I (Training + Sieg) erfuellt alle Aussagen - vereinbar. These II (kein Training + Sieg) ebenfalls: Aussage 1 ist bei falschem Wenn-Teil nicht verletzt. Beide Thesen sind vereinbar.",
+      "lerntipp": "Aus B und 'wenn A, dann B' folgt nichts ueber A. Beide Moeglichkeiten (A oder nicht A) bleiben mit den Feststellungen vereinbar - genau das fragt diese Aufgabe ab."
+    },
+    {
+      "id": "ind-vitrine",
+      "gruppe": "indizien",
+      "skill": "ind-nurwenn",
+      "schwierigkeit": "schwer",
+      "kontext": "Aus der Schatzkammer der Bibliothek fehlt eine wertvolle Erstausgabe. Der Sicherheitsdienst stellt fest:",
+      "praemissen": [
+        "Nur wenn die Vitrine geoeffnet wurde, konnte das Buch entnommen werden.",
+        "Wenn die Scheibe der Vitrine eingeschlagen wurde, liegen Glassplitter vor dem Regal.",
+        "Entweder wurde die Vitrine geoeffnet oder ihre Scheibe wurde eingeschlagen (genau eines von beidem).",
+        "Fest steht: Vor dem Regal liegen keine Glassplitter."
+      ],
+      "frageverb": "ableitbar",
+      "frage": "Welche der folgenden Thesen laesst bzw. lassen sich logisch ableiten?",
+      "thesen": [
+        "I. Das Buch wurde entnommen.",
+        "II. Die Vitrine wurde geoeffnet."
+      ],
+      "optionen": [
+        {
+          "text": "Nur These I laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur These II laesst sich ableiten.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Thesen lassen sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Thesen laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Aus Aussage 4 und Aussage 2 folgt per Modus tollens: Die Scheibe wurde nicht eingeschlagen. Das ausschliessende Oder (Aussage 3) erzwingt dann: Die Vitrine wurde geoeffnet - These II ist ableitbar. These I scheitert an der Richtung von Aussage 1: 'Nur wenn geoeffnet, dann entnommen' heisst Entnahme -> Oeffnung. Aus der OEFFNUNG folgt aber nicht die Entnahme - die offene Vitrine ist nur die notwendige Bedingung. Dass das Buch fehlt, steht lediglich im Erzaehltext, nicht in den nummerierten Feststellungen, und darf nicht als Praemisse verwendet werden.",
+      "lerntipp": "'Nur wenn A, dann B' liefert B -> A - niemals A -> B. Und: Ableiten darfst du nur aus den nummerierten Feststellungen, nicht aus der Rahmenerzaehlung."
+    },
+    {
+      "id": "ind-sicherung",
+      "gruppe": "indizien",
+      "skill": "ind-tollens",
+      "schwierigkeit": "mittel",
+      "kontext": "Im Wohnheim gab es am Abend Aufregung um einen vermeintlichen Stromausfall. Der Hausmeister haelt fest:",
+      "praemissen": [
+        "Wenn die Hauptsicherung ausgeloest hat, ist das ganze Gebaeude dunkel.",
+        "Nur wenn ein Geraet ueberlastet war, hat die Hauptsicherung ausgeloest.",
+        "Wenn das Gebaeude dunkel ist, faehrt der Aufzug nicht.",
+        "Fest steht: Der Aufzug faehrt."
+      ],
+      "frageverb": "widerspruch",
+      "frage": "Welche der folgenden Thesen steht bzw. stehen im Widerspruch zu den Ueberlegungen?",
+      "thesen": [
+        "I. Die Hauptsicherung hat nicht ausgeloest und kein Geraet war ueberlastet.",
+        "II. Die Hauptsicherung hat ausgeloest und ein Geraet war ueberlastet."
+      ],
+      "optionen": [
+        {
+          "text": "Nur These I steht im Widerspruch.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur These II steht im Widerspruch.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Thesen stehen im Widerspruch.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Thesen steht im Widerspruch.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Aus Aussage 4 und Aussage 3 folgt per Modus tollens: Das Gebaeude ist nicht dunkel. Daraus folgt mit Aussage 1 (wieder Tollens): Die Hauptsicherung hat NICHT ausgeloest. These II behauptet 'Hauptsicherung hat ausgeloest' und widerspricht damit direkt - dass sie zusaetzlich eine Ueberlastung nennt, aendert nichts. These I ist dagegen widerspruchsfrei: 'nicht ausgeloest' ist sogar ableitbar, und ob ein Geraet ueberlastet war, lassen die Feststellungen offen (Aussage 2 verlangt die Ueberlastung nur als Voraussetzung FUER das Ausloesen). 'Kein Geraet ueberlastet' ist damit vereinbar, wenn auch nicht ableitbar.",
+      "lerntipp": "Eine Und-These widerspricht schon dann, wenn EIN Glied einer abgeleiteten Tatsache widerspricht. Umgekehrt macht ein offenes Glied eine These nur 'nicht ableitbar', nicht widerspruechlich."
+    },
+    {
+      "id": "ind-festival",
+      "gruppe": "indizien",
+      "skill": "ind-oder",
+      "schwierigkeit": "mittel",
+      "kontext": "Fuer das Open-Air-Festival am Wochenende gilt laut Veranstalter:",
+      "praemissen": [
+        "Wenn es stuermt, wird das Festival abgesagt.",
+        "Wenn das Festival abgesagt wird, erhalten alle Besucher eine Rueckerstattung.",
+        "Entweder stuermt es am Festivaltag oder es regnet (genau eines von beidem).",
+        "Fest steht: Niemand erhaelt eine Rueckerstattung."
+      ],
+      "frageverb": "ableitbar",
+      "frage": "Welche der folgenden Thesen laesst bzw. lassen sich logisch ableiten?",
+      "thesen": [
+        "I. Es regnet am Festivaltag.",
+        "II. Das Festival wird nicht abgesagt und es stuermt nicht."
+      ],
+      "optionen": [
+        {
+          "text": "Nur These I laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur These II laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Thesen lassen sich ableiten.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Thesen laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Kettenweise rueckwaerts: Keine Rueckerstattung (Aussage 4) ergibt mit Aussage 2 per Modus tollens 'keine Absage'; daraus folgt mit Aussage 1 (Tollens) 'kein Sturm'. Das ausschliessende Oder (Aussage 3) erzwingt dann: Es regnet. These I ist ableitbar. These II fasst genau die beiden Zwischenschritte zusammen ('keine Absage' und 'kein Sturm') - ebenfalls ableitbar. Beide Thesen lassen sich ableiten.",
+      "lerntipp": "Arbeite Tollens-Ketten vom gesicherten Fakt rueckwaerts ab und loese erst am Ende das Entweder-oder auf: Faellt eine Seite weg, gilt zwingend die andere."
+    },
+    {
+      "id": "ind-server",
+      "gruppe": "indizien",
+      "skill": "ind-antecedent",
+      "schwierigkeit": "schwer",
+      "kontext": "In einer Firma ist am Montag der Server ausgefallen. Die IT-Leiterin haelt fest:",
+      "praemissen": [
+        "Wenn der Server nicht ueberlastet war, liegt ein Softwarefehler vor.",
+        "Wenn kein Softwarefehler vorliegt, war der Server ueberlastet.",
+        "Wenn der Praktikant das Update eingespielt hat, war der Server nicht ueberlastet.",
+        "Wenn die Wartung am Wochenende stattfand, hat der Praktikant das Update eingespielt.",
+        "Fest steht: Die Wartung fand nicht am Wochenende statt."
+      ],
+      "frageverb": "vereinbar",
+      "frage": "Welche der folgenden Thesen ist bzw. sind mit den Feststellungen vereinbar?",
+      "thesen": [
+        "I. Der Server war ueberlastet und es liegt zugleich ein Softwarefehler vor.",
+        "II. Der Praktikant hat das Update eingespielt und es liegt ein Softwarefehler vor."
+      ],
+      "optionen": [
+        {
+          "text": "Nur These I ist vereinbar.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur These II ist vereinbar.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Thesen sind vereinbar.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Thesen ist vereinbar.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Die Aussagen 1 und 2 sagen zusammen nur: Mindestens eines von beidem trifft zu (Ueberlastung und/oder Softwarefehler) - ein EINSCHLIESSENDES Oder; beides zugleich ist erlaubt. These I (ueberlastet UND Softwarefehler) verletzt daher keine Aussage; Aussage 3 verlangt dann lediglich, dass der Praktikant das Update nicht eingespielt hat - und genau das ist moeglich, denn aus Aussage 5 ('Wartung nicht am Wochenende') folgt ueber Aussage 4 NICHTS ueber den Praktikanten (Verneinung des Wenn-Satzes!). These II (Update eingespielt UND Softwarefehler) ist ebenfalls vereinbar: Das Update erzwingt ueber Aussage 3 'nicht ueberlastet', und Aussage 1 verlangt dann einen Softwarefehler - den die These ja gerade behauptet. Beide Thesen sind vereinbar.",
+      "lerntipp": "Zwei gespiegelte Wenn-Saetze ('wenn nicht A, dann B' und 'wenn nicht B, dann A') ergeben nur ein einschliessendes Oder. Und aus einem verneinten Wenn-Satz (keine Wochenend-Wartung) folgt nichts ueber den Dann-Satz."
+    },
+    {
+      "id": "fae-schirm",
+      "gruppe": "faelle",
+      "skill": "fae-begruendung",
+      "schwierigkeit": "leicht",
+      "frageverb": "ableitbar",
+      "norm": "\u00a7 242 StGB - Diebstahl (Auszug)\n(1) Wer eine fremde bewegliche Sache einem anderen in der Absicht wegnimmt, die Sache sich oder einem Dritten rechtswidrig zuzueignen, wird mit Freiheitsstrafe bis zu fuenf Jahren oder mit Geldstrafe bestraft.",
+      "sachverhalt": "Anna stellt ihren schwarzen Regenschirm im Cafe in den Schirmstaender. Beim Gehen greift sie versehentlich den baugleichen schwarzen Schirm eines anderen Gastes und nimmt ihn mit - sie haelt ihn fuer ihren eigenen. Zu Hause bemerkt sie die Verwechslung an einem Aufkleber und bringt den Schirm am naechsten Tag ins Cafe zurueck.",
+      "frage": "Welche der beiden Aussagen laesst bzw. lassen sich aus einem Abgleich von Norm und Sachverhalt ableiten?",
+      "thesen": [
+        "I. Anna hat sich nicht nach \u00a7 242 StGB strafbar gemacht, weil der mitgenommene Schirm keine fremde Sache war.",
+        "II. Anna hat sich nicht nach \u00a7 242 StGB strafbar gemacht, weil sie den Schirm nicht in der Absicht weggenommen hat, sich eine fremde Sache rechtswidrig zuzueignen."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II laesst sich ableiten.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen lassen sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Beide Aussagen kommen zum selben Ergebnis (nicht strafbar) - aber nur eine Begruendung traegt. Der Schirm gehoerte einem anderen Gast, er WAR also eine fremde bewegliche Sache; die Begruendung von Aussage I widerspricht dem Sachverhalt, deshalb ist I nicht ableitbar. Die Norm verlangt ausserdem die Wegnahme 'in der Absicht, die Sache sich ... rechtswidrig zuzueignen'. Anna hielt den Schirm beim Mitnehmen fuer ihren eigenen; ihr fehlte damit genau diese in der Norm genannte Absicht. Aussage II trifft Ergebnis UND Begruendung - nur sie ist ableitbar.",
+      "lerntipp": "Ableitbar ist eine Aussage nur, wenn Entscheidung UND Begruendung zum Norm-Sachverhalt-Abgleich passen. Ein richtiges Ergebnis mit falscher Begruendung scheidet aus."
+    },
+    {
+      "id": "fae-spruehkreide",
+      "gruppe": "faelle",
+      "skill": "fae-merkmale",
+      "schwierigkeit": "leicht",
+      "frageverb": "ableitbar",
+      "norm": "\u00a7 303 StGB - Sachbeschaedigung (Auszug)\n(1) Wer rechtswidrig eine fremde Sache beschaedigt oder zerstoert, wird mit Freiheitsstrafe bis zu zwei Jahren oder mit Geldstrafe bestraft.\n(2) Ebenso wird bestraft, wer unbefugt das Erscheinungsbild einer fremden Sache nicht nur unerheblich und nicht nur voruebergehend veraendert.",
+      "sachverhalt": "Ben besprueht ohne Erlaubnis die frisch gestrichene Hauswand seines Nachbarn grossflaechig mit Spruehkreide. Die Kreide haftet nur oberflaechlich: Nach zwei Tagen Regen ist sie restlos abgewaschen, die Wand ist voellig unversehrt und sieht aus wie zuvor.",
+      "frage": "Welche der beiden Aussagen laesst bzw. lassen sich aus einem Abgleich von Norm und Sachverhalt ableiten?",
+      "thesen": [
+        "I. Ben hat den Tatbestand des \u00a7 303 Abs. 2 StGB nicht erfuellt, weil die Veraenderung des Erscheinungsbilds nur voruebergehend war.",
+        "II. Ben hat den Tatbestand des \u00a7 303 Abs. 2 StGB erfuellt, weil er das Erscheinungsbild der Hauswand unbefugt und nicht nur unerheblich veraendert hat."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I laesst sich ableiten.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen lassen sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Absatz 2 verlangt drei Merkmale zugleich: unbefugt, nicht nur unerheblich UND nicht nur voruebergehend. Die grossflaechige Bespruehung war unbefugt und erheblich - aber die Kreide war nach zwei Tagen restlos verschwunden, die Veraenderung also NUR voruebergehend. Damit fehlt ein notwendiges Merkmal: Der Tatbestand ist nicht erfuellt, und genau das (mit der zutreffenden Begruendung) sagt Aussage I. Aussage II laesst das Merkmal 'nicht nur voruebergehend' unter den Tisch fallen und kommt deshalb zum falschen Ergebnis - nicht ableitbar.",
+      "lerntipp": "Hake bei kumulativen Merkmalen ('und') jedes einzelne ab. Eine Aussage, die ein Merkmal verschweigt und deshalb zum gegenteiligen Ergebnis kommt, ist nie ableitbar."
+    },
+    {
+      "id": "fae-wein",
+      "gruppe": "faelle",
+      "skill": "fae-begruendung",
+      "schwierigkeit": "mittel",
+      "frageverb": "ableitbar",
+      "norm": "\u00a7 1 JuSchG - Begriffsbestimmungen (Auszug)\n(1) Im Sinne dieses Gesetzes sind Kinder Personen, die noch nicht 14 Jahre alt sind, und Jugendliche Personen, die 14, aber noch nicht 18 Jahre alt sind.\n\n\u00a7 9 JuSchG - Alkoholische Getraenke (Auszug)\n(1) In Gaststaetten duerfen Bier, Wein, weinaehnliche Getraenke oder Schaumwein an Kinder und Jugendliche unter 16 Jahren weder abgegeben noch darf ihnen der Verzehr gestattet werden.\n(2) Absatz 1 Nummer 1 gilt nicht, wenn Jugendliche von einer personensorgeberechtigten Person begleitet werden.",
+      "sachverhalt": "Der 15-jaehrige Felix besucht mit seiner 19-jaehrigen Schwester ein Restaurant. Die Schwester ist nicht personensorgeberechtigt. Felix bestellt ein Glas Wein; der Kellner serviert es ihm.",
+      "frage": "Welche der beiden Aussagen laesst bzw. lassen sich aus einem Abgleich von Norm und Sachverhalt ableiten?",
+      "thesen": [
+        "I. Die Abgabe des Weins an Felix war zulaessig, weil Felix von einer volljaehrigen Angehoerigen begleitet wurde.",
+        "II. Die Abgabe des Weins an Felix war unzulaessig, weil Wein an unter 16-Jaehrige ausnahmslos weder abgegeben noch ihnen der Verzehr gestattet werden darf."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen lassen sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen laesst sich ableiten.",
+          "richtig": true,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Felix ist 15, also Jugendlicher unter 16 - die Abgabe von Wein ist nach Absatz 1 grundsaetzlich verboten. Die Ausnahme in Absatz 2 greift nur bei Begleitung durch eine PERSONENSORGEBERECHTIGTE Person; die 19-jaehrige Schwester ist das laut Sachverhalt nicht. Aussage I (zulaessig) ist daher im Ergebnis falsch. Aussage II kommt zwar zum richtigen Ergebnis (unzulaessig), begruendet es aber mit einem 'ausnahmslosen' Verbot - das widerspricht der Norm, die in Absatz 2 gerade eine Ausnahme vorsieht. Falsche Begruendung, also ebenfalls nicht ableitbar. Keine der beiden Aussagen laesst sich ableiten.",
+      "lerntipp": "Auch die Falle 'richtiges Ergebnis, uebertriebene Begruendung' zaehlt: Woerter wie 'ausnahmslos', 'immer' oder 'nie' sind verdaechtig, wenn die Norm eine Ausnahme enthaelt."
+    },
+    {
+      "id": "fae-modernisierung",
+      "gruppe": "faelle",
+      "skill": "fae-deckelung",
+      "schwierigkeit": "mittel",
+      "frageverb": "ableitbar",
+      "norm": "\u00a7 559 BGB - Mieterhoehung nach Modernisierung (Auszug)\n(1) Hat der Vermieter Modernisierungsmassnahmen durchgefuehrt, so kann er die jaehrliche Miete um 8 Prozent der fuer die Wohnung aufgewendeten Kosten erhoehen.\n(3a) Bei Erhoehungen der jaehrlichen Miete nach Absatz 1 darf sich die monatliche Miete innerhalb von sechs Jahren um nicht mehr als 3 Euro je Quadratmeter Wohnflaeche erhoehen. Betraegt die monatliche Miete vor der Mieterhoehung weniger als 7 Euro je Quadratmeter Wohnflaeche, darf sie sich um nicht mehr als 2 Euro je Quadratmeter Wohnflaeche erhoehen.",
+      "sachverhalt": "Vermieterin V hat fuer die 50 Quadratmeter grosse Wohnung des Mieters M Modernisierungskosten von 30 000 Euro aufgewendet. Die monatliche Miete betraegt bisher 400 Euro (8 Euro je Quadratmeter); in den letzten sechs Jahren gab es keine Erhoehung nach Modernisierung. V erhoeht die monatliche Miete um 200 Euro - das entspricht aufs Jahr gerechnet genau 8 Prozent der Kosten (2 400 Euro).",
+      "frage": "Welche der beiden Aussagen laesst bzw. lassen sich aus einem Abgleich von Norm und Sachverhalt ableiten?",
+      "thesen": [
+        "I. Die Mieterhoehung ist in dieser Hoehe zulaessig, weil sie genau 8 Prozent der aufgewendeten Modernisierungskosten entspricht.",
+        "II. Die Mieterhoehung ist in dieser Hoehe unzulaessig, weil die monatliche Miete um 4 Euro je Quadratmeter steigen wuerde und damit die Grenze von 3 Euro je Quadratmeter ueberschritten waere."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II laesst sich ableiten.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen lassen sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Absatz 1 erlaubt zwar 8 Prozent der Kosten (2 400 Euro im Jahr = 200 Euro im Monat) - aber Absatz 3a deckelt zusaetzlich: hoechstens 3 Euro je Quadratmeter innerhalb von sechs Jahren (die 2-Euro-Grenze gilt nicht, denn die Miete liegt mit 8 Euro je Quadratmeter nicht unter 7 Euro). Bei 50 Quadratmetern sind hoechstens 150 Euro im Monat zulaessig; 200 Euro entsprechen 4 Euro je Quadratmeter und ueberschreiten die Kappung. Aussage I uebersieht die Deckelung und ist nicht ableitbar. Aussage II rechnet korrekt und nennt den zutreffenden Grund - ableitbar.",
+      "lerntipp": "Eine Norm mit Prozentsatz UND Kappung musst du doppelt rechnen: erst den Prozentbetrag, dann den Deckel. Massgeblich ist immer der niedrigere Wert."
+    },
+    {
+      "id": "fae-schwelle",
+      "gruppe": "faelle",
+      "skill": "fae-deckelung",
+      "schwierigkeit": "mittel",
+      "frageverb": "ableitbar",
+      "norm": "\u00a7 23 KSchG - Geltungsbereich (Auszug, vereinfacht)\n(1) Die Vorschriften ueber den Kuendigungsschutz gelten nicht in Betrieben, in denen in der Regel zehn oder weniger Arbeitnehmer ausschliesslich der zu ihrer Berufsbildung Beschaeftigten beschaeftigt werden. Bei der Feststellung der Zahl der beschaeftigten Arbeitnehmer sind teilzeitbeschaeftigte Arbeitnehmer mit einer regelmaessigen woechentlichen Arbeitszeit von nicht mehr als 20 Stunden mit 0,5 und nicht mehr als 30 Stunden mit 0,75 zu beruecksichtigen.",
+      "sachverhalt": "Im Betrieb der B-GmbH arbeiten acht Vollzeitkraefte (40 Stunden), zwei Auszubildende, drei Teilzeitkraefte mit je 25 Wochenstunden und eine Teilzeitkraft mit 18 Wochenstunden. Einer der Vollzeitbeschaeftigten, Herr K, erhaelt eine Kuendigung und fragt, ob das Kuendigungsschutzgesetz auf seinen Fall anwendbar ist.",
+      "frage": "Welche der beiden Aussagen laesst bzw. lassen sich aus einem Abgleich von Norm und Sachverhalt ableiten?",
+      "thesen": [
+        "I. Das Kuendigungsschutzgesetz ist anwendbar, weil im Betrieb nach der gesetzlichen Zaehlweise mehr als zehn Arbeitnehmer beschaeftigt sind, naemlich 10,75.",
+        "II. Das Kuendigungsschutzgesetz ist anwendbar, weil im Betrieb einschliesslich der Auszubildenden vierzehn Personen arbeiten."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I laesst sich ableiten.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen lassen sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Die Norm verlangt eine gewichtete Zaehlung OHNE Auszubildende: acht Vollzeitkraefte zaehlen 8,0; die drei 25-Stunden-Kraefte je 0,75 (zusammen 2,25); die 18-Stunden-Kraft 0,5. Ergebnis: 10,75 - mehr als zehn, der Kleinbetriebs-Ausschluss greift nicht, das Gesetz ist anwendbar. Aussage I rechnet genau so und ist ableitbar. Aussage II kommt zwar zum selben Ergebnis, zaehlt aber nach Koepfen UND einschliesslich der Auszubildenden - beides widerspricht der Norm ('ausschliesslich der zu ihrer Berufsbildung Beschaeftigten', gewichtete Teilzeitzaehlung). Falsche Begruendung, nicht ableitbar.",
+      "lerntipp": "Wenn die Norm eine eigene Zaehl- oder Rechenregel vorgibt, gilt nur diese - Alltagslogik ('14 Leute arbeiten dort') ist dann eine Begruendungsfalle."
+    },
+    {
+      "id": "fae-schuppen",
+      "gruppe": "faelle",
+      "skill": "fae-merkmale",
+      "schwierigkeit": "mittel",
+      "frageverb": "ableitbar",
+      "norm": "\u00a7 242 StGB - Diebstahl (Auszug)\n(1) Wer eine fremde bewegliche Sache einem anderen in der Absicht wegnimmt, die Sache sich oder einem Dritten rechtswidrig zuzueignen, wird mit Freiheitsstrafe bis zu fuenf Jahren oder mit Geldstrafe bestraft.\n\n\u00a7 244 StGB - Wohnungseinbruchdiebstahl (Auszug)\n(1) Mit Freiheitsstrafe von sechs Monaten bis zu zehn Jahren wird bestraft, wer einen Diebstahl begeht, bei dem er in eine Wohnung einbricht.",
+      "sachverhalt": "T bricht nachts das Vorhaengeschloss des Geraeteschuppens auf, der im Garten des O steht, und nimmt die dort gelagerte Kettensaege des O mit, um sie zu verkaufen. O nutzt den Schuppen zum Abstellen von Werkzeug; im Sommer haelt er dort gelegentlich auf einer Liege seinen Mittagsschlaf.",
+      "frage": "Welche der beiden Aussagen laesst bzw. lassen sich aus einem Abgleich von Norm und Sachverhalt ableiten?",
+      "thesen": [
+        "I. T hat keinen Wohnungseinbruchdiebstahl nach \u00a7 244 StGB begangen, weil der Geraeteschuppen keine Wohnung ist; auch der gelegentliche Mittagsschlaf des O macht ihn nicht zur Wohnung.",
+        "II. T hat einen Diebstahl nach \u00a7 242 StGB begangen, weil er mit der Kettensaege eine fremde bewegliche Sache in der Absicht weggenommen hat, sie sich rechtswidrig zuzueignen."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen lassen sich ableiten.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "\u00a7 242: Die Kettensaege gehoert O (fremd), ist beweglich, T nimmt sie weg und will sie verkaufen - die in der Norm verlangte Zueignungsabsicht liegt vor. Aussage II ist ableitbar. \u00a7 244 verlangt den Einbruch 'in eine Wohnung': Ein Geraeteschuppen zum Abstellen von Werkzeug dient nicht der Wohnung von Menschen; dass O dort im Sommer gelegentlich ein Nickerchen haelt, macht den Schuppen nach dem Wortlaut nicht zur Wohnung. Aussage I verneint den Wohnungseinbruchdiebstahl mit genau dieser zutreffenden Begruendung - ebenfalls ableitbar. Beide Aussagen lassen sich ableiten.",
+      "lerntipp": "Bei zwei Normen jede getrennt pruefen: Das Scheitern der Qualifikation (Wohnung) laesst den Grundtatbestand (Diebstahl) unberuehrt. Begriffe wie 'Wohnung' streng am Wortlaut messen, nicht am Gefuehl."
+    },
+    {
+      "id": "fae-frist",
+      "gruppe": "faelle",
+      "skill": "fae-kumulativ",
+      "schwierigkeit": "schwer",
+      "frageverb": "ableitbar",
+      "norm": "\u00a7 622 BGB - Kuendigungsfristen bei Arbeitsverhaeltnissen (Auszug)\n(1) Das Arbeitsverhaeltnis kann mit einer Frist von vier Wochen zum Fuenfzehnten oder zum Ende eines Kalendermonats gekuendigt werden.\n(2) Fuer eine Kuendigung durch den Arbeitgeber betraegt die Kuendigungsfrist, wenn das Arbeitsverhaeltnis in dem Betrieb\n1. zwei Jahre bestanden hat, einen Monat zum Ende eines Kalendermonats,\n2. fuenf Jahre bestanden hat, zwei Monate zum Ende eines Kalendermonats,\n3. acht Jahre bestanden hat, drei Monate zum Ende eines Kalendermonats.",
+      "sachverhalt": "M ist seit dem 1. Juni 2019 bei der F-GmbH beschaeftigt. Am 15. Februar 2024 geht M die schriftliche Kuendigung des Arbeitgebers 'zum 31. Maerz 2024' zu.",
+      "frage": "Welche der beiden Aussagen laesst bzw. lassen sich aus einem Abgleich von Norm und Sachverhalt ableiten?",
+      "thesen": [
+        "I. Die Kuendigungsfrist betraegt zwei Monate zum Monatsende, weil das Arbeitsverhaeltnis fuenf Jahre bestanden hat.",
+        "II. Die Kuendigung zum 31. Maerz 2024 wahrt die Frist, weil das Arbeitsverhaeltnis laenger als zwei, aber noch keine fuenf Jahre bestanden hat und daher ein Monat zum Ende eines Kalendermonats genuegt."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II laesst sich ableiten.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen lassen sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Vom 1. Juni 2019 bis Mitte Februar 2024 sind erst rund vier Jahre und achteinhalb Monate vergangen - auch zum Beendigungstermin 31. Maerz 2024 sind die fuenf Jahre noch nicht erreicht. Die Stufe 'fuenf Jahre' (zwei Monate) greift also nicht; Aussage I ist nicht ableitbar. Es gilt die Stufe 'zwei Jahre': ein Monat zum Ende eines Kalendermonats. Ein Monat ab Zugang am 15. Februar fuehrt zum 15. Maerz; das naechste Monatsende ist der 31. Maerz 2024 - die Kuendigung zu diesem Termin wahrt die Frist. Aussage II nennt Ergebnis und Begruendung zutreffend und ist ableitbar.",
+      "lerntipp": "Bei gestaffelten Fristen erst die richtige Stufe bestimmen (Beschaeftigungsdauer exakt rechnen!), dann Frist plus 'zum Monatsende' auf den Kalender legen."
+    },
+    {
+      "id": "fae-basiszins",
+      "gruppe": "faelle",
+      "skill": "fae-deckelung",
+      "schwierigkeit": "schwer",
+      "frageverb": "ableitbar",
+      "norm": "\u00a7 288 BGB - Verzugszinsen (Auszug)\n(1) Eine Geldschuld ist waehrend des Verzugs zu verzinsen. Der Verzugszinssatz betraegt fuer das Jahr fuenf Prozentpunkte ueber dem Basiszinssatz.\n(2) Bei Rechtsgeschaeften, an denen ein Verbraucher nicht beteiligt ist, betraegt der Zinssatz fuer Entgeltforderungen neun Prozentpunkte ueber dem Basiszinssatz.",
+      "sachverhalt": "Grosshaendler L hat Einzelhaendler H (beide Unternehmer) Waren fuer 10 000 Euro geliefert. H zahlt den faelligen Kaufpreis genau ein Jahr lang trotz Verzugs nicht. L verlangt von H 900 Euro Verzugszinsen und rechnet vor: 9 Prozent von 10 000 Euro. Der Basiszinssatz ist im Sachverhalt nicht angegeben.",
+      "frage": "Welche der beiden Aussagen laesst bzw. lassen sich aus einem Abgleich von Norm und Sachverhalt ableiten?",
+      "thesen": [
+        "I. Der Verzugszinssatz betraegt neun Prozentpunkte ueber dem Basiszinssatz, weil an dem Geschaeft kein Verbraucher beteiligt ist und es sich um eine Entgeltforderung handelt.",
+        "II. L stehen genau 900 Euro Verzugszinsen zu, weil neun Prozent von 10 000 Euro genau 900 Euro ergeben."
+      ],
+      "optionen": [
+        {
+          "text": "Nur Aussage I laesst sich ableiten.",
+          "richtig": true,
+          "hinweis": ""
+        },
+        {
+          "text": "Nur Aussage II laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Beide Aussagen lassen sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        },
+        {
+          "text": "Keine der beiden Aussagen laesst sich ableiten.",
+          "richtig": false,
+          "hinweis": ""
+        }
+      ],
+      "erklaerung": "Beide Parteien sind Unternehmer, ein Verbraucher ist nicht beteiligt, und der Kaufpreis ist eine Entgeltforderung - nach Absatz 2 gilt daher der Satz von neun Prozentpunkten UEBER dem Basiszinssatz. Aussage I gibt genau das wieder und ist ableitbar. Aussage II verwechselt 'neun Prozentpunkte ueber dem Basiszinssatz' mit einem festen Zinssatz von neun Prozent: Der tatsaechliche Satz haengt vom Basiszinssatz ab, und der ist im Sachverhalt nicht angegeben - der Betrag laesst sich also gar nicht berechnen (er waere zudem nur bei einem Basiszinssatz von genau null 900 Euro). Aussage II ist nicht ableitbar.",
+      "lerntipp": "'X Prozentpunkte ueber dem Basiszinssatz' ist kein fester Prozentsatz. Fehlt die Bezugsgroesse im Sachverhalt, ist jeder konkrete Betrag eine Scheinrechnung - klassische Falle mit fehlender Angabe."
     }
   ]
 }
